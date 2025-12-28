@@ -1,0 +1,452 @@
+/* SkillPicker.css */
+.skill-picker {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+/* Header Area */
+.picker-header {
+    flex-shrink: 0;
+    padding: var(--space-sm) var(--space-xl) 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.picker-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.picker-title {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: var(--space-xs);
+    background: linear-gradient(to right, #fff, #a5b4fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.02em;
+}
+
+.picker-subtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    max-width: 600px;
+}
+
+/* Mode Switcher */
+.mode-toggle {
+    display: inline-flex;
+    background: var(--bg-secondary);
+    padding: 4px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    position: relative;
+}
+
+.mode-btn {
+    padding: 8px 16px;
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    transition: all 0.2s;
+    position: relative;
+    z-index: 1;
+}
+
+.mode-btn:hover {
+    color: var(--text-primary);
+}
+
+.mode-btn.active {
+    color: white;
+    background: var(--bg-tertiary);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Bar - Command Palette Style */
+/* Search Bar - Command Palette Style */
+.search-bar-row {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    padding: var(--space-sm) var(--space-xl);
+    backdrop-filter: blur(8px);
+    margin-top: var(--space-xs);
+    display: flex;
+    gap: var(--space-md);
+    align-items: center;
+}
+
+.search-container {
+    position: relative;
+    max-width: 100%;
+    flex: 1;
+}
+
+.search-icon {
+    position: absolute;
+    left: var(--space-lg);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-tertiary);
+    pointer-events: none;
+    transition: color 0.2s;
+}
+
+.search-input {
+    width: 100%;
+    height: 56px;
+    padding: 0 var(--space-xl);
+    padding-left: 3.5rem;
+    background: var(--bg-tertiary);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-xl);
+    color: var(--text-primary);
+    font-size: 1.125rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s var(--ease-smooth);
+}
+
+.search-input:focus {
+    background: var(--bg-secondary);
+    border-color: var(--accent-primary);
+    box-shadow: 0 8px 32px rgba(99, 102, 241, 0.15);
+    transform: translateY(-1px);
+}
+
+.search-input:focus+.search-icon {
+    color: var(--accent-primary);
+}
+
+/* View Toggle */
+.view-toggle {
+    display: flex;
+    background: var(--bg-tertiary);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-xl);
+    padding: 4px;
+    height: 56px;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.view-btn {
+    width: 48px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-lg);
+    color: var(--text-tertiary);
+    transition: all 0.2s;
+}
+
+.view-btn:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.view-btn.active {
+    background: var(--bg-secondary);
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Category Tabs - Premium Glassmorphic Design */
+.category-tabs {
+    display: flex;
+    gap: var(--space-xs);
+    padding: var(--space-sm) var(--space-xl) var(--space-md);
+    overflow-x: auto;
+    scrollbar-width: none;
+    position: relative;
+    align-items: center;
+}
+
+.category-tabs::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: var(--space-xl);
+    right: var(--space-xl);
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            var(--glass-border) 20%,
+            var(--glass-border) 80%,
+            transparent 100%);
+}
+
+.category-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.category-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: 10px 18px;
+    border-radius: var(--radius-lg);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--text-tertiary);
+    background: transparent;
+    border: 1px solid transparent;
+    transition: all 0.25s var(--ease-smooth);
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-tab::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 80% 50% at 50% 0%,
+            rgba(99, 102, 241, 0.15),
+            transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.category-tab:hover {
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.02);
+    border-color: rgba(255, 255, 255, 0.04);
+}
+
+.category-tab:hover::before {
+    opacity: 0.5;
+}
+
+.category-tab.active {
+    color: var(--text-primary);
+    background: var(--glass-surface);
+    border-color: rgba(99, 102, 241, 0.4);
+    box-shadow:
+        0 0 20px -5px var(--accent-glow),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.category-tab.active::before {
+    opacity: 1;
+}
+
+/* Tab Icon */
+.tab-icon {
+    font-size: 0.75rem;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.category-tab.active .tab-icon {
+    animation: sparkle 1.5s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.7;
+        transform: scale(1.2);
+    }
+}
+
+/* Tab Count Badge */
+.tab-count {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: var(--radius-full);
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-tertiary);
+    margin-left: var(--space-xs);
+    transition: all 0.2s;
+}
+
+.category-tab:hover .tab-count {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-secondary);
+}
+
+.category-tab.active .tab-count {
+    background: var(--accent-primary);
+    color: white;
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.4);
+}
+
+/* Agent Tabs - Scrollable with fade edges */
+.agent-tabs {
+    padding-bottom: var(--space-lg);
+    mask-image: linear-gradient(to right,
+            transparent,
+            black 48px,
+            black calc(100% - 48px),
+            transparent);
+    -webkit-mask-image: linear-gradient(to right,
+            transparent,
+            black 48px,
+            black calc(100% - 48px),
+            transparent);
+}
+
+/* Add Custom Button */
+.add-skill-btn {
+    margin-left: auto;
+    padding: 10px 20px;
+    background: var(--accent-gradient);
+    color: white;
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    font-size: 0.8125rem;
+    box-shadow:
+        0 4px 12px rgba(99, 102, 241, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transition: all 0.25s var(--ease-smooth);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.add-skill-btn:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 8px 20px rgba(99, 102, 241, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.add-skill-btn:active {
+    transform: translateY(0);
+}
+
+/* Grid Layout */
+.skills-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: var(--space-lg);
+    padding: var(--space-sm) var(--space-xl) var(--space-2xl);
+    overflow-y: auto;
+}
+
+/* List View Overrides */
+.skills-grid.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.skills-grid.list-view .skill-card,
+.skills-grid.list-view .skill-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: var(--space-xs) var(--space-md);
+    min-height: auto;
+    gap: var(--space-md);
+    width: 100%;
+}
+
+.skills-grid.list-view .skill-header {
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
+
+.skills-grid.list-view .skill-content {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-md);
+    margin-top: 0;
+}
+
+.skills-grid.list-view .skill-name {
+    margin-bottom: 0;
+    width: 220px;
+    flex-shrink: 0;
+    font-size: 0.875rem;
+}
+
+.skills-grid.list-view .skill-description {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex: 1;
+    color: var(--text-secondary);
+}
+
+.skills-grid.list-view .skill-footer {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+    width: auto;
+    flex-shrink: 0;
+    flex-direction: row;
+    gap: var(--space-md);
+    margin-left: auto;
+}
+
+.skills-grid.list-view .skill-category {
+    display: none;
+    /* Hide category in list view if needed, or keep it */
+}
+
+/* Show actions in list view always or on hover? Keep current behavior but layout changes */
+.skills-grid.list-view .skill-actions {
+    position: relative;
+    opacity: 0.5;
+}
+
+.skills-grid.list-view .skill-card:hover .skill-actions {
+    opacity: 1;
+}
+
+/* List Item Animation */
+.skill-item {
+    animation: slideUp 0.4s var(--ease-smooth) backwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-2xl);
+    color: var(--text-secondary);
+    opacity: 0.6;
+}
+
+/* Agent Mode Specifics */
+.agent-card {
+    /* reuse skill card styles? */
+    min-height: 140px;
+}

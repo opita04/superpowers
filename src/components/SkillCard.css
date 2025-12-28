@@ -1,0 +1,268 @@
+/* SkillCard.css */
+.skill-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    background: var(--glass-surface);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(var(--backdrop-blur));
+    -webkit-backdrop-filter: blur(var(--backdrop-blur));
+    transition: all var(--duration-fast) var(--ease-smooth);
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+    min-height: 180px;
+}
+
+/* Glass Highlight Gradient Overlay */
+.skill-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+            rgba(255, 255, 255, 0.06) 0%,
+            transparent 60%);
+    opacity: 0;
+    transition: opacity var(--duration-fast);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--glass-shadow);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.skill-card:hover::after {
+    opacity: 1;
+}
+
+/* Selection State */
+.skill-card.selected {
+    background: rgba(99, 102, 241, 0.08);
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 20px -5px var(--accent-glow);
+}
+
+.skill-card.selected .skill-icon {
+    background: var(--accent-primary);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Header Section */
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-md);
+    position: relative;
+    z-index: 1;
+}
+
+.skill-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: var(--radius-md);
+    font-size: 1.5rem;
+    transition: all var(--duration-normal) var(--ease-elastic);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skill-check {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 24px;
+    height: 24px;
+    background: var(--accent-primary);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    animation: popIn var(--duration-fast) var(--ease-elastic);
+}
+
+/* Content Section */
+.skill-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    z-index: 1;
+}
+
+.skill-name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+}
+
+.skill-description-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.skill-description {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: all var(--duration-normal);
+}
+
+.skill-description.expanded {
+    display: block;
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+    overflow: visible;
+}
+
+.expand-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent-primary);
+    background: rgba(99, 102, 241, 0.08);
+    border-radius: var(--radius-sm);
+    transition: all var(--duration-fast);
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.expand-btn:hover {
+    background: rgba(99, 102, 241, 0.15);
+    color: var(--accent-secondary);
+}
+
+/* Footer Section */
+.skill-footer {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--space-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    z-index: 1;
+}
+
+.skill-category {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 4px 8px;
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text-tertiary);
+}
+
+.skill-actions {
+    display: flex;
+    gap: var(--space-xs);
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all var(--duration-fast);
+}
+
+.skill-card:hover .skill-actions {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.action-btn {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    transition: all 0.2s;
+}
+
+.action-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+}
+
+.action-btn.delete-btn:hover {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--error);
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Favorite Button */
+.favorite-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-full);
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--text-tertiary);
+    cursor: pointer;
+    transition: all var(--duration-fast) var(--ease-smooth);
+    opacity: 0;
+    transform: scale(0.8);
+    z-index: 10;
+}
+
+.skill-card:hover .favorite-btn {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.favorite-btn:hover {
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--text-secondary);
+}
+
+.favorite-btn.active {
+    opacity: 1;
+    transform: scale(1);
+    background: rgba(251, 191, 36, 0.15);
+    color: #fbbf24;
+}
+
+.favorite-btn.active:hover {
+    background: rgba(251, 191, 36, 0.25);
+}

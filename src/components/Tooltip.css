@@ -1,0 +1,132 @@
+/* Tooltip.css */
+.tooltip-trigger {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.tooltip-container {
+    position: fixed;
+    z-index: 99999;
+    transform: translateX(-50%);
+    pointer-events: none;
+    animation: tooltipFadeIn 0.2s ease-out forwards;
+}
+
+.tooltip-top {
+    transform: translateX(-50%) translateY(-100%);
+}
+
+.tooltip-bottom {
+    transform: translateX(-50%);
+}
+
+.tooltip-content {
+    background: rgba(15, 15, 25, 0.98);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: var(--radius-lg, 12px);
+    padding: 16px 20px;
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(255, 255, 255, 0.05),
+        0 0 30px rgba(99, 102, 241, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.tooltip-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #a5b4fc;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tooltip-label::before {
+    content: '📖';
+    font-size: 0.75rem;
+}
+
+.tooltip-text {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0;
+    max-height: 240px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(99, 102, 241, 0.4) transparent;
+}
+
+.tooltip-text::-webkit-scrollbar {
+    width: 5px;
+}
+
+.tooltip-text::-webkit-scrollbar-thumb {
+    background: rgba(99, 102, 241, 0.4);
+    border-radius: 4px;
+}
+
+.tooltip-text::-webkit-scrollbar-thumb:hover {
+    background: rgba(99, 102, 241, 0.6);
+}
+
+/* Arrow */
+.tooltip-arrow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+}
+
+.tooltip-top .tooltip-arrow {
+    bottom: -8px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(15, 15, 25, 0.98);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.tooltip-bottom .tooltip-arrow {
+    top: -8px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(15, 15, 25, 0.98);
+    filter: drop-shadow(0 -2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Animation for top placement */
+@keyframes tooltipFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-100%) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-100%) scale(1);
+    }
+}
+
+/* Animation for bottom placement */
+.tooltip-bottom {
+    animation-name: tooltipFadeInBottom;
+}
+
+@keyframes tooltipFadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.96) translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%) scale(1) translateY(0);
+    }
+}

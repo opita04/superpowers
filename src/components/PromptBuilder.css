@@ -1,0 +1,235 @@
+/* PromptBuilder.css */
+.prompt-builder {
+    width: 440px;
+    background: var(--bg-secondary);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+}
+
+/* Header */
+.builder-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-xl);
+    border-bottom: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+}
+
+.builder-icon {
+    width: 42px;
+    height: 42px;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-primary);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-color);
+}
+
+.builder-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Empty State */
+.builder-empty {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-2xl);
+    text-align: center;
+    gap: var(--space-md);
+    color: var(--text-muted);
+}
+
+.empty-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: var(--space-md);
+    color: var(--bg-tertiary);
+    opacity: 0.5;
+}
+
+/* Content Area */
+.builder-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-xl);
+    gap: var(--space-xl);
+    overflow-y: auto;
+}
+
+/* Section: Selected Skill */
+.selected-skill-section {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    background: var(--bg-tertiary);
+    border: 1px solid var(--accent-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 0 20px -5px rgba(99, 102, 241, 0.2);
+}
+
+.selected-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--accent-primary);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Section: Goal Input */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.section-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: var(--text-tertiary);
+}
+
+.goal-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--border-color);
+    border-radius: 0;
+    padding: var(--space-sm) 0;
+    font-size: 1.125rem;
+    color: var(--text-primary);
+    transition: all 0.3s;
+    resize: none;
+    min-height: 40px;
+}
+
+.goal-input:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: none;
+}
+
+.goal-input::placeholder {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* Section: Output Terminal */
+.output-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    min-height: 200px;
+}
+
+.output-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.terminal-window {
+    flex: 1;
+    background: #0D0D15;
+    /* Pitch black terminal */
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: #A5B4FC;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.terminal-window::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    opacity: 0.5;
+}
+
+/* Copy Button */
+.copy-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: 6px 12px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: all 0.2s;
+}
+
+.copy-btn:hover {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: white;
+}
+
+.copy-btn.copied {
+    background: var(--success);
+    border-color: var(--success);
+    color: white;
+}
+
+.prompt-content {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* Footer with Settings */
+.builder-footer {
+    padding: var(--space-lg) var(--space-xl);
+    border-top: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+}
+
+.settings-trigger-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-full);
+    color: var(--text-secondary);
+    background: transparent;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+}
+
+.settings-trigger-btn:hover {
+    background: var(--bg-tertiary);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
