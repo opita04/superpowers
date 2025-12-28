@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { CATEGORY_INFO, type SkillCategory, type Skill, type Agent, type Plugin } from '../types';
+import { CATEGORY_INFO, type SkillCategory, type Skill, type Agent } from '../types';
 import { useAppStore } from '../stores/appStore';
 import { SkillCard } from './SkillCard';
 import { AgentCard } from './AgentCard';

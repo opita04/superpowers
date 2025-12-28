@@ -15,6 +15,7 @@ const DEFAULT_SKILL: Skill = {
     id: '',
     name: '',
     description: '',
+    shortDescription: '',
     category: 'collaboration',
     references: [],
     icon: '✨'
@@ -41,7 +42,11 @@ export function EditSkillModal({ isOpen, onClose, editingSkill }: EditSkillModal
             .map(s => s.trim())
             .filter(s => s.length > 0);
 
-        const skillToSave = { ...formData, references };
+        const skillToSave = {
+            ...formData,
+            references,
+            shortDescription: formData.shortDescription || formData.description
+        };
 
         if (editingSkill) {
             updateSkill(skillToSave);
@@ -85,13 +90,24 @@ export function EditSkillModal({ isOpen, onClose, editingSkill }: EditSkillModal
                     </div>
 
                     <div className="setting-group">
-                        <label className="setting-label">Description</label>
+                        <label className="setting-label">Short Description</label>
                         <input
                             type="text"
                             className="setting-input"
+                            value={formData.shortDescription}
+                            onChange={e => setFormData({ ...formData, shortDescription: e.target.value })}
+                            placeholder="Brief summary for the card"
+                        />
+                    </div>
+
+                    <div className="setting-group">
+                        <label className="setting-label">Full Description (Markdown)</label>
+                        <textarea
+                            className="setting-input"
+                            style={{ minHeight: '100px', resize: 'vertical' }}
                             value={formData.description}
                             onChange={e => setFormData({ ...formData, description: e.target.value })}
-                            placeholder="Brief description"
+                            placeholder="Detailed description and usage"
                         />
                     </div>
 
