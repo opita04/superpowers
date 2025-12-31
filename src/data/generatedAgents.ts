@@ -9,6 +9,7 @@ export interface Agent {
     shortDescription: string;
     model: string;
     path: string;
+    isArchived?: boolean;
 }
 
 export const GENERATED_AGENTS: Agent[] = [
