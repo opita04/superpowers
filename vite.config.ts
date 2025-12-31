@@ -30,6 +30,9 @@ const archivePlugin = () => ({
             } else if (type === 'agent') {
               sourcePath = path.join(rootDir, itemPath);
               targetPath = path.join(archiveDir, itemPath);
+            } else if (type === 'plugin') {
+              sourcePath = path.join(rootDir, 'agents', 'plugins', id);
+              targetPath = path.join(archiveDir, 'agents', 'plugins', id);
             }
 
             if (fs.existsSync(sourcePath)) {
@@ -46,6 +49,27 @@ const archivePlugin = () => ({
                   if (err) console.error('Failed to regenerate agents index:', err);
                   else console.log('Regenerated agents index');
                 });
+              } else if (type === 'skill') {
+                exec('npx -y tsx scripts/generate-skills-index.ts', (err) => {
+                  if (err) console.error('Failed to regenerate skills index:', err);
+                  else console.log('Regenerated skills index');
+                });
+              } else if (type === 'plugin') {
+                // Determine if we need to update generatedPlugins.ts
+                const pluginsPath = path.join(rootDir, 'src', 'data', 'generatedPlugins.ts');
+                if (fs.existsSync(pluginsPath)) {
+                  let content = fs.readFileSync(pluginsPath, 'utf-8');
+                  // Simple regex injection. Note: This assumes id is unique and format matches.
+                  // We inject isArchived: true after the id property.
+                  const regex = new RegExp(`(id:\\s*['"]${id}['"])`);
+                  if (content.match(regex)) {
+                    if (!content.includes(`id: '${id}', isArchived: true`) && !content.includes(`id: "${id}", isArchived: true`)) {
+                      content = content.replace(regex, `$1, isArchived: true`);
+                      fs.writeFileSync(pluginsPath, content);
+                      console.log('Updated generatedPlugins.ts with isArchived flag');
+                    }
+                  }
+                }
               }
 
               res.statusCode = 200;

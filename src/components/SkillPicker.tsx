@@ -164,6 +164,7 @@ export function SkillPicker() {
 
     // Filtering logic
     const filteredSkills = mode === 'skills' ? skills.filter(skill => {
+        if (skill.isArchived) return false;
         const matchesCategory = activeCategory === 'all' || skill.category === activeCategory;
         const matchesSearch = skill.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
             skill.description.toLowerCase().includes(searchQuery.toLowerCase());
@@ -175,6 +176,7 @@ export function SkillPicker() {
     }) : [];
 
     const filteredAgents = mode === 'agents' ? agents.filter(agent => {
+        if (agent.isArchived) return false;
         const agentCat = getAgentCategory(agent);
         const matchesCategory = activeAgentCategory === 'all' || agentCat === activeAgentCategory;
         const matchesSearch = agent.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -188,6 +190,7 @@ export function SkillPicker() {
     }) : [];
 
     const filteredPlugins = mode === 'plugins' ? plugins.filter(plugin => {
+        if (plugin.isArchived) return false;
         const matchesSearch = plugin.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
             plugin.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
             plugin.contents.toLowerCase().includes(searchQuery.toLowerCase());
@@ -197,6 +200,22 @@ export function SkillPicker() {
         const bFav = favoritePluginIds.includes(b.id) ? 0 : 1;
         return aFav - bFav;
     }) : [];
+
+    // Archive filtering
+    const archivedSkills = mode === 'archive' ? skills.filter(s => s.isArchived && (
+        s.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        s.description.toLowerCase().includes(searchQuery.toLowerCase())
+    )) : [];
+
+    const archivedAgents = mode === 'archive' ? agents.filter(a => a.isArchived && (
+        a.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        a.description.toLowerCase().includes(searchQuery.toLowerCase())
+    )) : [];
+
+    const archivedPlugins = mode === 'archive' ? plugins.filter(p => p.isArchived && (
+        p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        p.description.toLowerCase().includes(searchQuery.toLowerCase())
+    )) : [];
 
     // ... (handlers unchanged)
     const handleEditSkill = (skill: Skill) => {
@@ -215,14 +234,16 @@ export function SkillPicker() {
                 <div className="picker-title-row">
                     <div>
                         <h2 className="picker-title">
-                            {mode === 'skills' ? 'Superpowers' : mode === 'agents' ? 'Intelligence' : 'Plugins'}
+                            {mode === 'skills' ? 'Superpowers' : mode === 'agents' ? 'Intelligence' : mode === 'plugins' ? 'Plugins' : 'Archive'}
                         </h2>
                         <p className="picker-subtitle">
                             {mode === 'skills'
                                 ? 'Select a specialized capability to enhance your workflow.'
                                 : mode === 'agents'
                                     ? 'Deploy an autonomous agent for complex tasks.'
-                                    : 'Official Claude Code plugins from Anthropic.'
+                                    : mode === 'plugins'
+                                        ? 'Official Claude Code plugins from Anthropic.'
+                                        : 'View and restore archived items.'
                             }
                         </p>
                     </div>
@@ -245,6 +266,12 @@ export function SkillPicker() {
                         >
                             Plugins
                         </button>
+                        <button
+                            className={`mode-btn ${mode === 'archive' ? 'active' : ''}`}
+                            onClick={() => setMode('archive')}
+                        >
+                            Archive
+                        </button>
                     </div>
                 </div>
             </div>
@@ -255,7 +282,7 @@ export function SkillPicker() {
                     <input
                         type="text"
                         className="search-input"
-                        placeholder={mode === 'skills' ? "Search for a capability..." : mode === 'agents' ? "Search for an agent..." : "Search for a plugin..."}
+                        placeholder={mode === 'archive' ? "Search archived items..." : mode === 'skills' ? "Search for a capability..." : mode === 'agents' ? "Search for an agent..." : "Search for a plugin..."}
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                     />
@@ -286,7 +313,7 @@ export function SkillPicker() {
                     >
                         <span className="tab-icon">✦</span>
                         All
-                        <span className="tab-count">{skills.length}</span>
+                        <span className="tab-count">{skills.filter(s => !s.isArchived).length}</span>
                     </button>
                     {categories.map(cat => (
                         <button
@@ -296,7 +323,7 @@ export function SkillPicker() {
                         >
                             {CATEGORY_INFO[cat].label}
                             <span className="tab-count">
-                                {skills.filter(s => s.category === cat).length}
+                                {skills.filter(s => s.category === cat && !s.isArchived).length}
                             </span>
                         </button>
                     ))}
@@ -314,7 +341,7 @@ export function SkillPicker() {
                     >
                         <span className="tab-icon">✦</span>
                         All
-                        <span className="tab-count">{agents.length}</span>
+                        <span className="tab-count">{agents.filter(a => !a.isArchived).length}</span>
                     </button>
                     {activeAgentCategories.map(cat => (
                         <button
@@ -325,7 +352,7 @@ export function SkillPicker() {
                             <span className="tab-icon">{AGENT_CATEGORIES[cat].icon}</span>
                             {AGENT_CATEGORIES[cat].label}
                             <span className="tab-count">
-                                {agentsByCategory[cat].length}
+                                {agentsByCategory[cat].filter(a => !a.isArchived).length}
                             </span>
                         </button>
                     ))}
@@ -365,7 +392,6 @@ export function SkillPicker() {
                             isFavorite={favoriteAgentIds.includes(agent.id)}
                             onClick={() => setSelectedAgent(selectedAgent?.id === agent.id ? null : agent)}
                             onEdit={(agent) => {
-                                // Placeholder for agent edit functionality
                                 console.log('Edit agent:', agent.name);
                             }}
                             onDelete={deleteAgent}
@@ -386,7 +412,6 @@ export function SkillPicker() {
                             isFavorite={favoritePluginIds.includes(plugin.id)}
                             onClick={() => setSelectedPlugin(selectedPlugin?.id === plugin.id ? null : plugin)}
                             onEdit={(plugin) => {
-                                // Placeholder for plugin edit functionality
                                 console.log('Edit plugin:', plugin.name);
                             }}
                             onDelete={deletePlugin}
@@ -395,9 +420,74 @@ export function SkillPicker() {
                     </div>
                 ))}
 
+                {mode === 'archive' && (
+                    <>
+                        {archivedSkills.length > 0 && <div className="archive-section-label">Archived Skills</div>}
+                        {archivedSkills.map((skill, index) => (
+                            <div
+                                key={skill.id}
+                                className="skill-item archived"
+                                style={{ animationDelay: `${index * 50}ms` }}
+                            >
+                                <SkillCard
+                                    skill={skill}
+                                    isSelected={selectedSkill?.id === skill.id}
+                                    isFavorite={false}
+                                    onClick={() => setSelectedSkill(
+                                        selectedSkill?.id === skill.id ? null : skill
+                                    )}
+                                    // Disable actions for archived items
+                                    onEdit={() => { }}
+                                    onDelete={() => { }}
+                                    onToggleFavorite={() => { }}
+                                />
+                            </div>
+                        ))}
+
+                        {archivedAgents.length > 0 && <div className="archive-section-label">Archived Agents</div>}
+                        {archivedAgents.map((agent, index) => (
+                            <div
+                                key={agent.id + agent.plugin}
+                                className="skill-item archived"
+                                style={{ animationDelay: `${index * 50}ms` }}
+                            >
+                                <AgentCard
+                                    agent={agent}
+                                    isSelected={selectedAgent?.id === agent.id}
+                                    isFavorite={false}
+                                    onClick={() => setSelectedAgent(selectedAgent?.id === agent.id ? null : agent)}
+                                    onEdit={() => { }}
+                                    onDelete={() => { }}
+                                    onToggleFavorite={() => { }}
+                                />
+                            </div>
+                        ))}
+
+                        {archivedPlugins.length > 0 && <div className="archive-section-label">Archived Plugins</div>}
+                        {archivedPlugins.map((plugin, index) => (
+                            <div
+                                key={plugin.id}
+                                className="skill-item archived"
+                                style={{ animationDelay: `${index * 50}ms` }}
+                            >
+                                <PluginCard
+                                    plugin={plugin}
+                                    isSelected={selectedPlugin?.id === plugin.id}
+                                    isFavorite={false}
+                                    onClick={() => setSelectedPlugin(selectedPlugin?.id === plugin.id ? null : plugin)}
+                                    onEdit={() => { }}
+                                    onDelete={() => { }}
+                                    onToggleFavorite={() => { }}
+                                />
+                            </div>
+                        ))}
+                    </>
+                )}
+
                 {((mode === 'skills' && filteredSkills.length === 0) ||
                     (mode === 'agents' && filteredAgents.length === 0) ||
-                    (mode === 'plugins' && filteredPlugins.length === 0)) && searchQuery && (
+                    (mode === 'plugins' && filteredPlugins.length === 0) ||
+                    (mode === 'archive' && archivedSkills.length === 0 && archivedAgents.length === 0 && archivedPlugins.length === 0)) && searchQuery && (
                         <div className="no-results">
                             <Search size={48} style={{ opacity: 0.2, marginBottom: 16 }} />
                             <p>No results found for "{searchQuery}"</p>

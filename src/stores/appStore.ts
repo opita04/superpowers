@@ -65,7 +65,7 @@ export const useAppStore = create<AppStore>()(
             })),
             deleteSkill: (id) => {
                 set((state) => ({
-                    skills: state.skills.filter(s => s.id !== id),
+                    skills: state.skills.map(s => s.id === id ? { ...s, isArchived: true } : s),
                     selectedSkill: state.selectedSkill?.id === id ? null : state.selectedSkill
                 }));
                 fetch('/api/archive', {
@@ -75,7 +75,7 @@ export const useAppStore = create<AppStore>()(
             },
             deleteAgent: (agent) => {
                 set((state) => ({
-                    agents: state.agents.filter(a => a.id !== agent.id),
+                    agents: state.agents.map(a => a.id === agent.id && a.plugin === agent.plugin ? { ...a, isArchived: true } : a),
                     selectedAgent: state.selectedAgent?.id === agent.id ? null : state.selectedAgent
                 }));
                 fetch('/api/archive', {
@@ -85,9 +85,13 @@ export const useAppStore = create<AppStore>()(
             },
             deletePlugin: (plugin) => {
                 set((state) => ({
-                    plugins: state.plugins.filter(p => p.id !== plugin.id),
+                    plugins: state.plugins.map(p => p.id === plugin.id ? { ...p, isArchived: true } : p),
                     selectedPlugin: state.selectedPlugin?.id === plugin.id ? null : state.selectedPlugin
                 }));
+                fetch('/api/archive', {
+                    method: 'POST',
+                    body: JSON.stringify({ type: 'plugin', id: plugin.id })
+                }).catch(console.error);
             },
             resetSkills: () => set({ skills: GENERATED_SKILLS }),
             reset: () => set({ selectedSkill: null, selectedAgent: null, selectedPlugin: null, userGoal: '' }),

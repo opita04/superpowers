@@ -9,13 +9,14 @@ export interface Skill {
     category: SkillCategory;
     references: string[];
     icon: string;
+    isArchived?: boolean;
 }
 
 export interface Settings {
     superpowersPath: string;
 }
 
-export type AppMode = 'skills' | 'agents' | 'plugins';
+export type AppMode = 'skills' | 'agents' | 'plugins' | 'archive';
 
 export interface Plugin {
     id: string;
@@ -25,6 +26,7 @@ export interface Plugin {
     contents: string;
     githubUrl: string;
     icon: string;
+    isArchived?: boolean;
 }
 
 export interface Agent {
@@ -35,6 +37,7 @@ export interface Agent {
     shortDescription: string;
     model: string;
     path: string;
+    isArchived?: boolean;
 }
 
 

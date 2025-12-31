@@ -19,7 +19,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Rigorous visual validation expert specializing in UI testing, design system compliance, and accessibility verification. Masters screenshot analysis, visual regression testing, and component validation. Use PROACTIVELY to verify UI modifications have achieved their intended goals through comprehensive visual analysis.",
         "shortDescription": "Rigorous visual validation expert specializing in UI testing, design system compliance, and accessibility verification.",
         "model": "sonnet",
-        "path": "agents/plugins/accessibility-compliance/agents/ui-visual-validator.md"
+        "path": "agents/plugins/accessibility-compliance/agents/ui-visual-validator.md",
+        "isArchived": false
     },
     {
         "plugin": "agent-orchestration",
@@ -28,7 +29,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Elite AI context engineering specialist mastering dynamic context management, vector databases, knowledge graphs, and intelligent memory systems. Orchestrates context across multi-agent workflows, enterprise AI systems, and long-running projects with 2024/2025 best practices. Use PROACTIVELY for complex AI orchestration.",
         "shortDescription": "Elite AI context engineering specialist mastering dynamic context management, vector databases, knowledge graphs,...",
         "model": "inherit",
-        "path": "agents/plugins/agent-orchestration/agents/context-manager.md"
+        "path": "agents/plugins/agent-orchestration/agents/context-manager.md",
+        "isArchived": false
     },
     {
         "plugin": "api-scaffolding",
@@ -37,7 +39,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems. Masters REST/GraphQL/gRPC APIs, event-driven architectures, service mesh patterns, and modern backend frameworks. Handles service boundary definition, inter-service communication, resilience patterns, and observability. Use PROACTIVELY when creating new backend services or APIs.",
         "shortDescription": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems.",
         "model": "inherit",
-        "path": "agents/plugins/api-scaffolding/agents/backend-architect.md"
+        "path": "agents/plugins/api-scaffolding/agents/backend-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "api-scaffolding",
@@ -46,7 +49,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master Django 5.x with async views, DRF, Celery, and Django Channels. Build scalable web applications with proper architecture, testing, and deployment. Use PROACTIVELY for Django development, ORM optimization, or complex Django patterns.",
         "shortDescription": "Master Django 5.x with async views, DRF, Celery, and Django Channels.",
         "model": "opus",
-        "path": "agents/plugins/api-scaffolding/agents/django-pro.md"
+        "path": "agents/plugins/api-scaffolding/agents/django-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "api-scaffolding",
@@ -55,7 +59,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Build high-performance async APIs with FastAPI, SQLAlchemy 2.0, and Pydantic V2. Master microservices, WebSockets, and modern Python async patterns. Use PROACTIVELY for FastAPI development, async optimization, or API architecture.",
         "shortDescription": "Build high-performance async APIs with FastAPI, SQLAlchemy 2.0, and Pydantic V2.",
         "model": "opus",
-        "path": "agents/plugins/api-scaffolding/agents/fastapi-pro.md"
+        "path": "agents/plugins/api-scaffolding/agents/fastapi-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "api-scaffolding",
@@ -64,7 +69,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master modern GraphQL with federation, performance optimization, and enterprise security. Build scalable schemas, implement advanced caching, and design real-time systems. Use PROACTIVELY for GraphQL architecture or performance optimization.",
         "shortDescription": "Master modern GraphQL with federation, performance optimization, and enterprise security.",
         "model": "opus",
-        "path": "agents/plugins/api-scaffolding/agents/graphql-architect.md"
+        "path": "agents/plugins/api-scaffolding/agents/graphql-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "api-testing-observability",
@@ -73,7 +79,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master API documentation with OpenAPI 3.1, AI-powered tools, and modern developer experience practices. Create interactive docs, generate SDKs, and build comprehensive developer portals. Use PROACTIVELY for API documentation or developer portal creation.",
         "shortDescription": "Master API documentation with OpenAPI 3.1, AI-powered tools, and modern developer experience practices.",
         "model": "sonnet",
-        "path": "agents/plugins/api-testing-observability/agents/api-documenter.md"
+        "path": "agents/plugins/api-testing-observability/agents/api-documenter.md",
+        "isArchived": false
     },
     {
         "plugin": "application-performance",
@@ -82,7 +89,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Build React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, and modern frontend architecture. Optimizes performance and ensures accessibility. Use PROACTIVELY when creating UI components or fixing frontend issues.",
         "shortDescription": "Build React components, implement responsive layouts, and handle client-side state management.",
         "model": "inherit",
-        "path": "agents/plugins/application-performance/agents/frontend-developer.md"
+        "path": "agents/plugins/application-performance/agents/frontend-developer.md",
+        "isArchived": false
     },
     {
         "plugin": "application-performance",
@@ -91,7 +99,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Build production-ready monitoring, logging, and tracing systems. Implements comprehensive observability strategies, SLI/SLO management, and incident response workflows. Use PROACTIVELY for monitoring infrastructure, performance optimization, or production reliability.",
         "shortDescription": "Build production-ready monitoring, logging, and tracing systems.",
         "model": "inherit",
-        "path": "agents/plugins/application-performance/agents/observability-engineer.md"
+        "path": "agents/plugins/application-performance/agents/observability-engineer.md",
+        "isArchived": false
     },
     {
         "plugin": "application-performance",
@@ -100,7 +109,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert performance engineer specializing in modern observability, application optimization, and scalable system performance. Masters OpenTelemetry, distributed tracing, load testing, multi-tier caching, Core Web Vitals, and performance monitoring. Handles end-to-end optimization, real user monitoring, and scalability patterns. Use PROACTIVELY for performance optimization, observability, or scalability challenges.",
         "shortDescription": "Expert performance engineer specializing in modern observability, application optimization, and scalable system...",
         "model": "inherit",
-        "path": "agents/plugins/application-performance/agents/performance-engineer.md"
+        "path": "agents/plugins/application-performance/agents/performance-engineer.md",
+        "isArchived": false
     },
     {
         "plugin": "arm-cortex-microcontrollers",
@@ -109,7 +119,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": ">",
         "shortDescription": ">",
         "model": "inherit",
-        "path": "agents/plugins/arm-cortex-microcontrollers/agents/arm-cortex-expert.md"
+        "path": "agents/plugins/arm-cortex-microcontrollers/agents/arm-cortex-expert.md",
+        "isArchived": false
     },
     {
         "plugin": "backend-api-security",
@@ -118,7 +129,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems. Masters REST/GraphQL/gRPC APIs, event-driven architectures, service mesh patterns, and modern backend frameworks. Handles service boundary definition, inter-service communication, resilience patterns, and observability. Use PROACTIVELY when creating new backend services or APIs.",
         "shortDescription": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems.",
         "model": "inherit",
-        "path": "agents/plugins/backend-api-security/agents/backend-architect.md"
+        "path": "agents/plugins/backend-api-security/agents/backend-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "backend-api-security",
@@ -127,7 +139,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert in secure backend coding practices specializing in input validation, authentication, and API security. Use PROACTIVELY for backend security implementations or security code reviews.",
         "shortDescription": "Expert in secure backend coding practices specializing in input validation, authentication, and API security.",
         "model": "sonnet",
-        "path": "agents/plugins/backend-api-security/agents/backend-security-coder.md"
+        "path": "agents/plugins/backend-api-security/agents/backend-security-coder.md",
+        "isArchived": false
     },
     {
         "plugin": "backend-development",
@@ -136,7 +149,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems. Masters REST/GraphQL/gRPC APIs, event-driven architectures, service mesh patterns, and modern backend frameworks. Handles service boundary definition, inter-service communication, resilience patterns, and observability. Use PROACTIVELY when creating new backend services or APIs.",
         "shortDescription": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems.",
         "model": "inherit",
-        "path": "agents/plugins/backend-development/agents/backend-architect.md"
+        "path": "agents/plugins/backend-development/agents/backend-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "backend-development",
@@ -145,7 +159,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master modern GraphQL with federation, performance optimization, and enterprise security. Build scalable schemas, implement advanced caching, and design real-time systems. Use PROACTIVELY for GraphQL architecture or performance optimization.",
         "shortDescription": "Master modern GraphQL with federation, performance optimization, and enterprise security.",
         "model": "opus",
-        "path": "agents/plugins/backend-development/agents/graphql-architect.md"
+        "path": "agents/plugins/backend-development/agents/graphql-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "backend-development",
@@ -154,7 +169,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master TDD orchestrator specializing in red-green-refactor discipline, multi-agent workflow coordination, and comprehensive test-driven development practices. Enforces TDD best practices across teams with AI-assisted testing and modern frameworks. Use PROACTIVELY for TDD implementation and governance.",
         "shortDescription": "Master TDD orchestrator specializing in red-green-refactor discipline, multi-agent workflow coordination, and...",
         "model": "opus",
-        "path": "agents/plugins/backend-development/agents/tdd-orchestrator.md"
+        "path": "agents/plugins/backend-development/agents/tdd-orchestrator.md",
+        "isArchived": false
     },
     {
         "plugin": "backend-development",
@@ -163,7 +179,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master Temporal workflow orchestration with Python SDK. Implements durable workflows, saga patterns, and distributed transactions. Covers async/await, testing strategies, and production deployment. Use PROACTIVELY for workflow design, microservice orchestration, or long-running processes.",
         "shortDescription": "Master Temporal workflow orchestration with Python SDK.",
         "model": "inherit",
-        "path": "agents/plugins/backend-development/agents/temporal-python-pro.md"
+        "path": "agents/plugins/backend-development/agents/temporal-python-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "blockchain-web3",
@@ -172,7 +189,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Build production-ready Web3 applications, smart contracts, and decentralized systems. Implements DeFi protocols, NFT platforms, DAOs, and enterprise blockchain integrations. Use PROACTIVELY for smart contracts, Web3 apps, DeFi protocols, or blockchain infrastructure.",
         "shortDescription": "Build production-ready Web3 applications, smart contracts, and decentralized systems.",
         "model": "opus",
-        "path": "agents/plugins/blockchain-web3/agents/blockchain-developer.md"
+        "path": "agents/plugins/blockchain-web3/agents/blockchain-developer.md",
+        "isArchived": false
     },
     {
         "plugin": "business-analytics",
@@ -181,7 +199,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master modern business analysis with AI-powered analytics, real-time dashboards, and data-driven insights. Build comprehensive KPI frameworks, predictive models, and strategic recommendations. Use PROACTIVELY for business intelligence or strategic analysis.",
         "shortDescription": "Master modern business analysis with AI-powered analytics, real-time dashboards, and data-driven insights.",
         "model": "sonnet",
-        "path": "agents/plugins/business-analytics/agents/business-analyst.md"
+        "path": "agents/plugins/business-analytics/agents/business-analyst.md",
+        "isArchived": false
     },
     {
         "plugin": "c4-architecture",
@@ -190,7 +209,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert C4 Code-level documentation specialist. Analyzes code directories to create comprehensive C4 code-level documentation including function signatures, arguments, dependencies, and code structure. Use when documenting code at the lowest C4 level for individual directories and code modules.",
         "shortDescription": "Expert C4 Code-level documentation specialist.",
         "model": "haiku",
-        "path": "agents/plugins/c4-architecture/agents/c4-code.md"
+        "path": "agents/plugins/c4-architecture/agents/c4-code.md",
+        "isArchived": false
     },
     {
         "plugin": "c4-architecture",
@@ -199,7 +219,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert C4 Component-level documentation specialist. Synthesizes C4 Code-level documentation into Component-level architecture, defining component boundaries, interfaces, and relationships. Creates component diagrams and documentation. Use when synthesizing code-level documentation into logical components.",
         "shortDescription": "Expert C4 Component-level documentation specialist.",
         "model": "sonnet",
-        "path": "agents/plugins/c4-architecture/agents/c4-component.md"
+        "path": "agents/plugins/c4-architecture/agents/c4-component.md",
+        "isArchived": false
     },
     {
         "plugin": "c4-architecture",
@@ -208,7 +229,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert C4 Container-level documentation specialist. Synthesizes Component-level documentation into Container-level architecture, mapping components to deployment units, documenting container interfaces as APIs, and creating container diagrams. Use when synthesizing components into deployment containers and documenting system deployment architecture.",
         "shortDescription": "Expert C4 Container-level documentation specialist.",
         "model": "sonnet",
-        "path": "agents/plugins/c4-architecture/agents/c4-container.md"
+        "path": "agents/plugins/c4-architecture/agents/c4-container.md",
+        "isArchived": false
     },
     {
         "plugin": "c4-architecture",
@@ -217,7 +239,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert C4 Context-level documentation specialist. Creates high-level system context diagrams, documents personas, user journeys, system features, and external dependencies. Synthesizes container and component documentation with system documentation to create comprehensive context-level architecture. Use when creating the highest-level C4 system context documentation.",
         "shortDescription": "Expert C4 Context-level documentation specialist.",
         "model": "sonnet",
-        "path": "agents/plugins/c4-architecture/agents/c4-context.md"
+        "path": "agents/plugins/c4-architecture/agents/c4-context.md",
+        "isArchived": false
     },
     {
         "plugin": "cicd-automation",
@@ -226,7 +249,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC (Terraform/OpenTofu/CDK), FinOps cost optimization, and modern architectural patterns. Masters serverless, microservices, security, compliance, and disaster recovery. Use PROACTIVELY for cloud architecture, cost optimization, migration planning, or multi-cloud strategies.",
         "shortDescription": "Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC...",
         "model": "opus",
-        "path": "agents/plugins/cicd-automation/agents/cloud-architect.md"
+        "path": "agents/plugins/cicd-automation/agents/cloud-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "cicd-automation",
@@ -235,7 +259,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation. Masters GitHub Actions, ArgoCD/Flux, progressive delivery, container security, and platform engineering. Handles zero-downtime deployments, security scanning, and developer experience optimization. Use PROACTIVELY for CI/CD design, GitOps implementation, or deployment automation.",
         "shortDescription": "Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation.",
         "model": "haiku",
-        "path": "agents/plugins/cicd-automation/agents/deployment-engineer.md"
+        "path": "agents/plugins/cicd-automation/agents/deployment-engineer.md",
+        "isArchived": false
     },
     {
         "plugin": "cicd-automation",
@@ -244,7 +269,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert DevOps troubleshooter specializing in rapid incident response, advanced debugging, and modern observability. Masters log analysis, distributed tracing, Kubernetes debugging, performance optimization, and root cause analysis. Handles production outages, system reliability, and preventive monitoring. Use PROACTIVELY for debugging, incident response, or system troubleshooting.",
         "shortDescription": "Expert DevOps troubleshooter specializing in rapid incident response, advanced debugging, and modern observability.",
         "model": "sonnet",
-        "path": "agents/plugins/cicd-automation/agents/devops-troubleshooter.md"
+        "path": "agents/plugins/cicd-automation/agents/devops-troubleshooter.md",
+        "isArchived": false
     },
     {
         "plugin": "cicd-automation",
@@ -253,7 +279,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux), and enterprise container orchestration. Masters EKS/AKS/GKE, service mesh (Istio/Linkerd), progressive delivery, multi-tenancy, and platform engineering. Handles security, observability, cost optimization, and developer experience. Use PROACTIVELY for K8s architecture, GitOps implementation, or cloud-native platform design.",
         "shortDescription": "Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux),...",
         "model": "opus",
-        "path": "agents/plugins/cicd-automation/agents/kubernetes-architect.md"
+        "path": "agents/plugins/cicd-automation/agents/kubernetes-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "cicd-automation",
@@ -262,7 +289,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, and enterprise infrastructure patterns. Handles complex module design, multi-cloud deployments, GitOps workflows, policy as code, and CI/CD integration. Covers migration strategies, security best practices, and modern IaC ecosystems. Use PROACTIVELY for advanced IaC, state management, or infrastructure automation.",
         "shortDescription": "Expert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, and enterprise...",
         "model": "opus",
-        "path": "agents/plugins/cicd-automation/agents/terraform-specialist.md"
+        "path": "agents/plugins/cicd-automation/agents/terraform-specialist.md",
+        "isArchived": false
     },
     {
         "plugin": "cloud-infrastructure",
@@ -271,7 +299,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC (Terraform/OpenTofu/CDK), FinOps cost optimization, and modern architectural patterns. Masters serverless, microservices, security, compliance, and disaster recovery. Use PROACTIVELY for cloud architecture, cost optimization, migration planning, or multi-cloud strategies.",
         "shortDescription": "Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC...",
         "model": "opus",
-        "path": "agents/plugins/cloud-infrastructure/agents/cloud-architect.md"
+        "path": "agents/plugins/cloud-infrastructure/agents/cloud-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "cloud-infrastructure",
@@ -280,7 +309,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation. Masters GitHub Actions, ArgoCD/Flux, progressive delivery, container security, and platform engineering. Handles zero-downtime deployments, security scanning, and developer experience optimization. Use PROACTIVELY for CI/CD design, GitOps implementation, or deployment automation.",
         "shortDescription": "Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation.",
         "model": "haiku",
-        "path": "agents/plugins/cloud-infrastructure/agents/deployment-engineer.md"
+        "path": "agents/plugins/cloud-infrastructure/agents/deployment-engineer.md",
+        "isArchived": false
     },
     {
         "plugin": "cloud-infrastructure",
@@ -289,7 +319,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert hybrid cloud architect specializing in complex multi-cloud solutions across AWS/Azure/GCP and private clouds (OpenStack/VMware). Masters hybrid connectivity, workload placement optimization, edge computing, and cross-cloud automation. Handles compliance, cost optimization, disaster recovery, and migration strategies. Use PROACTIVELY for hybrid architecture, multi-cloud strategy, or complex infrastructure integration.",
         "shortDescription": "Expert hybrid cloud architect specializing in complex multi-cloud solutions across AWS/Azure/GCP and private clouds...",
         "model": "opus",
-        "path": "agents/plugins/cloud-infrastructure/agents/hybrid-cloud-architect.md"
+        "path": "agents/plugins/cloud-infrastructure/agents/hybrid-cloud-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "cloud-infrastructure",
@@ -298,7 +329,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux), and enterprise container orchestration. Masters EKS/AKS/GKE, service mesh (Istio/Linkerd), progressive delivery, multi-tenancy, and platform engineering. Handles security, observability, cost optimization, and developer experience. Use PROACTIVELY for K8s architecture, GitOps implementation, or cloud-native platform design.",
         "shortDescription": "Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux),...",
         "model": "opus",
-        "path": "agents/plugins/cloud-infrastructure/agents/kubernetes-architect.md"
+        "path": "agents/plugins/cloud-infrastructure/agents/kubernetes-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "cloud-infrastructure",
@@ -307,7 +339,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert network engineer specializing in modern cloud networking, security architectures, and performance optimization. Masters multi-cloud connectivity, service mesh, zero-trust networking, SSL/TLS, global load balancing, and advanced troubleshooting. Handles CDN optimization, network automation, and compliance. Use PROACTIVELY for network design, connectivity issues, or performance optimization.",
         "shortDescription": "Expert network engineer specializing in modern cloud networking, security architectures, and performance optimization.",
         "model": "sonnet",
-        "path": "agents/plugins/cloud-infrastructure/agents/network-engineer.md"
+        "path": "agents/plugins/cloud-infrastructure/agents/network-engineer.md",
+        "isArchived": false
     },
     {
         "plugin": "cloud-infrastructure",
@@ -316,7 +349,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, and enterprise infrastructure patterns. Handles complex module design, multi-cloud deployments, GitOps workflows, policy as code, and CI/CD integration. Covers migration strategies, security best practices, and modern IaC ecosystems. Use PROACTIVELY for advanced IaC, state management, or infrastructure automation.",
         "shortDescription": "Expert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, and enterprise...",
         "model": "opus",
-        "path": "agents/plugins/cloud-infrastructure/agents/terraform-specialist.md"
+        "path": "agents/plugins/cloud-infrastructure/agents/terraform-specialist.md",
+        "isArchived": false
     },
     {
         "plugin": "code-documentation",
@@ -325,7 +359,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance optimization, and production reliability. Masters static analysis tools, security scanning, and configuration review with 2024/2025 best practices. Use PROACTIVELY for code quality assurance.",
         "shortDescription": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance...",
         "model": "opus",
-        "path": "agents/plugins/code-documentation/agents/code-reviewer.md"
+        "path": "agents/plugins/code-documentation/agents/code-reviewer.md",
+        "isArchived": false
     },
     {
         "plugin": "code-documentation",
@@ -334,7 +369,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Creates comprehensive technical documentation from existing codebases. Analyzes architecture, design patterns, and implementation details to produce long-form technical manuals and ebooks. Use PROACTIVELY for system documentation, architecture guides, or technical deep-dives.",
         "shortDescription": "Creates comprehensive technical documentation from existing codebases.",
         "model": "sonnet",
-        "path": "agents/plugins/code-documentation/agents/docs-architect.md"
+        "path": "agents/plugins/code-documentation/agents/docs-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "code-documentation",
@@ -343,7 +379,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Creates step-by-step tutorials and educational content from code. Transforms complex concepts into progressive learning experiences with hands-on examples. Use PROACTIVELY for onboarding guides, feature tutorials, or concept explanations.",
         "shortDescription": "Creates step-by-step tutorials and educational content from code.",
         "model": "sonnet",
-        "path": "agents/plugins/code-documentation/agents/tutorial-engineer.md"
+        "path": "agents/plugins/code-documentation/agents/tutorial-engineer.md",
+        "isArchived": false
     },
     {
         "plugin": "code-refactoring",
@@ -352,7 +389,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance optimization, and production reliability. Masters static analysis tools, security scanning, and configuration review with 2024/2025 best practices. Use PROACTIVELY for code quality assurance.",
         "shortDescription": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance...",
         "model": "opus",
-        "path": "agents/plugins/code-refactoring/agents/code-reviewer.md"
+        "path": "agents/plugins/code-refactoring/agents/code-reviewer.md",
+        "isArchived": false
     },
     {
         "plugin": "code-refactoring",
@@ -361,7 +399,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Refactor legacy codebases, migrate outdated frameworks, and implement gradual modernization. Handles technical debt, dependency updates, and backward compatibility. Use PROACTIVELY for legacy system updates, framework migrations, or technical debt reduction.",
         "shortDescription": "Refactor legacy codebases, migrate outdated frameworks, and implement gradual modernization.",
         "model": "sonnet",
-        "path": "agents/plugins/code-refactoring/agents/legacy-modernizer.md"
+        "path": "agents/plugins/code-refactoring/agents/legacy-modernizer.md",
+        "isArchived": false
     },
     {
         "plugin": "code-review-ai",
@@ -370,7 +409,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master software architect specializing in modern architecture patterns, clean architecture, microservices, event-driven systems, and DDD. Reviews system designs and code changes for architectural integrity, scalability, and maintainability. Use PROACTIVELY for architectural decisions.",
         "shortDescription": "Master software architect specializing in modern architecture patterns, clean architecture, microservices,...",
         "model": "opus",
-        "path": "agents/plugins/code-review-ai/agents/architect-review.md"
+        "path": "agents/plugins/code-review-ai/agents/architect-review.md",
+        "isArchived": false
     },
     {
         "plugin": "codebase-cleanup",
@@ -379,7 +419,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance optimization, and production reliability. Masters static analysis tools, security scanning, and configuration review with 2024/2025 best practices. Use PROACTIVELY for code quality assurance.",
         "shortDescription": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance...",
         "model": "opus",
-        "path": "agents/plugins/codebase-cleanup/agents/code-reviewer.md"
+        "path": "agents/plugins/codebase-cleanup/agents/code-reviewer.md",
+        "isArchived": false
     },
     {
         "plugin": "codebase-cleanup",
@@ -388,7 +429,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering. Build scalable testing strategies with advanced CI/CD integration. Use PROACTIVELY for testing automation or quality assurance.",
         "shortDescription": "Master AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering.",
         "model": "sonnet",
-        "path": "agents/plugins/codebase-cleanup/agents/test-automator.md"
+        "path": "agents/plugins/codebase-cleanup/agents/test-automator.md",
+        "isArchived": false
     },
     {
         "plugin": "comprehensive-review",
@@ -397,7 +439,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master software architect specializing in modern architecture patterns, clean architecture, microservices, event-driven systems, and DDD. Reviews system designs and code changes for architectural integrity, scalability, and maintainability. Use PROACTIVELY for architectural decisions.",
         "shortDescription": "Master software architect specializing in modern architecture patterns, clean architecture, microservices,...",
         "model": "opus",
-        "path": "agents/plugins/comprehensive-review/agents/architect-review.md"
+        "path": "agents/plugins/comprehensive-review/agents/architect-review.md",
+        "isArchived": false
     },
     {
         "plugin": "comprehensive-review",
@@ -406,7 +449,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance optimization, and production reliability. Masters static analysis tools, security scanning, and configuration review with 2024/2025 best practices. Use PROACTIVELY for code quality assurance.",
         "shortDescription": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance...",
         "model": "opus",
-        "path": "agents/plugins/comprehensive-review/agents/code-reviewer.md"
+        "path": "agents/plugins/comprehensive-review/agents/code-reviewer.md",
+        "isArchived": false
     },
     {
         "plugin": "comprehensive-review",
@@ -415,7 +459,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks. Masters vulnerability assessment, threat modeling, secure authentication (OAuth2/OIDC), OWASP standards, cloud security, and security automation. Handles DevSecOps integration, compliance (GDPR/HIPAA/SOC2), and incident response. Use PROACTIVELY for security audits, DevSecOps, or compliance implementation.",
         "shortDescription": "Expert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks.",
         "model": "opus",
-        "path": "agents/plugins/comprehensive-review/agents/security-auditor.md"
+        "path": "agents/plugins/comprehensive-review/agents/security-auditor.md",
+        "isArchived": false
     },
     {
         "plugin": "content-marketing",
@@ -424,7 +469,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Elite content marketing strategist specializing in AI-powered content creation, omnichannel distribution, SEO optimization, and data-driven performance marketing. Masters modern content tools, social media automation, and conversion optimization with 2024/2025 best practices. Use PROACTIVELY for comprehensive content marketing.",
         "shortDescription": "Elite content marketing strategist specializing in AI-powered content creation, omnichannel distribution, SEO...",
         "model": "haiku",
-        "path": "agents/plugins/content-marketing/agents/content-marketer.md"
+        "path": "agents/plugins/content-marketing/agents/content-marketer.md",
+        "isArchived": false
     },
     {
         "plugin": "content-marketing",
@@ -433,7 +479,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert web researcher using advanced search techniques and synthesis. Masters search operators, result filtering, and multi-source verification. Handles competitive analysis and fact-checking. Use PROACTIVELY for deep research, information gathering, or trend analysis.",
         "shortDescription": "Expert web researcher using advanced search techniques and synthesis.",
         "model": "haiku",
-        "path": "agents/plugins/content-marketing/agents/search-specialist.md"
+        "path": "agents/plugins/content-marketing/agents/search-specialist.md",
+        "isArchived": false
     },
     {
         "plugin": "context-management",
@@ -442,7 +489,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Elite AI context engineering specialist mastering dynamic context management, vector databases, knowledge graphs, and intelligent memory systems. Orchestrates context across multi-agent workflows, enterprise AI systems, and long-running projects with 2024/2025 best practices. Use PROACTIVELY for complex AI orchestration.",
         "shortDescription": "Elite AI context engineering specialist mastering dynamic context management, vector databases, knowledge graphs,...",
         "model": "inherit",
-        "path": "agents/plugins/context-management/agents/context-manager.md"
+        "path": "agents/plugins/context-management/agents/context-manager.md",
+        "isArchived": false
     },
     {
         "plugin": "customer-sales-automation",
@@ -451,7 +499,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Elite AI-powered customer support specialist mastering conversational AI, automated ticketing, sentiment analysis, and omnichannel support experiences. Integrates modern support tools, chatbot platforms, and CX optimization with 2024/2025 best practices. Use PROACTIVELY for comprehensive customer experience management.",
         "shortDescription": "Elite AI-powered customer support specialist mastering conversational AI, automated ticketing, sentiment analysis,...",
         "model": "haiku",
-        "path": "agents/plugins/customer-sales-automation/agents/customer-support.md"
+        "path": "agents/plugins/customer-sales-automation/agents/customer-support.md",
+        "isArchived": false
     },
     {
         "plugin": "customer-sales-automation",
@@ -460,7 +509,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Draft cold emails, follow-ups, and proposal templates. Creates pricing pages, case studies, and sales scripts. Use PROACTIVELY for sales outreach or lead nurturing.",
         "shortDescription": "Draft cold emails, follow-ups, and proposal templates. Creates pricing pages, case studies, and sales scripts.",
         "model": "haiku",
-        "path": "agents/plugins/customer-sales-automation/agents/sales-automator.md"
+        "path": "agents/plugins/customer-sales-automation/agents/sales-automator.md",
+        "isArchived": false
     },
     {
         "plugin": "data-engineering",
@@ -469,7 +519,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems. Masters REST/GraphQL/gRPC APIs, event-driven architectures, service mesh patterns, and modern backend frameworks. Handles service boundary definition, inter-service communication, resilience patterns, and observability. Use PROACTIVELY when creating new backend services or APIs.",
         "shortDescription": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems.",
         "model": "inherit",
-        "path": "agents/plugins/data-engineering/agents/backend-architect.md"
+        "path": "agents/plugins/data-engineering/agents/backend-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "data-engineering",
@@ -478,7 +529,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Build scalable data pipelines, modern data warehouses, and real-time streaming architectures. Implements Apache Spark, dbt, Airflow, and cloud-native data platforms. Use PROACTIVELY for data pipeline design, analytics infrastructure, or modern data stack implementation.",
         "shortDescription": "Build scalable data pipelines, modern data warehouses, and real-time streaming architectures.",
         "model": "opus",
-        "path": "agents/plugins/data-engineering/agents/data-engineer.md"
+        "path": "agents/plugins/data-engineering/agents/data-engineer.md",
+        "isArchived": false
     },
     {
         "plugin": "data-validation-suite",
@@ -487,7 +539,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert in secure backend coding practices specializing in input validation, authentication, and API security. Use PROACTIVELY for backend security implementations or security code reviews.",
         "shortDescription": "Expert in secure backend coding practices specializing in input validation, authentication, and API security.",
         "model": "sonnet",
-        "path": "agents/plugins/data-validation-suite/agents/backend-security-coder.md"
+        "path": "agents/plugins/data-validation-suite/agents/backend-security-coder.md",
+        "isArchived": false
     },
     {
         "plugin": "database-cloud-optimization",
@@ -496,7 +549,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems. Masters REST/GraphQL/gRPC APIs, event-driven architectures, service mesh patterns, and modern backend frameworks. Handles service boundary definition, inter-service communication, resilience patterns, and observability. Use PROACTIVELY when creating new backend services or APIs.",
         "shortDescription": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems.",
         "model": "inherit",
-        "path": "agents/plugins/database-cloud-optimization/agents/backend-architect.md"
+        "path": "agents/plugins/database-cloud-optimization/agents/backend-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "database-cloud-optimization",
@@ -505,7 +559,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC (Terraform/OpenTofu/CDK), FinOps cost optimization, and modern architectural patterns. Masters serverless, microservices, security, compliance, and disaster recovery. Use PROACTIVELY for cloud architecture, cost optimization, migration planning, or multi-cloud strategies.",
         "shortDescription": "Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC...",
         "model": "sonnet",
-        "path": "agents/plugins/database-cloud-optimization/agents/cloud-architect.md"
+        "path": "agents/plugins/database-cloud-optimization/agents/cloud-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "database-cloud-optimization",
@@ -514,7 +569,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert database architect specializing in data layer design from scratch, technology selection, schema modeling, and scalable database architectures. Masters SQL/NoSQL/TimeSeries database selection, normalization strategies, migration planning, and performance-first design. Handles both greenfield architectures and re-architecture of existing systems. Use PROACTIVELY for database architecture, technology selection, or data modeling decisions.",
         "shortDescription": "Expert database architect specializing in data layer design from scratch, technology selection, schema modeling, and...",
         "model": "inherit",
-        "path": "agents/plugins/database-cloud-optimization/agents/database-architect.md"
+        "path": "agents/plugins/database-cloud-optimization/agents/database-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "database-cloud-optimization",
@@ -523,7 +579,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert database optimizer specializing in modern performance tuning, query optimization, and scalable architectures. Masters advanced indexing, N+1 resolution, multi-tier caching, partitioning strategies, and cloud database optimization. Handles complex query analysis, migration strategies, and performance monitoring. Use PROACTIVELY for database optimization, performance issues, or scalability challenges.",
         "shortDescription": "Expert database optimizer specializing in modern performance tuning, query optimization, and scalable architectures.",
         "model": "inherit",
-        "path": "agents/plugins/database-cloud-optimization/agents/database-optimizer.md"
+        "path": "agents/plugins/database-cloud-optimization/agents/database-optimizer.md",
+        "isArchived": false
     },
     {
         "plugin": "database-design",
@@ -532,7 +589,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert database architect specializing in data layer design from scratch, technology selection, schema modeling, and scalable database architectures. Masters SQL/NoSQL/TimeSeries database selection, normalization strategies, migration planning, and performance-first design. Handles both greenfield architectures and re-architecture of existing systems. Use PROACTIVELY for database architecture, technology selection, or data modeling decisions.",
         "shortDescription": "Expert database architect specializing in data layer design from scratch, technology selection, schema modeling, and...",
         "model": "opus",
-        "path": "agents/plugins/database-design/agents/database-architect.md"
+        "path": "agents/plugins/database-design/agents/database-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "database-design",
@@ -541,7 +599,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master modern SQL with cloud-native databases, OLTP/OLAP optimization, and advanced query techniques. Expert in performance tuning, data modeling, and hybrid analytical systems. Use PROACTIVELY for database optimization or complex analysis.",
         "shortDescription": "Master modern SQL with cloud-native databases, OLTP/OLAP optimization, and advanced query techniques.",
         "model": "inherit",
-        "path": "agents/plugins/database-design/agents/sql-pro.md"
+        "path": "agents/plugins/database-design/agents/sql-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "database-migrations",
@@ -550,7 +609,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert database administrator specializing in modern cloud databases, automation, and reliability engineering. Masters AWS/Azure/GCP database services, Infrastructure as Code, high availability, disaster recovery, performance optimization, and compliance. Handles multi-cloud strategies, container databases, and cost optimization. Use PROACTIVELY for database architecture, operations, or reliability engineering.",
         "shortDescription": "Expert database administrator specializing in modern cloud databases, automation, and reliability engineering.",
         "model": "sonnet",
-        "path": "agents/plugins/database-migrations/agents/database-admin.md"
+        "path": "agents/plugins/database-migrations/agents/database-admin.md",
+        "isArchived": false
     },
     {
         "plugin": "database-migrations",
@@ -559,7 +619,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert database optimizer specializing in modern performance tuning, query optimization, and scalable architectures. Masters advanced indexing, N+1 resolution, multi-tier caching, partitioning strategies, and cloud database optimization. Handles complex query analysis, migration strategies, and performance monitoring. Use PROACTIVELY for database optimization, performance issues, or scalability challenges.",
         "shortDescription": "Expert database optimizer specializing in modern performance tuning, query optimization, and scalable architectures.",
         "model": "inherit",
-        "path": "agents/plugins/database-migrations/agents/database-optimizer.md"
+        "path": "agents/plugins/database-migrations/agents/database-optimizer.md",
+        "isArchived": false
     },
     {
         "plugin": "debugging-toolkit",
@@ -568,7 +629,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Debugging specialist for errors, test failures, and unexpected behavior. Use proactively when encountering any issues.",
         "shortDescription": "Debugging specialist for errors, test failures, and unexpected behavior.",
         "model": "sonnet",
-        "path": "agents/plugins/debugging-toolkit/agents/debugger.md"
+        "path": "agents/plugins/debugging-toolkit/agents/debugger.md",
+        "isArchived": false
     },
     {
         "plugin": "debugging-toolkit",
@@ -577,7 +639,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Developer Experience specialist. Improves tooling, setup, and workflows. Use PROACTIVELY when setting up new projects, after team feedback, or when development friction is noticed.",
         "shortDescription": "Developer Experience specialist. Improves tooling, setup, and workflows.",
         "model": "sonnet",
-        "path": "agents/plugins/debugging-toolkit/agents/dx-optimizer.md"
+        "path": "agents/plugins/debugging-toolkit/agents/dx-optimizer.md",
+        "isArchived": false
     },
     {
         "plugin": "dependency-management",
@@ -586,7 +649,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Refactor legacy codebases, migrate outdated frameworks, and implement gradual modernization. Handles technical debt, dependency updates, and backward compatibility. Use PROACTIVELY for legacy system updates, framework migrations, or technical debt reduction.",
         "shortDescription": "Refactor legacy codebases, migrate outdated frameworks, and implement gradual modernization.",
         "model": "sonnet",
-        "path": "agents/plugins/dependency-management/agents/legacy-modernizer.md"
+        "path": "agents/plugins/dependency-management/agents/legacy-modernizer.md",
+        "isArchived": false
     },
     {
         "plugin": "deployment-strategies",
@@ -595,7 +659,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation. Masters GitHub Actions, ArgoCD/Flux, progressive delivery, container security, and platform engineering. Handles zero-downtime deployments, security scanning, and developer experience optimization. Use PROACTIVELY for CI/CD design, GitOps implementation, or deployment automation.",
         "shortDescription": "Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation.",
         "model": "haiku",
-        "path": "agents/plugins/deployment-strategies/agents/deployment-engineer.md"
+        "path": "agents/plugins/deployment-strategies/agents/deployment-engineer.md",
+        "isArchived": false
     },
     {
         "plugin": "deployment-strategies",
@@ -604,7 +669,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, and enterprise infrastructure patterns. Handles complex module design, multi-cloud deployments, GitOps workflows, policy as code, and CI/CD integration. Covers migration strategies, security best practices, and modern IaC ecosystems. Use PROACTIVELY for advanced IaC, state management, or infrastructure automation.",
         "shortDescription": "Expert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, and enterprise...",
         "model": "opus",
-        "path": "agents/plugins/deployment-strategies/agents/terraform-specialist.md"
+        "path": "agents/plugins/deployment-strategies/agents/terraform-specialist.md",
+        "isArchived": false
     },
     {
         "plugin": "deployment-validation",
@@ -613,7 +679,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC (Terraform/OpenTofu/CDK), FinOps cost optimization, and modern architectural patterns. Masters serverless, microservices, security, compliance, and disaster recovery. Use PROACTIVELY for cloud architecture, cost optimization, migration planning, or multi-cloud strategies.",
         "shortDescription": "Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC...",
         "model": "sonnet",
-        "path": "agents/plugins/deployment-validation/agents/cloud-architect.md"
+        "path": "agents/plugins/deployment-validation/agents/cloud-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "distributed-debugging",
@@ -622,7 +689,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert DevOps troubleshooter specializing in rapid incident response, advanced debugging, and modern observability. Masters log analysis, distributed tracing, Kubernetes debugging, performance optimization, and root cause analysis. Handles production outages, system reliability, and preventive monitoring. Use PROACTIVELY for debugging, incident response, or system troubleshooting.",
         "shortDescription": "Expert DevOps troubleshooter specializing in rapid incident response, advanced debugging, and modern observability.",
         "model": "sonnet",
-        "path": "agents/plugins/distributed-debugging/agents/devops-troubleshooter.md"
+        "path": "agents/plugins/distributed-debugging/agents/devops-troubleshooter.md",
+        "isArchived": false
     },
     {
         "plugin": "distributed-debugging",
@@ -631,7 +699,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Search logs and codebases for error patterns, stack traces, and anomalies. Correlates errors across systems and identifies root causes. Use PROACTIVELY when debugging issues, analyzing logs, or investigating production errors.",
         "shortDescription": "Search logs and codebases for error patterns, stack traces, and anomalies.",
         "model": "sonnet",
-        "path": "agents/plugins/distributed-debugging/agents/error-detective.md"
+        "path": "agents/plugins/distributed-debugging/agents/error-detective.md",
+        "isArchived": false
     },
     {
         "plugin": "documentation-generation",
@@ -640,7 +709,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master API documentation with OpenAPI 3.1, AI-powered tools, and modern developer experience practices. Create interactive docs, generate SDKs, and build comprehensive developer portals. Use PROACTIVELY for API documentation or developer portal creation.",
         "shortDescription": "Master API documentation with OpenAPI 3.1, AI-powered tools, and modern developer experience practices.",
         "model": "sonnet",
-        "path": "agents/plugins/documentation-generation/agents/api-documenter.md"
+        "path": "agents/plugins/documentation-generation/agents/api-documenter.md",
+        "isArchived": false
     },
     {
         "plugin": "documentation-generation",
@@ -649,7 +719,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Creates comprehensive technical documentation from existing codebases. Analyzes architecture, design patterns, and implementation details to produce long-form technical manuals and ebooks. Use PROACTIVELY for system documentation, architecture guides, or technical deep-dives.",
         "shortDescription": "Creates comprehensive technical documentation from existing codebases.",
         "model": "sonnet",
-        "path": "agents/plugins/documentation-generation/agents/docs-architect.md"
+        "path": "agents/plugins/documentation-generation/agents/docs-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "documentation-generation",
@@ -658,7 +729,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Create Mermaid diagrams for flowcharts, sequences, ERDs, and architectures. Masters syntax for all diagram types and styling. Use PROACTIVELY for visual documentation, system diagrams, or process flows.",
         "shortDescription": "Create Mermaid diagrams for flowcharts, sequences, ERDs, and architectures.",
         "model": "haiku",
-        "path": "agents/plugins/documentation-generation/agents/mermaid-expert.md"
+        "path": "agents/plugins/documentation-generation/agents/mermaid-expert.md",
+        "isArchived": false
     },
     {
         "plugin": "documentation-generation",
@@ -667,7 +739,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Creates exhaustive technical references and API documentation. Generates comprehensive parameter listings, configuration guides, and searchable reference materials. Use PROACTIVELY for API docs, configuration references, or complete technical specifications.",
         "shortDescription": "Creates exhaustive technical references and API documentation.",
         "model": "haiku",
-        "path": "agents/plugins/documentation-generation/agents/reference-builder.md"
+        "path": "agents/plugins/documentation-generation/agents/reference-builder.md",
+        "isArchived": false
     },
     {
         "plugin": "documentation-generation",
@@ -676,7 +749,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Creates step-by-step tutorials and educational content from code. Transforms complex concepts into progressive learning experiences with hands-on examples. Use PROACTIVELY for onboarding guides, feature tutorials, or concept explanations.",
         "shortDescription": "Creates step-by-step tutorials and educational content from code.",
         "model": "sonnet",
-        "path": "agents/plugins/documentation-generation/agents/tutorial-engineer.md"
+        "path": "agents/plugins/documentation-generation/agents/tutorial-engineer.md",
+        "isArchived": false
     },
     {
         "plugin": "error-debugging",
@@ -685,7 +759,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Debugging specialist for errors, test failures, and unexpected behavior. Use proactively when encountering any issues.",
         "shortDescription": "Debugging specialist for errors, test failures, and unexpected behavior.",
         "model": "sonnet",
-        "path": "agents/plugins/error-debugging/agents/debugger.md"
+        "path": "agents/plugins/error-debugging/agents/debugger.md",
+        "isArchived": false
     },
     {
         "plugin": "error-debugging",
@@ -694,7 +769,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Search logs and codebases for error patterns, stack traces, and anomalies. Correlates errors across systems and identifies root causes. Use PROACTIVELY when debugging issues, analyzing logs, or investigating production errors.",
         "shortDescription": "Search logs and codebases for error patterns, stack traces, and anomalies.",
         "model": "sonnet",
-        "path": "agents/plugins/error-debugging/agents/error-detective.md"
+        "path": "agents/plugins/error-debugging/agents/error-detective.md",
+        "isArchived": false
     },
     {
         "plugin": "error-diagnostics",
@@ -703,7 +779,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Debugging specialist for errors, test failures, and unexpected behavior. Use proactively when encountering any issues.",
         "shortDescription": "Debugging specialist for errors, test failures, and unexpected behavior.",
         "model": "sonnet",
-        "path": "agents/plugins/error-diagnostics/agents/debugger.md"
+        "path": "agents/plugins/error-diagnostics/agents/debugger.md",
+        "isArchived": false
     },
     {
         "plugin": "error-diagnostics",
@@ -712,7 +789,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Search logs and codebases for error patterns, stack traces, and anomalies. Correlates errors across systems and identifies root causes. Use PROACTIVELY when debugging issues, analyzing logs, or investigating production errors.",
         "shortDescription": "Search logs and codebases for error patterns, stack traces, and anomalies.",
         "model": "sonnet",
-        "path": "agents/plugins/error-diagnostics/agents/error-detective.md"
+        "path": "agents/plugins/error-diagnostics/agents/error-detective.md",
+        "isArchived": false
     },
     {
         "plugin": "framework-migration",
@@ -721,7 +799,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master software architect specializing in modern architecture patterns, clean architecture, microservices, event-driven systems, and DDD. Reviews system designs and code changes for architectural integrity, scalability, and maintainability. Use PROACTIVELY for architectural decisions.",
         "shortDescription": "Master software architect specializing in modern architecture patterns, clean architecture, microservices,...",
         "model": "opus",
-        "path": "agents/plugins/framework-migration/agents/architect-review.md"
+        "path": "agents/plugins/framework-migration/agents/architect-review.md",
+        "isArchived": false
     },
     {
         "plugin": "framework-migration",
@@ -730,7 +809,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Refactor legacy codebases, migrate outdated frameworks, and implement gradual modernization. Handles technical debt, dependency updates, and backward compatibility. Use PROACTIVELY for legacy system updates, framework migrations, or technical debt reduction.",
         "shortDescription": "Refactor legacy codebases, migrate outdated frameworks, and implement gradual modernization.",
         "model": "sonnet",
-        "path": "agents/plugins/framework-migration/agents/legacy-modernizer.md"
+        "path": "agents/plugins/framework-migration/agents/legacy-modernizer.md",
+        "isArchived": false
     },
     {
         "plugin": "frontend-mobile-development",
@@ -739,7 +819,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Build React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, and modern frontend architecture. Optimizes performance and ensures accessibility. Use PROACTIVELY when creating UI components or fixing frontend issues.",
         "shortDescription": "Build React components, implement responsive layouts, and handle client-side state management.",
         "model": "inherit",
-        "path": "agents/plugins/frontend-mobile-development/agents/frontend-developer.md"
+        "path": "agents/plugins/frontend-mobile-development/agents/frontend-developer.md",
+        "isArchived": false
     },
     {
         "plugin": "frontend-mobile-development",
@@ -748,7 +829,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Develop React Native, Flutter, or native mobile apps with modern architecture patterns. Masters cross-platform development, native integrations, offline sync, and app store optimization. Use PROACTIVELY for mobile features, cross-platform code, or app optimization.",
         "shortDescription": "Develop React Native, Flutter, or native mobile apps with modern architecture patterns.",
         "model": "inherit",
-        "path": "agents/plugins/frontend-mobile-development/agents/mobile-developer.md"
+        "path": "agents/plugins/frontend-mobile-development/agents/mobile-developer.md",
+        "isArchived": false
     },
     {
         "plugin": "frontend-mobile-security",
@@ -757,7 +839,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Build React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, and modern frontend architecture. Optimizes performance and ensures accessibility. Use PROACTIVELY when creating UI components or fixing frontend issues.",
         "shortDescription": "Build React components, implement responsive layouts, and handle client-side state management.",
         "model": "inherit",
-        "path": "agents/plugins/frontend-mobile-security/agents/frontend-developer.md"
+        "path": "agents/plugins/frontend-mobile-security/agents/frontend-developer.md",
+        "isArchived": false
     },
     {
         "plugin": "frontend-mobile-security",
@@ -766,7 +849,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert in secure frontend coding practices specializing in XSS prevention, output sanitization, and client-side security patterns. Use PROACTIVELY for frontend security implementations or client-side security code reviews.",
         "shortDescription": "Expert in secure frontend coding practices specializing in XSS prevention, output sanitization, and client-side...",
         "model": "sonnet",
-        "path": "agents/plugins/frontend-mobile-security/agents/frontend-security-coder.md"
+        "path": "agents/plugins/frontend-mobile-security/agents/frontend-security-coder.md",
+        "isArchived": false
     },
     {
         "plugin": "frontend-mobile-security",
@@ -775,7 +859,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert in secure mobile coding practices specializing in input validation, WebView security, and mobile-specific security patterns. Use PROACTIVELY for mobile security implementations or mobile security code reviews.",
         "shortDescription": "Expert in secure mobile coding practices specializing in input validation, WebView security, and mobile-specific...",
         "model": "sonnet",
-        "path": "agents/plugins/frontend-mobile-security/agents/mobile-security-coder.md"
+        "path": "agents/plugins/frontend-mobile-security/agents/mobile-security-coder.md",
+        "isArchived": false
     },
     {
         "plugin": "full-stack-orchestration",
@@ -784,7 +869,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation. Masters GitHub Actions, ArgoCD/Flux, progressive delivery, container security, and platform engineering. Handles zero-downtime deployments, security scanning, and developer experience optimization. Use PROACTIVELY for CI/CD design, GitOps implementation, or deployment automation.",
         "shortDescription": "Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation.",
         "model": "haiku",
-        "path": "agents/plugins/full-stack-orchestration/agents/deployment-engineer.md"
+        "path": "agents/plugins/full-stack-orchestration/agents/deployment-engineer.md",
+        "isArchived": false
     },
     {
         "plugin": "full-stack-orchestration",
@@ -793,7 +879,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert performance engineer specializing in modern observability, application optimization, and scalable system performance. Masters OpenTelemetry, distributed tracing, load testing, multi-tier caching, Core Web Vitals, and performance monitoring. Handles end-to-end optimization, real user monitoring, and scalability patterns. Use PROACTIVELY for performance optimization, observability, or scalability challenges.",
         "shortDescription": "Expert performance engineer specializing in modern observability, application optimization, and scalable system...",
         "model": "inherit",
-        "path": "agents/plugins/full-stack-orchestration/agents/performance-engineer.md"
+        "path": "agents/plugins/full-stack-orchestration/agents/performance-engineer.md",
+        "isArchived": false
     },
     {
         "plugin": "full-stack-orchestration",
@@ -802,7 +889,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks. Masters vulnerability assessment, threat modeling, secure authentication (OAuth2/OIDC), OWASP standards, cloud security, and security automation. Handles DevSecOps integration, compliance (GDPR/HIPAA/SOC2), and incident response. Use PROACTIVELY for security audits, DevSecOps, or compliance implementation.",
         "shortDescription": "Expert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks.",
         "model": "opus",
-        "path": "agents/plugins/full-stack-orchestration/agents/security-auditor.md"
+        "path": "agents/plugins/full-stack-orchestration/agents/security-auditor.md",
+        "isArchived": false
     },
     {
         "plugin": "full-stack-orchestration",
@@ -811,7 +899,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering. Build scalable testing strategies with advanced CI/CD integration. Use PROACTIVELY for testing automation or quality assurance.",
         "shortDescription": "Master AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering.",
         "model": "sonnet",
-        "path": "agents/plugins/full-stack-orchestration/agents/test-automator.md"
+        "path": "agents/plugins/full-stack-orchestration/agents/test-automator.md",
+        "isArchived": false
     },
     {
         "plugin": "functional-programming",
@@ -820,7 +909,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Write idiomatic Elixir code with OTP patterns, supervision trees, and Phoenix LiveView. Masters concurrency, fault tolerance, and distributed systems. Use PROACTIVELY for Elixir refactoring, OTP design, or complex BEAM optimizations.",
         "shortDescription": "Write idiomatic Elixir code with OTP patterns, supervision trees, and Phoenix LiveView.",
         "model": "inherit",
-        "path": "agents/plugins/functional-programming/agents/elixir-pro.md"
+        "path": "agents/plugins/functional-programming/agents/elixir-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "functional-programming",
@@ -829,7 +919,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert Haskell engineer specializing in advanced type systems, pure functional design, and high-reliability software. Use PROACTIVELY for type-level programming, concurrency, and architecture guidance.",
         "shortDescription": "Expert Haskell engineer specializing in advanced type systems, pure functional design, and high-reliability software.",
         "model": "sonnet",
-        "path": "agents/plugins/functional-programming/agents/haskell-pro.md"
+        "path": "agents/plugins/functional-programming/agents/haskell-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "game-development",
@@ -838,7 +929,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master Minecraft server plugin development with Bukkit, Spigot, and Paper APIs. Specializes in event-driven architecture, command systems, world manipulation, player management, and performance optimization. Use PROACTIVELY for plugin architecture, gameplay mechanics, server-side features, or cross-version compatibility.",
         "shortDescription": "Master Minecraft server plugin development with Bukkit, Spigot, and Paper APIs.",
         "model": "opus",
-        "path": "agents/plugins/game-development/agents/minecraft-bukkit-pro.md"
+        "path": "agents/plugins/game-development/agents/minecraft-bukkit-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "game-development",
@@ -847,7 +939,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Build Unity games with optimized C# scripts, efficient rendering, and proper asset management. Masters Unity 6 LTS, URP/HDRP pipelines, and cross-platform deployment. Handles gameplay systems, UI implementation, and platform optimization. Use PROACTIVELY for Unity performance issues, game mechanics, or cross-platform builds.",
         "shortDescription": "Build Unity games with optimized C# scripts, efficient rendering, and proper asset management.",
         "model": "opus",
-        "path": "agents/plugins/game-development/agents/unity-developer.md"
+        "path": "agents/plugins/game-development/agents/unity-developer.md",
+        "isArchived": false
     },
     {
         "plugin": "git-pr-workflows",
@@ -856,7 +949,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance optimization, and production reliability. Masters static analysis tools, security scanning, and configuration review with 2024/2025 best practices. Use PROACTIVELY for code quality assurance.",
         "shortDescription": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance...",
         "model": "opus",
-        "path": "agents/plugins/git-pr-workflows/agents/code-reviewer.md"
+        "path": "agents/plugins/git-pr-workflows/agents/code-reviewer.md",
+        "isArchived": false
     },
     {
         "plugin": "hr-legal-compliance",
@@ -865,7 +959,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Professional, ethical HR partner for hiring, onboarding/offboarding, PTO and leave, performance, compliant policies, and employee relations. Ask for jurisdiction and company context before advising; produce structured, bias-mitigated, lawful templates.",
         "shortDescription": "Professional, ethical HR partner for hiring, onboarding/offboarding, PTO and leave, performance, compliant policies,...",
         "model": "sonnet",
-        "path": "agents/plugins/hr-legal-compliance/agents/hr-pro.md"
+        "path": "agents/plugins/hr-legal-compliance/agents/hr-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "hr-legal-compliance",
@@ -874,7 +969,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Draft privacy policies, terms of service, disclaimers, and legal notices. Creates GDPR-compliant texts, cookie policies, and data processing agreements. Use PROACTIVELY for legal documentation, compliance texts, or regulatory requirements.",
         "shortDescription": "Draft privacy policies, terms of service, disclaimers, and legal notices.",
         "model": "sonnet",
-        "path": "agents/plugins/hr-legal-compliance/agents/legal-advisor.md"
+        "path": "agents/plugins/hr-legal-compliance/agents/legal-advisor.md",
+        "isArchived": false
     },
     {
         "plugin": "incident-response",
@@ -883,7 +979,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert DevOps troubleshooter specializing in rapid incident response, advanced debugging, and modern observability. Masters log analysis, distributed tracing, Kubernetes debugging, performance optimization, and root cause analysis. Handles production outages, system reliability, and preventive monitoring. Use PROACTIVELY for debugging, incident response, or system troubleshooting.",
         "shortDescription": "Expert DevOps troubleshooter specializing in rapid incident response, advanced debugging, and modern observability.",
         "model": "sonnet",
-        "path": "agents/plugins/incident-response/agents/devops-troubleshooter.md"
+        "path": "agents/plugins/incident-response/agents/devops-troubleshooter.md",
+        "isArchived": false
     },
     {
         "plugin": "incident-response",
@@ -892,7 +989,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert SRE incident responder specializing in rapid problem resolution, modern observability, and comprehensive incident management. Masters incident command, blameless post-mortems, error budget management, and system reliability patterns. Handles critical outages, communication strategies, and continuous improvement. Use IMMEDIATELY for production incidents or SRE practices.",
         "shortDescription": "Expert SRE incident responder specializing in rapid problem resolution, modern observability, and comprehensive...",
         "model": "sonnet",
-        "path": "agents/plugins/incident-response/agents/incident-responder.md"
+        "path": "agents/plugins/incident-response/agents/incident-responder.md",
+        "isArchived": false
     },
     {
         "plugin": "javascript-typescript",
@@ -901,7 +999,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master modern JavaScript with ES6+, async patterns, and Node.js APIs. Handles promises, event loops, and browser/Node compatibility. Use PROACTIVELY for JavaScript optimization, async debugging, or complex JS patterns.",
         "shortDescription": "Master modern JavaScript with ES6+, async patterns, and Node.js APIs.",
         "model": "inherit",
-        "path": "agents/plugins/javascript-typescript/agents/javascript-pro.md"
+        "path": "agents/plugins/javascript-typescript/agents/javascript-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "javascript-typescript",
@@ -910,7 +1009,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master TypeScript with advanced types, generics, and strict type safety. Handles complex type systems, decorators, and enterprise-grade patterns. Use PROACTIVELY for TypeScript architecture, type inference optimization, or advanced typing patterns.",
         "shortDescription": "Master TypeScript with advanced types, generics, and strict type safety.",
         "model": "opus",
-        "path": "agents/plugins/javascript-typescript/agents/typescript-pro.md"
+        "path": "agents/plugins/javascript-typescript/agents/typescript-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "julia-development",
@@ -919,7 +1019,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master Julia 1.10+ with modern features, performance optimization, multiple dispatch, and production-ready practices. Expert in the Julia ecosystem including package management, scientific computing, and high-performance numerical code. Use PROACTIVELY for Julia development, optimization, or advanced Julia patterns.",
         "shortDescription": "Master Julia 1.10+ with modern features, performance optimization, multiple dispatch, and production-ready practices.",
         "model": "sonnet",
-        "path": "agents/plugins/julia-development/agents/julia-pro.md"
+        "path": "agents/plugins/julia-development/agents/julia-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "jvm-languages",
@@ -928,7 +1029,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Write modern C# code with advanced features like records, pattern matching, and async/await. Optimizes .NET applications, implements enterprise patterns, and ensures comprehensive testing. Use PROACTIVELY for C# refactoring, performance optimization, or complex .NET solutions.",
         "shortDescription": "Write modern C# code with advanced features like records, pattern matching, and async/await.",
         "model": "inherit",
-        "path": "agents/plugins/jvm-languages/agents/csharp-pro.md"
+        "path": "agents/plugins/jvm-languages/agents/csharp-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "jvm-languages",
@@ -937,7 +1039,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master Java 21+ with modern features like virtual threads, pattern matching, and Spring Boot 3.x. Expert in the latest Java ecosystem including GraalVM, Project Loom, and cloud-native patterns. Use PROACTIVELY for Java development, microservices architecture, or performance optimization.",
         "shortDescription": "Master Java 21+ with modern features like virtual threads, pattern matching, and Spring Boot 3.x.",
         "model": "opus",
-        "path": "agents/plugins/jvm-languages/agents/java-pro.md"
+        "path": "agents/plugins/jvm-languages/agents/java-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "jvm-languages",
@@ -946,7 +1049,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master enterprise-grade Scala development with functional programming, distributed systems, and big data processing. Expert in Apache Pekko, Akka, Spark, ZIO/Cats Effect, and reactive architectures. Use PROACTIVELY for Scala system design, performance optimization, or enterprise integration.",
         "shortDescription": "Master enterprise-grade Scala development with functional programming, distributed systems, and big data processing.",
         "model": "inherit",
-        "path": "agents/plugins/jvm-languages/agents/scala-pro.md"
+        "path": "agents/plugins/jvm-languages/agents/scala-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "kubernetes-operations",
@@ -955,7 +1059,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux), and enterprise container orchestration. Masters EKS/AKS/GKE, service mesh (Istio/Linkerd), progressive delivery, multi-tenancy, and platform engineering. Handles security, observability, cost optimization, and developer experience. Use PROACTIVELY for K8s architecture, GitOps implementation, or cloud-native platform design.",
         "shortDescription": "Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux),...",
         "model": "opus",
-        "path": "agents/plugins/kubernetes-operations/agents/kubernetes-architect.md"
+        "path": "agents/plugins/kubernetes-operations/agents/kubernetes-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "llm-application-dev",
@@ -964,7 +1069,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Build production-ready LLM applications, advanced RAG systems, and intelligent agents. Implements vector search, multimodal AI, agent orchestration, and enterprise AI integrations. Use PROACTIVELY for LLM features, chatbots, AI agents, or AI-powered applications.",
         "shortDescription": "Build production-ready LLM applications, advanced RAG systems, and intelligent agents.",
         "model": "inherit",
-        "path": "agents/plugins/llm-application-dev/agents/ai-engineer.md"
+        "path": "agents/plugins/llm-application-dev/agents/ai-engineer.md",
+        "isArchived": false
     },
     {
         "plugin": "llm-application-dev",
@@ -973,7 +1079,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert prompt engineer specializing in advanced prompting techniques, LLM optimization, and AI system design. Masters chain-of-thought, constitutional AI, and production prompt strategies. Use when building AI features, improving agent performance, or crafting system prompts.",
         "shortDescription": "Expert prompt engineer specializing in advanced prompting techniques, LLM optimization, and AI system design.",
         "model": "inherit",
-        "path": "agents/plugins/llm-application-dev/agents/prompt-engineer.md"
+        "path": "agents/plugins/llm-application-dev/agents/prompt-engineer.md",
+        "isArchived": false
     },
     {
         "plugin": "machine-learning-ops",
@@ -982,7 +1089,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert data scientist for advanced analytics, machine learning, and statistical modeling. Handles complex data analysis, predictive modeling, and business intelligence. Use PROACTIVELY for data analysis tasks, ML modeling, statistical analysis, and data-driven insights.",
         "shortDescription": "Expert data scientist for advanced analytics, machine learning, and statistical modeling.",
         "model": "inherit",
-        "path": "agents/plugins/machine-learning-ops/agents/data-scientist.md"
+        "path": "agents/plugins/machine-learning-ops/agents/data-scientist.md",
+        "isArchived": false
     },
     {
         "plugin": "machine-learning-ops",
@@ -991,7 +1099,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Build production ML systems with PyTorch 2.x, TensorFlow, and modern ML frameworks. Implements model serving, feature engineering, A/B testing, and monitoring. Use PROACTIVELY for ML model deployment, inference optimization, or production ML infrastructure.",
         "shortDescription": "Build production ML systems with PyTorch 2.x, TensorFlow, and modern ML frameworks.",
         "model": "inherit",
-        "path": "agents/plugins/machine-learning-ops/agents/ml-engineer.md"
+        "path": "agents/plugins/machine-learning-ops/agents/ml-engineer.md",
+        "isArchived": false
     },
     {
         "plugin": "machine-learning-ops",
@@ -1000,7 +1109,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Build comprehensive ML pipelines, experiment tracking, and model registries with MLflow, Kubeflow, and modern MLOps tools. Implements automated training, deployment, and monitoring across cloud platforms. Use PROACTIVELY for ML infrastructure, experiment management, or pipeline automation.",
         "shortDescription": "Build comprehensive ML pipelines, experiment tracking, and model registries with MLflow, Kubeflow, and modern MLOps...",
         "model": "inherit",
-        "path": "agents/plugins/machine-learning-ops/agents/mlops-engineer.md"
+        "path": "agents/plugins/machine-learning-ops/agents/mlops-engineer.md",
+        "isArchived": false
     },
     {
         "plugin": "multi-platform-apps",
@@ -1009,7 +1119,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems. Masters REST/GraphQL/gRPC APIs, event-driven architectures, service mesh patterns, and modern backend frameworks. Handles service boundary definition, inter-service communication, resilience patterns, and observability. Use PROACTIVELY when creating new backend services or APIs.",
         "shortDescription": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems.",
         "model": "inherit",
-        "path": "agents/plugins/multi-platform-apps/agents/backend-architect.md"
+        "path": "agents/plugins/multi-platform-apps/agents/backend-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "multi-platform-apps",
@@ -1018,7 +1129,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master Flutter development with Dart 3, advanced widgets, and multi-platform deployment. Handles state management, animations, testing, and performance optimization for mobile, web, desktop, and embedded platforms. Use PROACTIVELY for Flutter architecture, UI implementation, or cross-platform features.",
         "shortDescription": "Master Flutter development with Dart 3, advanced widgets, and multi-platform deployment.",
         "model": "inherit",
-        "path": "agents/plugins/multi-platform-apps/agents/flutter-expert.md"
+        "path": "agents/plugins/multi-platform-apps/agents/flutter-expert.md",
+        "isArchived": false
     },
     {
         "plugin": "multi-platform-apps",
@@ -1027,7 +1139,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Build React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, and modern frontend architecture. Optimizes performance and ensures accessibility. Use PROACTIVELY when creating UI components or fixing frontend issues.",
         "shortDescription": "Build React components, implement responsive layouts, and handle client-side state management.",
         "model": "inherit",
-        "path": "agents/plugins/multi-platform-apps/agents/frontend-developer.md"
+        "path": "agents/plugins/multi-platform-apps/agents/frontend-developer.md",
+        "isArchived": false
     },
     {
         "plugin": "multi-platform-apps",
@@ -1036,7 +1149,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Develop native iOS applications with Swift/SwiftUI. Masters iOS 18, SwiftUI, UIKit integration, Core Data, networking, and App Store optimization. Use PROACTIVELY for iOS-specific features, App Store optimization, or native iOS development.",
         "shortDescription": "Develop native iOS applications with Swift/SwiftUI.",
         "model": "inherit",
-        "path": "agents/plugins/multi-platform-apps/agents/ios-developer.md"
+        "path": "agents/plugins/multi-platform-apps/agents/ios-developer.md",
+        "isArchived": false
     },
     {
         "plugin": "multi-platform-apps",
@@ -1045,7 +1159,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Develop React Native, Flutter, or native mobile apps with modern architecture patterns. Masters cross-platform development, native integrations, offline sync, and app store optimization. Use PROACTIVELY for mobile features, cross-platform code, or app optimization.",
         "shortDescription": "Develop React Native, Flutter, or native mobile apps with modern architecture patterns.",
         "model": "inherit",
-        "path": "agents/plugins/multi-platform-apps/agents/mobile-developer.md"
+        "path": "agents/plugins/multi-platform-apps/agents/mobile-developer.md",
+        "isArchived": false
     },
     {
         "plugin": "multi-platform-apps",
@@ -1054,7 +1169,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Create interface designs, wireframes, and design systems. Masters user research, accessibility standards, and modern design tools. Specializes in design tokens, component libraries, and inclusive design. Use PROACTIVELY for design systems, user flows, or interface optimization.",
         "shortDescription": "Create interface designs, wireframes, and design systems.",
         "model": "sonnet",
-        "path": "agents/plugins/multi-platform-apps/agents/ui-ux-designer.md"
+        "path": "agents/plugins/multi-platform-apps/agents/ui-ux-designer.md",
+        "isArchived": false
     },
     {
         "plugin": "observability-monitoring",
@@ -1063,7 +1179,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert database optimizer specializing in modern performance tuning, query optimization, and scalable architectures. Masters advanced indexing, N+1 resolution, multi-tier caching, partitioning strategies, and cloud database optimization. Handles complex query analysis, migration strategies, and performance monitoring. Use PROACTIVELY for database optimization, performance issues, or scalability challenges.",
         "shortDescription": "Expert database optimizer specializing in modern performance tuning, query optimization, and scalable architectures.",
         "model": "inherit",
-        "path": "agents/plugins/observability-monitoring/agents/database-optimizer.md"
+        "path": "agents/plugins/observability-monitoring/agents/database-optimizer.md",
+        "isArchived": false
     },
     {
         "plugin": "observability-monitoring",
@@ -1072,7 +1189,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert network engineer specializing in modern cloud networking, security architectures, and performance optimization. Masters multi-cloud connectivity, service mesh, zero-trust networking, SSL/TLS, global load balancing, and advanced troubleshooting. Handles CDN optimization, network automation, and compliance. Use PROACTIVELY for network design, connectivity issues, or performance optimization.",
         "shortDescription": "Expert network engineer specializing in modern cloud networking, security architectures, and performance optimization.",
         "model": "sonnet",
-        "path": "agents/plugins/observability-monitoring/agents/network-engineer.md"
+        "path": "agents/plugins/observability-monitoring/agents/network-engineer.md",
+        "isArchived": false
     },
     {
         "plugin": "observability-monitoring",
@@ -1081,7 +1199,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Build production-ready monitoring, logging, and tracing systems. Implements comprehensive observability strategies, SLI/SLO management, and incident response workflows. Use PROACTIVELY for monitoring infrastructure, performance optimization, or production reliability.",
         "shortDescription": "Build production-ready monitoring, logging, and tracing systems.",
         "model": "inherit",
-        "path": "agents/plugins/observability-monitoring/agents/observability-engineer.md"
+        "path": "agents/plugins/observability-monitoring/agents/observability-engineer.md",
+        "isArchived": false
     },
     {
         "plugin": "observability-monitoring",
@@ -1090,7 +1209,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert performance engineer specializing in modern observability, application optimization, and scalable system performance. Masters OpenTelemetry, distributed tracing, load testing, multi-tier caching, Core Web Vitals, and performance monitoring. Handles end-to-end optimization, real user monitoring, and scalability patterns. Use PROACTIVELY for performance optimization, observability, or scalability challenges.",
         "shortDescription": "Expert performance engineer specializing in modern observability, application optimization, and scalable system...",
         "model": "inherit",
-        "path": "agents/plugins/observability-monitoring/agents/performance-engineer.md"
+        "path": "agents/plugins/observability-monitoring/agents/performance-engineer.md",
+        "isArchived": false
     },
     {
         "plugin": "payment-processing",
@@ -1099,7 +1219,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Integrate Stripe, PayPal, and payment processors. Handles checkout flows, subscriptions, webhooks, and PCI compliance. Use PROACTIVELY when implementing payments, billing, or subscription features.",
         "shortDescription": "Integrate Stripe, PayPal, and payment processors. Handles checkout flows, subscriptions, webhooks, and PCI compliance.",
         "model": "sonnet",
-        "path": "agents/plugins/payment-processing/agents/payment-integration.md"
+        "path": "agents/plugins/payment-processing/agents/payment-integration.md",
+        "isArchived": false
     },
     {
         "plugin": "performance-testing-review",
@@ -1108,7 +1229,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert performance engineer specializing in modern observability, application optimization, and scalable system performance. Masters OpenTelemetry, distributed tracing, load testing, multi-tier caching, Core Web Vitals, and performance monitoring. Handles end-to-end optimization, real user monitoring, and scalability patterns. Use PROACTIVELY for performance optimization, observability, or scalability challenges.",
         "shortDescription": "Expert performance engineer specializing in modern observability, application optimization, and scalable system...",
         "model": "inherit",
-        "path": "agents/plugins/performance-testing-review/agents/performance-engineer.md"
+        "path": "agents/plugins/performance-testing-review/agents/performance-engineer.md",
+        "isArchived": false
     },
     {
         "plugin": "performance-testing-review",
@@ -1117,7 +1239,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering. Build scalable testing strategies with advanced CI/CD integration. Use PROACTIVELY for testing automation or quality assurance.",
         "shortDescription": "Master AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering.",
         "model": "sonnet",
-        "path": "agents/plugins/performance-testing-review/agents/test-automator.md"
+        "path": "agents/plugins/performance-testing-review/agents/test-automator.md",
+        "isArchived": false
     },
     {
         "plugin": "python-development",
@@ -1126,7 +1249,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master Django 5.x with async views, DRF, Celery, and Django Channels. Build scalable web applications with proper architecture, testing, and deployment. Use PROACTIVELY for Django development, ORM optimization, or complex Django patterns.",
         "shortDescription": "Master Django 5.x with async views, DRF, Celery, and Django Channels.",
         "model": "opus",
-        "path": "agents/plugins/python-development/agents/django-pro.md"
+        "path": "agents/plugins/python-development/agents/django-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "python-development",
@@ -1135,7 +1259,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Build high-performance async APIs with FastAPI, SQLAlchemy 2.0, and Pydantic V2. Master microservices, WebSockets, and modern Python async patterns. Use PROACTIVELY for FastAPI development, async optimization, or API architecture.",
         "shortDescription": "Build high-performance async APIs with FastAPI, SQLAlchemy 2.0, and Pydantic V2.",
         "model": "opus",
-        "path": "agents/plugins/python-development/agents/fastapi-pro.md"
+        "path": "agents/plugins/python-development/agents/fastapi-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "python-development",
@@ -1144,7 +1269,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master Python 3.12+ with modern features, async programming, performance optimization, and production-ready practices. Expert in the latest Python ecosystem including uv, ruff, pydantic, and FastAPI. Use PROACTIVELY for Python development, optimization, or advanced Python patterns.",
         "shortDescription": "Master Python 3.12+ with modern features, async programming, performance optimization, and production-ready practices.",
         "model": "opus",
-        "path": "agents/plugins/python-development/agents/python-pro.md"
+        "path": "agents/plugins/python-development/agents/python-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "quantitative-trading",
@@ -1153,7 +1279,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Build financial models, backtest trading strategies, and analyze market data. Implements risk metrics, portfolio optimization, and statistical arbitrage. Use PROACTIVELY for quantitative finance, trading algorithms, or risk analysis.",
         "shortDescription": "Build financial models, backtest trading strategies, and analyze market data.",
         "model": "inherit",
-        "path": "agents/plugins/quantitative-trading/agents/quant-analyst.md"
+        "path": "agents/plugins/quantitative-trading/agents/quant-analyst.md",
+        "isArchived": false
     },
     {
         "plugin": "quantitative-trading",
@@ -1162,7 +1289,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Monitor portfolio risk, R-multiples, and position limits. Creates hedging strategies, calculates expectancy, and implements stop-losses. Use PROACTIVELY for risk assessment, trade tracking, or portfolio protection.",
         "shortDescription": "Monitor portfolio risk, R-multiples, and position limits.",
         "model": "inherit",
-        "path": "agents/plugins/quantitative-trading/agents/risk-manager.md"
+        "path": "agents/plugins/quantitative-trading/agents/risk-manager.md",
+        "isArchived": false
     },
     {
         "plugin": "security-compliance",
@@ -1171,7 +1299,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks. Masters vulnerability assessment, threat modeling, secure authentication (OAuth2/OIDC), OWASP standards, cloud security, and security automation. Handles DevSecOps integration, compliance (GDPR/HIPAA/SOC2), and incident response. Use PROACTIVELY for security audits, DevSecOps, or compliance implementation.",
         "shortDescription": "Expert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks.",
         "model": "opus",
-        "path": "agents/plugins/security-compliance/agents/security-auditor.md"
+        "path": "agents/plugins/security-compliance/agents/security-auditor.md",
+        "isArchived": false
     },
     {
         "plugin": "security-scanning",
@@ -1180,7 +1309,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks. Masters vulnerability assessment, threat modeling, secure authentication (OAuth2/OIDC), OWASP standards, cloud security, and security automation. Handles DevSecOps integration, compliance (GDPR/HIPAA/SOC2), and incident response. Use PROACTIVELY for security audits, DevSecOps, or compliance implementation.",
         "shortDescription": "Expert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks.",
         "model": "opus",
-        "path": "agents/plugins/security-scanning/agents/security-auditor.md"
+        "path": "agents/plugins/security-scanning/agents/security-auditor.md",
+        "isArchived": false
     },
     {
         "plugin": "seo-analysis-monitoring",
@@ -1189,7 +1319,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Analyzes content for E-E-A-T signals and suggests improvements to build authority and trust. Identifies missing credibility elements. Use PROACTIVELY for YMYL topics.",
         "shortDescription": "Analyzes content for E-E-A-T signals and suggests improvements to build authority and trust.",
         "model": "sonnet",
-        "path": "agents/plugins/seo-analysis-monitoring/agents/seo-authority-builder.md"
+        "path": "agents/plugins/seo-analysis-monitoring/agents/seo-authority-builder.md",
+        "isArchived": false
     },
     {
         "plugin": "seo-analysis-monitoring",
@@ -1198,7 +1329,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Analyzes multiple provided pages to identify keyword overlap and potential cannibalization issues. Suggests differentiation strategies. Use PROACTIVELY when reviewing similar content.",
         "shortDescription": "Analyzes multiple provided pages to identify keyword overlap and potential cannibalization issues.",
         "model": "haiku",
-        "path": "agents/plugins/seo-analysis-monitoring/agents/seo-cannibalization-detector.md"
+        "path": "agents/plugins/seo-analysis-monitoring/agents/seo-cannibalization-detector.md",
+        "isArchived": false
     },
     {
         "plugin": "seo-analysis-monitoring",
@@ -1207,7 +1339,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Identifies outdated elements in provided content and suggests updates to maintain freshness. Finds statistics, dates, and examples that need updating. Use PROACTIVELY for older content.",
         "shortDescription": "Identifies outdated elements in provided content and suggests updates to maintain freshness.",
         "model": "haiku",
-        "path": "agents/plugins/seo-analysis-monitoring/agents/seo-content-refresher.md"
+        "path": "agents/plugins/seo-analysis-monitoring/agents/seo-content-refresher.md",
+        "isArchived": false
     },
     {
         "plugin": "seo-content-creation",
@@ -1216,7 +1349,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Analyzes provided content for quality, E-E-A-T signals, and SEO best practices. Scores content and provides improvement recommendations based on established guidelines. Use PROACTIVELY for content review.",
         "shortDescription": "Analyzes provided content for quality, E-E-A-T signals, and SEO best practices.",
         "model": "sonnet",
-        "path": "agents/plugins/seo-content-creation/agents/seo-content-auditor.md"
+        "path": "agents/plugins/seo-content-creation/agents/seo-content-auditor.md",
+        "isArchived": false
     },
     {
         "plugin": "seo-content-creation",
@@ -1225,7 +1359,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Creates comprehensive content outlines and topic clusters for SEO. Plans content calendars and identifies topic gaps. Use PROACTIVELY for content strategy and planning.",
         "shortDescription": "Creates comprehensive content outlines and topic clusters for SEO. Plans content calendars and identifies topic gaps.",
         "model": "haiku",
-        "path": "agents/plugins/seo-content-creation/agents/seo-content-planner.md"
+        "path": "agents/plugins/seo-content-creation/agents/seo-content-planner.md",
+        "isArchived": false
     },
     {
         "plugin": "seo-content-creation",
@@ -1234,7 +1369,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Writes SEO-optimized content based on provided keywords and topic briefs. Creates engaging, comprehensive content following best practices. Use PROACTIVELY for content creation tasks.",
         "shortDescription": "Writes SEO-optimized content based on provided keywords and topic briefs.",
         "model": "sonnet",
-        "path": "agents/plugins/seo-content-creation/agents/seo-content-writer.md"
+        "path": "agents/plugins/seo-content-creation/agents/seo-content-writer.md",
+        "isArchived": false
     },
     {
         "plugin": "seo-technical-optimization",
@@ -1243,7 +1379,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Analyzes keyword usage in provided content, calculates density, suggests semantic variations and LSI keywords based on the topic. Prevents over-optimization. Use PROACTIVELY for content optimization.",
         "shortDescription": "Analyzes keyword usage in provided content, calculates density, suggests semantic variations and LSI keywords based...",
         "model": "haiku",
-        "path": "agents/plugins/seo-technical-optimization/agents/seo-keyword-strategist.md"
+        "path": "agents/plugins/seo-technical-optimization/agents/seo-keyword-strategist.md",
+        "isArchived": false
     },
     {
         "plugin": "seo-technical-optimization",
@@ -1252,7 +1389,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Creates optimized meta titles, descriptions, and URL suggestions based on character limits and best practices. Generates compelling, keyword-rich metadata. Use PROACTIVELY for new content.",
         "shortDescription": "Creates optimized meta titles, descriptions, and URL suggestions based on character limits and best practices.",
         "model": "haiku",
-        "path": "agents/plugins/seo-technical-optimization/agents/seo-meta-optimizer.md"
+        "path": "agents/plugins/seo-technical-optimization/agents/seo-meta-optimizer.md",
+        "isArchived": false
     },
     {
         "plugin": "seo-technical-optimization",
@@ -1261,7 +1399,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Formats content to be eligible for featured snippets and SERP features. Creates snippet-optimized content blocks based on best practices. Use PROACTIVELY for question-based content.",
         "shortDescription": "Formats content to be eligible for featured snippets and SERP features.",
         "model": "haiku",
-        "path": "agents/plugins/seo-technical-optimization/agents/seo-snippet-hunter.md"
+        "path": "agents/plugins/seo-technical-optimization/agents/seo-snippet-hunter.md",
+        "isArchived": false
     },
     {
         "plugin": "seo-technical-optimization",
@@ -1270,7 +1409,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Analyzes and optimizes content structure including header hierarchy, suggests schema markup, and internal linking opportunities. Creates search-friendly content organization. Use PROACTIVELY for content structuring.",
         "shortDescription": "Analyzes and optimizes content structure including header hierarchy, suggests schema markup, and internal linking...",
         "model": "haiku",
-        "path": "agents/plugins/seo-technical-optimization/agents/seo-structure-architect.md"
+        "path": "agents/plugins/seo-technical-optimization/agents/seo-structure-architect.md",
+        "isArchived": false
     },
     {
         "plugin": "shell-scripting",
@@ -1279,7 +1419,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master of defensive Bash scripting for production automation, CI/CD pipelines, and system utilities. Expert in safe, portable, and testable shell scripts.",
         "shortDescription": "Master of defensive Bash scripting for production automation, CI/CD pipelines, and system utilities.",
         "model": "sonnet",
-        "path": "agents/plugins/shell-scripting/agents/bash-pro.md"
+        "path": "agents/plugins/shell-scripting/agents/bash-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "shell-scripting",
@@ -1288,7 +1429,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Expert in strict POSIX sh scripting for maximum portability across Unix-like systems. Specializes in shell scripts that run on any POSIX-compliant shell (dash, ash, sh, bash --posix).",
         "shortDescription": "Expert in strict POSIX sh scripting for maximum portability across Unix-like systems.",
         "model": "sonnet",
-        "path": "agents/plugins/shell-scripting/agents/posix-shell-pro.md"
+        "path": "agents/plugins/shell-scripting/agents/posix-shell-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "systems-programming",
@@ -1297,7 +1439,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Write efficient C code with proper memory management, pointer arithmetic, and system calls. Handles embedded systems, kernel modules, and performance-critical code. Use PROACTIVELY for C optimization, memory issues, or system programming.",
         "shortDescription": "Write efficient C code with proper memory management, pointer arithmetic, and system calls.",
         "model": "opus",
-        "path": "agents/plugins/systems-programming/agents/c-pro.md"
+        "path": "agents/plugins/systems-programming/agents/c-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "systems-programming",
@@ -1306,7 +1449,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Write idiomatic C++ code with modern features, RAII, smart pointers, and STL algorithms. Handles templates, move semantics, and performance optimization. Use PROACTIVELY for C++ refactoring, memory safety, or complex C++ patterns.",
         "shortDescription": "Write idiomatic C++ code with modern features, RAII, smart pointers, and STL algorithms.",
         "model": "opus",
-        "path": "agents/plugins/systems-programming/agents/cpp-pro.md"
+        "path": "agents/plugins/systems-programming/agents/cpp-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "systems-programming",
@@ -1315,7 +1459,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master Go 1.21+ with modern patterns, advanced concurrency, performance optimization, and production-ready microservices. Expert in the latest Go ecosystem including generics, workspaces, and cutting-edge frameworks. Use PROACTIVELY for Go development, architecture design, or performance optimization.",
         "shortDescription": "Master Go 1.21+ with modern patterns, advanced concurrency, performance optimization, and production-ready...",
         "model": "opus",
-        "path": "agents/plugins/systems-programming/agents/golang-pro.md"
+        "path": "agents/plugins/systems-programming/agents/golang-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "systems-programming",
@@ -1324,7 +1469,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master Rust 1.75+ with modern async patterns, advanced type system features, and production-ready systems programming. Expert in the latest Rust ecosystem including Tokio, axum, and cutting-edge crates. Use PROACTIVELY for Rust development, performance optimization, or systems programming.",
         "shortDescription": "Master Rust 1.75+ with modern async patterns, advanced type system features, and production-ready systems programming.",
         "model": "opus",
-        "path": "agents/plugins/systems-programming/agents/rust-pro.md"
+        "path": "agents/plugins/systems-programming/agents/rust-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "tdd-workflows",
@@ -1333,7 +1479,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance optimization, and production reliability. Masters static analysis tools, security scanning, and configuration review with 2024/2025 best practices. Use PROACTIVELY for code quality assurance.",
         "shortDescription": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance...",
         "model": "opus",
-        "path": "agents/plugins/tdd-workflows/agents/code-reviewer.md"
+        "path": "agents/plugins/tdd-workflows/agents/code-reviewer.md",
+        "isArchived": false
     },
     {
         "plugin": "tdd-workflows",
@@ -1342,7 +1489,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master TDD orchestrator specializing in red-green-refactor discipline, multi-agent workflow coordination, and comprehensive test-driven development practices. Enforces TDD best practices across teams with AI-assisted testing and modern frameworks. Use PROACTIVELY for TDD implementation and governance.",
         "shortDescription": "Master TDD orchestrator specializing in red-green-refactor discipline, multi-agent workflow coordination, and...",
         "model": "opus",
-        "path": "agents/plugins/tdd-workflows/agents/tdd-orchestrator.md"
+        "path": "agents/plugins/tdd-workflows/agents/tdd-orchestrator.md",
+        "isArchived": false
     },
     {
         "plugin": "team-collaboration",
@@ -1351,7 +1499,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Developer Experience specialist. Improves tooling, setup, and workflows. Use PROACTIVELY when setting up new projects, after team feedback, or when development friction is noticed.",
         "shortDescription": "Developer Experience specialist. Improves tooling, setup, and workflows.",
         "model": "sonnet",
-        "path": "agents/plugins/team-collaboration/agents/dx-optimizer.md"
+        "path": "agents/plugins/team-collaboration/agents/dx-optimizer.md",
+        "isArchived": false
     },
     {
         "plugin": "unit-testing",
@@ -1360,7 +1509,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Debugging specialist for errors, test failures, and unexpected behavior. Use proactively when encountering any issues.",
         "shortDescription": "Debugging specialist for errors, test failures, and unexpected behavior.",
         "model": "sonnet",
-        "path": "agents/plugins/unit-testing/agents/debugger.md"
+        "path": "agents/plugins/unit-testing/agents/debugger.md",
+        "isArchived": false
     },
     {
         "plugin": "unit-testing",
@@ -1369,7 +1519,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Master AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering. Build scalable testing strategies with advanced CI/CD integration. Use PROACTIVELY for testing automation or quality assurance.",
         "shortDescription": "Master AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering.",
         "model": "sonnet",
-        "path": "agents/plugins/unit-testing/agents/test-automator.md"
+        "path": "agents/plugins/unit-testing/agents/test-automator.md",
+        "isArchived": false
     },
     {
         "plugin": "web-scripting",
@@ -1378,7 +1529,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Write idiomatic PHP code with generators, iterators, SPL data structures, and modern OOP features. Use PROACTIVELY for high-performance PHP applications.",
         "shortDescription": "Write idiomatic PHP code with generators, iterators, SPL data structures, and modern OOP features.",
         "model": "inherit",
-        "path": "agents/plugins/web-scripting/agents/php-pro.md"
+        "path": "agents/plugins/web-scripting/agents/php-pro.md",
+        "isArchived": false
     },
     {
         "plugin": "web-scripting",
@@ -1387,6 +1539,7 @@ export const GENERATED_AGENTS: Agent[] = [
         "description": "Write idiomatic Ruby code with metaprogramming, Rails patterns, and performance optimization. Specializes in Ruby on Rails, gem development, and testing frameworks. Use PROACTIVELY for Ruby refactoring, optimization, or complex Ruby features.",
         "shortDescription": "Write idiomatic Ruby code with metaprogramming, Rails patterns, and performance optimization.",
         "model": "inherit",
-        "path": "agents/plugins/web-scripting/agents/ruby-pro.md"
+        "path": "agents/plugins/web-scripting/agents/ruby-pro.md",
+        "isArchived": false
     }
 ];

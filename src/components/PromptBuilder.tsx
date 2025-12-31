@@ -65,25 +65,32 @@ export function PromptBuilder({ onOpenSettings }: PromptBuilderProps) {
         }
     };
 
-    const hasSelection = (mode === 'skills' && selectedSkill) || (mode === 'agents' && selectedAgent) || (mode === 'plugins' && selectedPlugin);
+    const hasSelection =
+        (mode === 'skills' && selectedSkill) ||
+        (mode === 'agents' && selectedAgent) ||
+        (mode === 'plugins' && selectedPlugin) ||
+        (mode === 'archive' && (selectedSkill || selectedAgent || selectedPlugin));
 
     // Get the appropriate icon and name based on mode
     const getSelectionIcon = () => {
-        if (mode === 'skills') return selectedSkill?.icon;
-        if (mode === 'agents') return '🤖';
-        return selectedPlugin?.icon;
+        if (mode === 'skills' || selectedSkill) return selectedSkill?.icon;
+        if (mode === 'agents' || selectedAgent) return '🤖';
+        if (mode === 'plugins' || selectedPlugin) return selectedPlugin?.icon;
+        return '❓';
     };
 
     const getSelectionName = () => {
-        if (mode === 'skills') return selectedSkill?.name;
-        if (mode === 'agents') return selectedAgent?.name;
-        return selectedPlugin?.name;
+        if (selectedSkill) return selectedSkill.name;
+        if (selectedAgent) return selectedAgent.name;
+        if (selectedPlugin) return selectedPlugin.name;
+        return '';
     };
 
     const getModeLabel = () => {
-        if (mode === 'skills') return 'Skill';
-        if (mode === 'agents') return 'Agent';
-        return 'Plugin';
+        if (mode === 'skills' || selectedSkill) return 'Skill';
+        if (mode === 'agents' || selectedAgent) return 'Agent';
+        if (mode === 'plugins' || selectedPlugin) return 'Plugin';
+        return 'Item';
     };
 
     return (
