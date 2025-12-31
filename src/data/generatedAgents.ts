@@ -9,6 +9,8 @@ export interface Agent {
     shortDescription: string;
     model: string;
     path: string;
+    sourcePath: string;
+    usageInstructions: string;
     isArchived?: boolean;
 }
 
@@ -21,6 +23,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Rigorous visual validation expert specializing in UI testing, design system compliance, and accessibility verification.",
         "model": "sonnet",
         "path": "agents/plugins/accessibility-compliance/agents/ui-visual-validator.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\accessibility-compliance\\agents\\ui-visual-validator.md",
+        "usageInstructions": "## Agent: ui-visual-validator\\nRigorous visual validation expert specializing in UI testing, design system compliance, and accessibility verification. Masters screenshot analysis, visual regression testing, and component validation. Use PROACTIVELY to verify UI modifications have achieved their intended goals through comprehensive visual analysis.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\accessibility-compliance\\agents\\ui-visual-validator.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── ui-visual-validator.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/ui-visual-validator.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\accessibility-compliance\\agents\\ui-visual-validator.md`",
         "isArchived": false
     },
     {
@@ -31,6 +35,32 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Elite AI context engineering specialist mastering dynamic context management, vector databases, knowledge graphs,...",
         "model": "inherit",
         "path": "agents/plugins/agent-orchestration/agents/context-manager.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\agent-orchestration\\agents\\context-manager.md",
+        "usageInstructions": "## Agent: context-manager\\nElite AI context engineering specialist mastering dynamic context management, vector databases, knowledge graphs, and intelligent memory systems. Orchestrates context across multi-agent workflows, enterprise AI systems, and long-running projects with 2024/2025 best practices. Use PROACTIVELY for complex AI orchestration.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\agent-orchestration\\agents\\context-manager.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── context-manager.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/context-manager.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\agent-orchestration\\agents\\context-manager.md`",
+        "isArchived": false
+    },
+    {
+        "plugin": "agent-sdk-dev",
+        "id": "agent-sdk-verifier-py",
+        "name": "agent-sdk-verifier-py",
+        "description": "Use this agent to verify that a Python Agent SDK application is properly configured, follows SDK best practices and documentation recommendations, and is ready for deployment or testing. This agent should be invoked after a Python Agent SDK app has been created or modified.",
+        "shortDescription": "Use this agent to verify that a Python Agent SDK application is properly configured, follows SDK best practices and...",
+        "model": "sonnet",
+        "path": "agents/plugins/agent-sdk-dev/agents/agent-sdk-verifier-py.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\agent-sdk-dev\\agents\\agent-sdk-verifier-py.md",
+        "usageInstructions": "## Agent: agent-sdk-verifier-py\\nUse this agent to verify that a Python Agent SDK application is properly configured, follows SDK best practices and documentation recommendations, and is ready for deployment or testing. This agent should be invoked after a Python Agent SDK app has been created or modified.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\agent-sdk-dev\\agents\\agent-sdk-verifier-py.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── agent-sdk-verifier-py.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/agent-sdk-verifier-py.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\agent-sdk-dev\\agents\\agent-sdk-verifier-py.md`",
+        "isArchived": false
+    },
+    {
+        "plugin": "agent-sdk-dev",
+        "id": "agent-sdk-verifier-ts",
+        "name": "agent-sdk-verifier-ts",
+        "description": "Use this agent to verify that a TypeScript Agent SDK application is properly configured, follows SDK best practices and documentation recommendations, and is ready for deployment or testing. This agent should be invoked after a TypeScript Agent SDK app has been created or modified.",
+        "shortDescription": "Use this agent to verify that a TypeScript Agent SDK application is properly configured, follows SDK best practices...",
+        "model": "sonnet",
+        "path": "agents/plugins/agent-sdk-dev/agents/agent-sdk-verifier-ts.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\agent-sdk-dev\\agents\\agent-sdk-verifier-ts.md",
+        "usageInstructions": "## Agent: agent-sdk-verifier-ts\\nUse this agent to verify that a TypeScript Agent SDK application is properly configured, follows SDK best practices and documentation recommendations, and is ready for deployment or testing. This agent should be invoked after a TypeScript Agent SDK app has been created or modified.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\agent-sdk-dev\\agents\\agent-sdk-verifier-ts.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── agent-sdk-verifier-ts.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/agent-sdk-verifier-ts.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\agent-sdk-dev\\agents\\agent-sdk-verifier-ts.md`",
         "isArchived": false
     },
     {
@@ -41,6 +71,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems.",
         "model": "inherit",
         "path": "agents/plugins/api-scaffolding/agents/backend-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\api-scaffolding\\agents\\backend-architect.md",
+        "usageInstructions": "## Agent: backend-architect\\nExpert backend architect specializing in scalable API design, microservices architecture, and distributed systems. Masters REST/GraphQL/gRPC APIs, event-driven architectures, service mesh patterns, and modern backend frameworks. Handles service boundary definition, inter-service communication, resilience patterns, and observability. Use PROACTIVELY when creating new backend services or APIs.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\api-scaffolding\\agents\\backend-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── backend-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/backend-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\api-scaffolding\\agents\\backend-architect.md`",
         "isArchived": false
     },
     {
@@ -51,6 +83,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master Django 5.x with async views, DRF, Celery, and Django Channels.",
         "model": "opus",
         "path": "agents/plugins/api-scaffolding/agents/django-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\api-scaffolding\\agents\\django-pro.md",
+        "usageInstructions": "## Agent: django-pro\\nMaster Django 5.x with async views, DRF, Celery, and Django Channels. Build scalable web applications with proper architecture, testing, and deployment. Use PROACTIVELY for Django development, ORM optimization, or complex Django patterns.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\api-scaffolding\\agents\\django-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── django-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/django-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\api-scaffolding\\agents\\django-pro.md`",
         "isArchived": false
     },
     {
@@ -61,6 +95,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Build high-performance async APIs with FastAPI, SQLAlchemy 2.0, and Pydantic V2.",
         "model": "opus",
         "path": "agents/plugins/api-scaffolding/agents/fastapi-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\api-scaffolding\\agents\\fastapi-pro.md",
+        "usageInstructions": "## Agent: fastapi-pro\\nBuild high-performance async APIs with FastAPI, SQLAlchemy 2.0, and Pydantic V2. Master microservices, WebSockets, and modern Python async patterns. Use PROACTIVELY for FastAPI development, async optimization, or API architecture.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\api-scaffolding\\agents\\fastapi-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── fastapi-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/fastapi-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\api-scaffolding\\agents\\fastapi-pro.md`",
         "isArchived": false
     },
     {
@@ -71,6 +107,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master modern GraphQL with federation, performance optimization, and enterprise security.",
         "model": "opus",
         "path": "agents/plugins/api-scaffolding/agents/graphql-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\api-scaffolding\\agents\\graphql-architect.md",
+        "usageInstructions": "## Agent: graphql-architect\\nMaster modern GraphQL with federation, performance optimization, and enterprise security. Build scalable schemas, implement advanced caching, and design real-time systems. Use PROACTIVELY for GraphQL architecture or performance optimization.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\api-scaffolding\\agents\\graphql-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── graphql-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/graphql-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\api-scaffolding\\agents\\graphql-architect.md`",
         "isArchived": false
     },
     {
@@ -81,6 +119,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master API documentation with OpenAPI 3.1, AI-powered tools, and modern developer experience practices.",
         "model": "sonnet",
         "path": "agents/plugins/api-testing-observability/agents/api-documenter.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\api-testing-observability\\agents\\api-documenter.md",
+        "usageInstructions": "## Agent: api-documenter\\nMaster API documentation with OpenAPI 3.1, AI-powered tools, and modern developer experience practices. Create interactive docs, generate SDKs, and build comprehensive developer portals. Use PROACTIVELY for API documentation or developer portal creation.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\api-testing-observability\\agents\\api-documenter.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── api-documenter.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/api-documenter.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\api-testing-observability\\agents\\api-documenter.md`",
         "isArchived": false
     },
     {
@@ -91,6 +131,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Build React components, implement responsive layouts, and handle client-side state management.",
         "model": "inherit",
         "path": "agents/plugins/application-performance/agents/frontend-developer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\application-performance\\agents\\frontend-developer.md",
+        "usageInstructions": "## Agent: frontend-developer\\nBuild React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, and modern frontend architecture. Optimizes performance and ensures accessibility. Use PROACTIVELY when creating UI components or fixing frontend issues.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\application-performance\\agents\\frontend-developer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── frontend-developer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/frontend-developer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\application-performance\\agents\\frontend-developer.md`",
         "isArchived": false
     },
     {
@@ -101,6 +143,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Build production-ready monitoring, logging, and tracing systems.",
         "model": "inherit",
         "path": "agents/plugins/application-performance/agents/observability-engineer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\application-performance\\agents\\observability-engineer.md",
+        "usageInstructions": "## Agent: observability-engineer\\nBuild production-ready monitoring, logging, and tracing systems. Implements comprehensive observability strategies, SLI/SLO management, and incident response workflows. Use PROACTIVELY for monitoring infrastructure, performance optimization, or production reliability.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\application-performance\\agents\\observability-engineer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── observability-engineer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/observability-engineer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\application-performance\\agents\\observability-engineer.md`",
         "isArchived": false
     },
     {
@@ -111,6 +155,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert performance engineer specializing in modern observability, application optimization, and scalable system...",
         "model": "inherit",
         "path": "agents/plugins/application-performance/agents/performance-engineer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\application-performance\\agents\\performance-engineer.md",
+        "usageInstructions": "## Agent: performance-engineer\\nExpert performance engineer specializing in modern observability, application optimization, and scalable system performance. Masters OpenTelemetry, distributed tracing, load testing, multi-tier caching, Core Web Vitals, and performance monitoring. Handles end-to-end optimization, real user monitoring, and scalability patterns. Use PROACTIVELY for performance optimization, observability, or scalability challenges.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\application-performance\\agents\\performance-engineer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── performance-engineer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/performance-engineer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\application-performance\\agents\\performance-engineer.md`",
         "isArchived": false
     },
     {
@@ -121,6 +167,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": ">",
         "model": "inherit",
         "path": "agents/plugins/arm-cortex-microcontrollers/agents/arm-cortex-expert.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\arm-cortex-microcontrollers\\agents\\arm-cortex-expert.md",
+        "usageInstructions": "## Agent: arm-cortex-expert\\n>\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\arm-cortex-microcontrollers\\agents\\arm-cortex-expert.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── arm-cortex-expert.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/arm-cortex-expert.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\arm-cortex-microcontrollers\\agents\\arm-cortex-expert.md`",
         "isArchived": false
     },
     {
@@ -131,6 +179,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems.",
         "model": "inherit",
         "path": "agents/plugins/backend-api-security/agents/backend-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\backend-api-security\\agents\\backend-architect.md",
+        "usageInstructions": "## Agent: backend-architect\\nExpert backend architect specializing in scalable API design, microservices architecture, and distributed systems. Masters REST/GraphQL/gRPC APIs, event-driven architectures, service mesh patterns, and modern backend frameworks. Handles service boundary definition, inter-service communication, resilience patterns, and observability. Use PROACTIVELY when creating new backend services or APIs.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\backend-api-security\\agents\\backend-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── backend-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/backend-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\backend-api-security\\agents\\backend-architect.md`",
         "isArchived": false
     },
     {
@@ -141,6 +191,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert in secure backend coding practices specializing in input validation, authentication, and API security.",
         "model": "sonnet",
         "path": "agents/plugins/backend-api-security/agents/backend-security-coder.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\backend-api-security\\agents\\backend-security-coder.md",
+        "usageInstructions": "## Agent: backend-security-coder\\nExpert in secure backend coding practices specializing in input validation, authentication, and API security. Use PROACTIVELY for backend security implementations or security code reviews.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\backend-api-security\\agents\\backend-security-coder.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── backend-security-coder.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/backend-security-coder.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\backend-api-security\\agents\\backend-security-coder.md`",
         "isArchived": false
     },
     {
@@ -151,6 +203,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems.",
         "model": "inherit",
         "path": "agents/plugins/backend-development/agents/backend-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\backend-development\\agents\\backend-architect.md",
+        "usageInstructions": "## Agent: backend-architect\\nExpert backend architect specializing in scalable API design, microservices architecture, and distributed systems. Masters REST/GraphQL/gRPC APIs, event-driven architectures, service mesh patterns, and modern backend frameworks. Handles service boundary definition, inter-service communication, resilience patterns, and observability. Use PROACTIVELY when creating new backend services or APIs.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\backend-development\\agents\\backend-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── backend-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/backend-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\backend-development\\agents\\backend-architect.md`",
         "isArchived": false
     },
     {
@@ -161,6 +215,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master modern GraphQL with federation, performance optimization, and enterprise security.",
         "model": "opus",
         "path": "agents/plugins/backend-development/agents/graphql-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\backend-development\\agents\\graphql-architect.md",
+        "usageInstructions": "## Agent: graphql-architect\\nMaster modern GraphQL with federation, performance optimization, and enterprise security. Build scalable schemas, implement advanced caching, and design real-time systems. Use PROACTIVELY for GraphQL architecture or performance optimization.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\backend-development\\agents\\graphql-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── graphql-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/graphql-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\backend-development\\agents\\graphql-architect.md`",
         "isArchived": false
     },
     {
@@ -171,6 +227,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master TDD orchestrator specializing in red-green-refactor discipline, multi-agent workflow coordination, and...",
         "model": "opus",
         "path": "agents/plugins/backend-development/agents/tdd-orchestrator.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\backend-development\\agents\\tdd-orchestrator.md",
+        "usageInstructions": "## Agent: tdd-orchestrator\\nMaster TDD orchestrator specializing in red-green-refactor discipline, multi-agent workflow coordination, and comprehensive test-driven development practices. Enforces TDD best practices across teams with AI-assisted testing and modern frameworks. Use PROACTIVELY for TDD implementation and governance.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\backend-development\\agents\\tdd-orchestrator.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── tdd-orchestrator.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/tdd-orchestrator.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\backend-development\\agents\\tdd-orchestrator.md`",
         "isArchived": false
     },
     {
@@ -181,6 +239,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master Temporal workflow orchestration with Python SDK.",
         "model": "inherit",
         "path": "agents/plugins/backend-development/agents/temporal-python-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\backend-development\\agents\\temporal-python-pro.md",
+        "usageInstructions": "## Agent: temporal-python-pro\\nMaster Temporal workflow orchestration with Python SDK. Implements durable workflows, saga patterns, and distributed transactions. Covers async/await, testing strategies, and production deployment. Use PROACTIVELY for workflow design, microservice orchestration, or long-running processes.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\backend-development\\agents\\temporal-python-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── temporal-python-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/temporal-python-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\backend-development\\agents\\temporal-python-pro.md`",
         "isArchived": false
     },
     {
@@ -191,6 +251,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Build production-ready Web3 applications, smart contracts, and decentralized systems.",
         "model": "opus",
         "path": "agents/plugins/blockchain-web3/agents/blockchain-developer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\blockchain-web3\\agents\\blockchain-developer.md",
+        "usageInstructions": "## Agent: blockchain-developer\\nBuild production-ready Web3 applications, smart contracts, and decentralized systems. Implements DeFi protocols, NFT platforms, DAOs, and enterprise blockchain integrations. Use PROACTIVELY for smart contracts, Web3 apps, DeFi protocols, or blockchain infrastructure.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\blockchain-web3\\agents\\blockchain-developer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── blockchain-developer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/blockchain-developer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\blockchain-web3\\agents\\blockchain-developer.md`",
         "isArchived": false
     },
     {
@@ -201,6 +263,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master modern business analysis with AI-powered analytics, real-time dashboards, and data-driven insights.",
         "model": "sonnet",
         "path": "agents/plugins/business-analytics/agents/business-analyst.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\business-analytics\\agents\\business-analyst.md",
+        "usageInstructions": "## Agent: business-analyst\\nMaster modern business analysis with AI-powered analytics, real-time dashboards, and data-driven insights. Build comprehensive KPI frameworks, predictive models, and strategic recommendations. Use PROACTIVELY for business intelligence or strategic analysis.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\business-analytics\\agents\\business-analyst.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── business-analyst.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/business-analyst.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\business-analytics\\agents\\business-analyst.md`",
         "isArchived": false
     },
     {
@@ -211,6 +275,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert C4 Code-level documentation specialist.",
         "model": "haiku",
         "path": "agents/plugins/c4-architecture/agents/c4-code.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\c4-architecture\\agents\\c4-code.md",
+        "usageInstructions": "## Agent: c4-code\\nExpert C4 Code-level documentation specialist. Analyzes code directories to create comprehensive C4 code-level documentation including function signatures, arguments, dependencies, and code structure. Use when documenting code at the lowest C4 level for individual directories and code modules.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\c4-architecture\\agents\\c4-code.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── c4-code.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/c4-code.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\c4-architecture\\agents\\c4-code.md`",
         "isArchived": false
     },
     {
@@ -221,6 +287,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert C4 Component-level documentation specialist.",
         "model": "sonnet",
         "path": "agents/plugins/c4-architecture/agents/c4-component.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\c4-architecture\\agents\\c4-component.md",
+        "usageInstructions": "## Agent: c4-component\\nExpert C4 Component-level documentation specialist. Synthesizes C4 Code-level documentation into Component-level architecture, defining component boundaries, interfaces, and relationships. Creates component diagrams and documentation. Use when synthesizing code-level documentation into logical components.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\c4-architecture\\agents\\c4-component.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── c4-component.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/c4-component.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\c4-architecture\\agents\\c4-component.md`",
         "isArchived": false
     },
     {
@@ -231,6 +299,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert C4 Container-level documentation specialist.",
         "model": "sonnet",
         "path": "agents/plugins/c4-architecture/agents/c4-container.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\c4-architecture\\agents\\c4-container.md",
+        "usageInstructions": "## Agent: c4-container\\nExpert C4 Container-level documentation specialist. Synthesizes Component-level documentation into Container-level architecture, mapping components to deployment units, documenting container interfaces as APIs, and creating container diagrams. Use when synthesizing components into deployment containers and documenting system deployment architecture.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\c4-architecture\\agents\\c4-container.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── c4-container.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/c4-container.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\c4-architecture\\agents\\c4-container.md`",
         "isArchived": false
     },
     {
@@ -241,6 +311,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert C4 Context-level documentation specialist.",
         "model": "sonnet",
         "path": "agents/plugins/c4-architecture/agents/c4-context.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\c4-architecture\\agents\\c4-context.md",
+        "usageInstructions": "## Agent: c4-context\\nExpert C4 Context-level documentation specialist. Creates high-level system context diagrams, documents personas, user journeys, system features, and external dependencies. Synthesizes container and component documentation with system documentation to create comprehensive context-level architecture. Use when creating the highest-level C4 system context documentation.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\c4-architecture\\agents\\c4-context.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── c4-context.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/c4-context.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\c4-architecture\\agents\\c4-context.md`",
         "isArchived": false
     },
     {
@@ -251,6 +323,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC...",
         "model": "opus",
         "path": "agents/plugins/cicd-automation/agents/cloud-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cicd-automation\\agents\\cloud-architect.md",
+        "usageInstructions": "## Agent: cloud-architect\\nExpert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC (Terraform/OpenTofu/CDK), FinOps cost optimization, and modern architectural patterns. Masters serverless, microservices, security, compliance, and disaster recovery. Use PROACTIVELY for cloud architecture, cost optimization, migration planning, or multi-cloud strategies.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cicd-automation\\agents\\cloud-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── cloud-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/cloud-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cicd-automation\\agents\\cloud-architect.md`",
         "isArchived": false
     },
     {
@@ -261,6 +335,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation.",
         "model": "haiku",
         "path": "agents/plugins/cicd-automation/agents/deployment-engineer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cicd-automation\\agents\\deployment-engineer.md",
+        "usageInstructions": "## Agent: deployment-engineer\\nExpert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation. Masters GitHub Actions, ArgoCD/Flux, progressive delivery, container security, and platform engineering. Handles zero-downtime deployments, security scanning, and developer experience optimization. Use PROACTIVELY for CI/CD design, GitOps implementation, or deployment automation.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cicd-automation\\agents\\deployment-engineer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── deployment-engineer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/deployment-engineer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cicd-automation\\agents\\deployment-engineer.md`",
         "isArchived": false
     },
     {
@@ -271,6 +347,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert DevOps troubleshooter specializing in rapid incident response, advanced debugging, and modern observability.",
         "model": "sonnet",
         "path": "agents/plugins/cicd-automation/agents/devops-troubleshooter.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cicd-automation\\agents\\devops-troubleshooter.md",
+        "usageInstructions": "## Agent: devops-troubleshooter\\nExpert DevOps troubleshooter specializing in rapid incident response, advanced debugging, and modern observability. Masters log analysis, distributed tracing, Kubernetes debugging, performance optimization, and root cause analysis. Handles production outages, system reliability, and preventive monitoring. Use PROACTIVELY for debugging, incident response, or system troubleshooting.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cicd-automation\\agents\\devops-troubleshooter.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── devops-troubleshooter.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/devops-troubleshooter.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cicd-automation\\agents\\devops-troubleshooter.md`",
         "isArchived": false
     },
     {
@@ -281,6 +359,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux),...",
         "model": "opus",
         "path": "agents/plugins/cicd-automation/agents/kubernetes-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cicd-automation\\agents\\kubernetes-architect.md",
+        "usageInstructions": "## Agent: kubernetes-architect\\nExpert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux), and enterprise container orchestration. Masters EKS/AKS/GKE, service mesh (Istio/Linkerd), progressive delivery, multi-tenancy, and platform engineering. Handles security, observability, cost optimization, and developer experience. Use PROACTIVELY for K8s architecture, GitOps implementation, or cloud-native platform design.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cicd-automation\\agents\\kubernetes-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── kubernetes-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/kubernetes-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cicd-automation\\agents\\kubernetes-architect.md`",
         "isArchived": false
     },
     {
@@ -291,6 +371,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, and enterprise...",
         "model": "opus",
         "path": "agents/plugins/cicd-automation/agents/terraform-specialist.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cicd-automation\\agents\\terraform-specialist.md",
+        "usageInstructions": "## Agent: terraform-specialist\\nExpert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, and enterprise infrastructure patterns. Handles complex module design, multi-cloud deployments, GitOps workflows, policy as code, and CI/CD integration. Covers migration strategies, security best practices, and modern IaC ecosystems. Use PROACTIVELY for advanced IaC, state management, or infrastructure automation.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cicd-automation\\agents\\terraform-specialist.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── terraform-specialist.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/terraform-specialist.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cicd-automation\\agents\\terraform-specialist.md`",
         "isArchived": false
     },
     {
@@ -301,6 +383,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC...",
         "model": "opus",
         "path": "agents/plugins/cloud-infrastructure/agents/cloud-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cloud-infrastructure\\agents\\cloud-architect.md",
+        "usageInstructions": "## Agent: cloud-architect\\nExpert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC (Terraform/OpenTofu/CDK), FinOps cost optimization, and modern architectural patterns. Masters serverless, microservices, security, compliance, and disaster recovery. Use PROACTIVELY for cloud architecture, cost optimization, migration planning, or multi-cloud strategies.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cloud-infrastructure\\agents\\cloud-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── cloud-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/cloud-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cloud-infrastructure\\agents\\cloud-architect.md`",
         "isArchived": false
     },
     {
@@ -311,6 +395,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation.",
         "model": "haiku",
         "path": "agents/plugins/cloud-infrastructure/agents/deployment-engineer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cloud-infrastructure\\agents\\deployment-engineer.md",
+        "usageInstructions": "## Agent: deployment-engineer\\nExpert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation. Masters GitHub Actions, ArgoCD/Flux, progressive delivery, container security, and platform engineering. Handles zero-downtime deployments, security scanning, and developer experience optimization. Use PROACTIVELY for CI/CD design, GitOps implementation, or deployment automation.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cloud-infrastructure\\agents\\deployment-engineer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── deployment-engineer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/deployment-engineer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cloud-infrastructure\\agents\\deployment-engineer.md`",
         "isArchived": false
     },
     {
@@ -321,6 +407,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert hybrid cloud architect specializing in complex multi-cloud solutions across AWS/Azure/GCP and private clouds...",
         "model": "opus",
         "path": "agents/plugins/cloud-infrastructure/agents/hybrid-cloud-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cloud-infrastructure\\agents\\hybrid-cloud-architect.md",
+        "usageInstructions": "## Agent: hybrid-cloud-architect\\nExpert hybrid cloud architect specializing in complex multi-cloud solutions across AWS/Azure/GCP and private clouds (OpenStack/VMware). Masters hybrid connectivity, workload placement optimization, edge computing, and cross-cloud automation. Handles compliance, cost optimization, disaster recovery, and migration strategies. Use PROACTIVELY for hybrid architecture, multi-cloud strategy, or complex infrastructure integration.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cloud-infrastructure\\agents\\hybrid-cloud-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── hybrid-cloud-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/hybrid-cloud-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cloud-infrastructure\\agents\\hybrid-cloud-architect.md`",
         "isArchived": false
     },
     {
@@ -331,6 +419,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux),...",
         "model": "opus",
         "path": "agents/plugins/cloud-infrastructure/agents/kubernetes-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cloud-infrastructure\\agents\\kubernetes-architect.md",
+        "usageInstructions": "## Agent: kubernetes-architect\\nExpert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux), and enterprise container orchestration. Masters EKS/AKS/GKE, service mesh (Istio/Linkerd), progressive delivery, multi-tenancy, and platform engineering. Handles security, observability, cost optimization, and developer experience. Use PROACTIVELY for K8s architecture, GitOps implementation, or cloud-native platform design.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cloud-infrastructure\\agents\\kubernetes-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── kubernetes-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/kubernetes-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cloud-infrastructure\\agents\\kubernetes-architect.md`",
         "isArchived": false
     },
     {
@@ -341,6 +431,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert network engineer specializing in modern cloud networking, security architectures, and performance optimization.",
         "model": "sonnet",
         "path": "agents/plugins/cloud-infrastructure/agents/network-engineer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cloud-infrastructure\\agents\\network-engineer.md",
+        "usageInstructions": "## Agent: network-engineer\\nExpert network engineer specializing in modern cloud networking, security architectures, and performance optimization. Masters multi-cloud connectivity, service mesh, zero-trust networking, SSL/TLS, global load balancing, and advanced troubleshooting. Handles CDN optimization, network automation, and compliance. Use PROACTIVELY for network design, connectivity issues, or performance optimization.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cloud-infrastructure\\agents\\network-engineer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── network-engineer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/network-engineer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cloud-infrastructure\\agents\\network-engineer.md`",
         "isArchived": false
     },
     {
@@ -351,6 +443,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, and enterprise...",
         "model": "opus",
         "path": "agents/plugins/cloud-infrastructure/agents/terraform-specialist.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cloud-infrastructure\\agents\\terraform-specialist.md",
+        "usageInstructions": "## Agent: terraform-specialist\\nExpert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, and enterprise infrastructure patterns. Handles complex module design, multi-cloud deployments, GitOps workflows, policy as code, and CI/CD integration. Covers migration strategies, security best practices, and modern IaC ecosystems. Use PROACTIVELY for advanced IaC, state management, or infrastructure automation.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cloud-infrastructure\\agents\\terraform-specialist.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── terraform-specialist.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/terraform-specialist.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\cloud-infrastructure\\agents\\terraform-specialist.md`",
         "isArchived": false
     },
     {
@@ -361,6 +455,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance...",
         "model": "opus",
         "path": "agents/plugins/code-documentation/agents/code-reviewer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\code-documentation\\agents\\code-reviewer.md",
+        "usageInstructions": "## Agent: code-reviewer\\nElite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance optimization, and production reliability. Masters static analysis tools, security scanning, and configuration review with 2024/2025 best practices. Use PROACTIVELY for code quality assurance.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\code-documentation\\agents\\code-reviewer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── code-reviewer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/code-reviewer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\code-documentation\\agents\\code-reviewer.md`",
         "isArchived": false
     },
     {
@@ -371,6 +467,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Creates comprehensive technical documentation from existing codebases.",
         "model": "sonnet",
         "path": "agents/plugins/code-documentation/agents/docs-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\code-documentation\\agents\\docs-architect.md",
+        "usageInstructions": "## Agent: docs-architect\\nCreates comprehensive technical documentation from existing codebases. Analyzes architecture, design patterns, and implementation details to produce long-form technical manuals and ebooks. Use PROACTIVELY for system documentation, architecture guides, or technical deep-dives.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\code-documentation\\agents\\docs-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── docs-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/docs-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\code-documentation\\agents\\docs-architect.md`",
         "isArchived": false
     },
     {
@@ -381,6 +479,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Creates step-by-step tutorials and educational content from code.",
         "model": "sonnet",
         "path": "agents/plugins/code-documentation/agents/tutorial-engineer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\code-documentation\\agents\\tutorial-engineer.md",
+        "usageInstructions": "## Agent: tutorial-engineer\\nCreates step-by-step tutorials and educational content from code. Transforms complex concepts into progressive learning experiences with hands-on examples. Use PROACTIVELY for onboarding guides, feature tutorials, or concept explanations.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\code-documentation\\agents\\tutorial-engineer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── tutorial-engineer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/tutorial-engineer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\code-documentation\\agents\\tutorial-engineer.md`",
         "isArchived": false
     },
     {
@@ -391,6 +491,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance...",
         "model": "opus",
         "path": "agents/plugins/code-refactoring/agents/code-reviewer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\code-refactoring\\agents\\code-reviewer.md",
+        "usageInstructions": "## Agent: code-reviewer\\nElite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance optimization, and production reliability. Masters static analysis tools, security scanning, and configuration review with 2024/2025 best practices. Use PROACTIVELY for code quality assurance.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\code-refactoring\\agents\\code-reviewer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── code-reviewer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/code-reviewer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\code-refactoring\\agents\\code-reviewer.md`",
         "isArchived": false
     },
     {
@@ -401,6 +503,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Refactor legacy codebases, migrate outdated frameworks, and implement gradual modernization.",
         "model": "sonnet",
         "path": "agents/plugins/code-refactoring/agents/legacy-modernizer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\code-refactoring\\agents\\legacy-modernizer.md",
+        "usageInstructions": "## Agent: legacy-modernizer\\nRefactor legacy codebases, migrate outdated frameworks, and implement gradual modernization. Handles technical debt, dependency updates, and backward compatibility. Use PROACTIVELY for legacy system updates, framework migrations, or technical debt reduction.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\code-refactoring\\agents\\legacy-modernizer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── legacy-modernizer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/legacy-modernizer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\code-refactoring\\agents\\legacy-modernizer.md`",
         "isArchived": false
     },
     {
@@ -411,6 +515,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master software architect specializing in modern architecture patterns, clean architecture, microservices,...",
         "model": "opus",
         "path": "agents/plugins/code-review-ai/agents/architect-review.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\code-review-ai\\agents\\architect-review.md",
+        "usageInstructions": "## Agent: architect-review\\nMaster software architect specializing in modern architecture patterns, clean architecture, microservices, event-driven systems, and DDD. Reviews system designs and code changes for architectural integrity, scalability, and maintainability. Use PROACTIVELY for architectural decisions.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\code-review-ai\\agents\\architect-review.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── architect-review.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/architect-review.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\code-review-ai\\agents\\architect-review.md`",
         "isArchived": false
     },
     {
@@ -421,6 +527,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance...",
         "model": "opus",
         "path": "agents/plugins/codebase-cleanup/agents/code-reviewer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\codebase-cleanup\\agents\\code-reviewer.md",
+        "usageInstructions": "## Agent: code-reviewer\\nElite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance optimization, and production reliability. Masters static analysis tools, security scanning, and configuration review with 2024/2025 best practices. Use PROACTIVELY for code quality assurance.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\codebase-cleanup\\agents\\code-reviewer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── code-reviewer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/code-reviewer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\codebase-cleanup\\agents\\code-reviewer.md`",
         "isArchived": false
     },
     {
@@ -431,6 +539,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering.",
         "model": "sonnet",
         "path": "agents/plugins/codebase-cleanup/agents/test-automator.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\codebase-cleanup\\agents\\test-automator.md",
+        "usageInstructions": "## Agent: test-automator\\nMaster AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering. Build scalable testing strategies with advanced CI/CD integration. Use PROACTIVELY for testing automation or quality assurance.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\codebase-cleanup\\agents\\test-automator.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── test-automator.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/test-automator.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\codebase-cleanup\\agents\\test-automator.md`",
         "isArchived": false
     },
     {
@@ -441,6 +551,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master software architect specializing in modern architecture patterns, clean architecture, microservices,...",
         "model": "opus",
         "path": "agents/plugins/comprehensive-review/agents/architect-review.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\comprehensive-review\\agents\\architect-review.md",
+        "usageInstructions": "## Agent: architect-review\\nMaster software architect specializing in modern architecture patterns, clean architecture, microservices, event-driven systems, and DDD. Reviews system designs and code changes for architectural integrity, scalability, and maintainability. Use PROACTIVELY for architectural decisions.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\comprehensive-review\\agents\\architect-review.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── architect-review.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/architect-review.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\comprehensive-review\\agents\\architect-review.md`",
         "isArchived": false
     },
     {
@@ -451,6 +563,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance...",
         "model": "opus",
         "path": "agents/plugins/comprehensive-review/agents/code-reviewer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\comprehensive-review\\agents\\code-reviewer.md",
+        "usageInstructions": "## Agent: code-reviewer\\nElite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance optimization, and production reliability. Masters static analysis tools, security scanning, and configuration review with 2024/2025 best practices. Use PROACTIVELY for code quality assurance.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\comprehensive-review\\agents\\code-reviewer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── code-reviewer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/code-reviewer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\comprehensive-review\\agents\\code-reviewer.md`",
         "isArchived": false
     },
     {
@@ -461,6 +575,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks.",
         "model": "opus",
         "path": "agents/plugins/comprehensive-review/agents/security-auditor.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\comprehensive-review\\agents\\security-auditor.md",
+        "usageInstructions": "## Agent: security-auditor\\nExpert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks. Masters vulnerability assessment, threat modeling, secure authentication (OAuth2/OIDC), OWASP standards, cloud security, and security automation. Handles DevSecOps integration, compliance (GDPR/HIPAA/SOC2), and incident response. Use PROACTIVELY for security audits, DevSecOps, or compliance implementation.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\comprehensive-review\\agents\\security-auditor.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── security-auditor.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/security-auditor.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\comprehensive-review\\agents\\security-auditor.md`",
         "isArchived": false
     },
     {
@@ -471,6 +587,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Elite content marketing strategist specializing in AI-powered content creation, omnichannel distribution, SEO...",
         "model": "haiku",
         "path": "agents/plugins/content-marketing/agents/content-marketer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\content-marketing\\agents\\content-marketer.md",
+        "usageInstructions": "## Agent: content-marketer\\nElite content marketing strategist specializing in AI-powered content creation, omnichannel distribution, SEO optimization, and data-driven performance marketing. Masters modern content tools, social media automation, and conversion optimization with 2024/2025 best practices. Use PROACTIVELY for comprehensive content marketing.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\content-marketing\\agents\\content-marketer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── content-marketer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/content-marketer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\content-marketing\\agents\\content-marketer.md`",
         "isArchived": false
     },
     {
@@ -481,6 +599,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert web researcher using advanced search techniques and synthesis.",
         "model": "haiku",
         "path": "agents/plugins/content-marketing/agents/search-specialist.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\content-marketing\\agents\\search-specialist.md",
+        "usageInstructions": "## Agent: search-specialist\\nExpert web researcher using advanced search techniques and synthesis. Masters search operators, result filtering, and multi-source verification. Handles competitive analysis and fact-checking. Use PROACTIVELY for deep research, information gathering, or trend analysis.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\content-marketing\\agents\\search-specialist.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── search-specialist.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/search-specialist.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\content-marketing\\agents\\search-specialist.md`",
         "isArchived": false
     },
     {
@@ -491,6 +611,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Elite AI context engineering specialist mastering dynamic context management, vector databases, knowledge graphs,...",
         "model": "inherit",
         "path": "agents/plugins/context-management/agents/context-manager.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\context-management\\agents\\context-manager.md",
+        "usageInstructions": "## Agent: context-manager\\nElite AI context engineering specialist mastering dynamic context management, vector databases, knowledge graphs, and intelligent memory systems. Orchestrates context across multi-agent workflows, enterprise AI systems, and long-running projects with 2024/2025 best practices. Use PROACTIVELY for complex AI orchestration.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\context-management\\agents\\context-manager.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── context-manager.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/context-manager.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\context-management\\agents\\context-manager.md`",
         "isArchived": false
     },
     {
@@ -501,6 +623,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Elite AI-powered customer support specialist mastering conversational AI, automated ticketing, sentiment analysis,...",
         "model": "haiku",
         "path": "agents/plugins/customer-sales-automation/agents/customer-support.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\customer-sales-automation\\agents\\customer-support.md",
+        "usageInstructions": "## Agent: customer-support\\nElite AI-powered customer support specialist mastering conversational AI, automated ticketing, sentiment analysis, and omnichannel support experiences. Integrates modern support tools, chatbot platforms, and CX optimization with 2024/2025 best practices. Use PROACTIVELY for comprehensive customer experience management.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\customer-sales-automation\\agents\\customer-support.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── customer-support.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/customer-support.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\customer-sales-automation\\agents\\customer-support.md`",
         "isArchived": false
     },
     {
@@ -511,6 +635,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Draft cold emails, follow-ups, and proposal templates. Creates pricing pages, case studies, and sales scripts.",
         "model": "haiku",
         "path": "agents/plugins/customer-sales-automation/agents/sales-automator.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\customer-sales-automation\\agents\\sales-automator.md",
+        "usageInstructions": "## Agent: sales-automator\\nDraft cold emails, follow-ups, and proposal templates. Creates pricing pages, case studies, and sales scripts. Use PROACTIVELY for sales outreach or lead nurturing.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\customer-sales-automation\\agents\\sales-automator.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── sales-automator.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/sales-automator.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\customer-sales-automation\\agents\\sales-automator.md`",
         "isArchived": false
     },
     {
@@ -521,6 +647,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems.",
         "model": "inherit",
         "path": "agents/plugins/data-engineering/agents/backend-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\data-engineering\\agents\\backend-architect.md",
+        "usageInstructions": "## Agent: backend-architect\\nExpert backend architect specializing in scalable API design, microservices architecture, and distributed systems. Masters REST/GraphQL/gRPC APIs, event-driven architectures, service mesh patterns, and modern backend frameworks. Handles service boundary definition, inter-service communication, resilience patterns, and observability. Use PROACTIVELY when creating new backend services or APIs.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\data-engineering\\agents\\backend-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── backend-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/backend-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\data-engineering\\agents\\backend-architect.md`",
         "isArchived": false
     },
     {
@@ -531,6 +659,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Build scalable data pipelines, modern data warehouses, and real-time streaming architectures.",
         "model": "opus",
         "path": "agents/plugins/data-engineering/agents/data-engineer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\data-engineering\\agents\\data-engineer.md",
+        "usageInstructions": "## Agent: data-engineer\\nBuild scalable data pipelines, modern data warehouses, and real-time streaming architectures. Implements Apache Spark, dbt, Airflow, and cloud-native data platforms. Use PROACTIVELY for data pipeline design, analytics infrastructure, or modern data stack implementation.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\data-engineering\\agents\\data-engineer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── data-engineer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/data-engineer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\data-engineering\\agents\\data-engineer.md`",
         "isArchived": false
     },
     {
@@ -541,6 +671,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert in secure backend coding practices specializing in input validation, authentication, and API security.",
         "model": "sonnet",
         "path": "agents/plugins/data-validation-suite/agents/backend-security-coder.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\data-validation-suite\\agents\\backend-security-coder.md",
+        "usageInstructions": "## Agent: backend-security-coder\\nExpert in secure backend coding practices specializing in input validation, authentication, and API security. Use PROACTIVELY for backend security implementations or security code reviews.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\data-validation-suite\\agents\\backend-security-coder.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── backend-security-coder.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/backend-security-coder.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\data-validation-suite\\agents\\backend-security-coder.md`",
         "isArchived": false
     },
     {
@@ -551,6 +683,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems.",
         "model": "inherit",
         "path": "agents/plugins/database-cloud-optimization/agents/backend-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-cloud-optimization\\agents\\backend-architect.md",
+        "usageInstructions": "## Agent: backend-architect\\nExpert backend architect specializing in scalable API design, microservices architecture, and distributed systems. Masters REST/GraphQL/gRPC APIs, event-driven architectures, service mesh patterns, and modern backend frameworks. Handles service boundary definition, inter-service communication, resilience patterns, and observability. Use PROACTIVELY when creating new backend services or APIs.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-cloud-optimization\\agents\\backend-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── backend-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/backend-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-cloud-optimization\\agents\\backend-architect.md`",
         "isArchived": false
     },
     {
@@ -561,6 +695,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC...",
         "model": "sonnet",
         "path": "agents/plugins/database-cloud-optimization/agents/cloud-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-cloud-optimization\\agents\\cloud-architect.md",
+        "usageInstructions": "## Agent: cloud-architect\\nExpert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC (Terraform/OpenTofu/CDK), FinOps cost optimization, and modern architectural patterns. Masters serverless, microservices, security, compliance, and disaster recovery. Use PROACTIVELY for cloud architecture, cost optimization, migration planning, or multi-cloud strategies.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-cloud-optimization\\agents\\cloud-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── cloud-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/cloud-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-cloud-optimization\\agents\\cloud-architect.md`",
         "isArchived": false
     },
     {
@@ -571,6 +707,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert database architect specializing in data layer design from scratch, technology selection, schema modeling, and...",
         "model": "inherit",
         "path": "agents/plugins/database-cloud-optimization/agents/database-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-cloud-optimization\\agents\\database-architect.md",
+        "usageInstructions": "## Agent: database-architect\\nExpert database architect specializing in data layer design from scratch, technology selection, schema modeling, and scalable database architectures. Masters SQL/NoSQL/TimeSeries database selection, normalization strategies, migration planning, and performance-first design. Handles both greenfield architectures and re-architecture of existing systems. Use PROACTIVELY for database architecture, technology selection, or data modeling decisions.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-cloud-optimization\\agents\\database-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── database-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/database-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-cloud-optimization\\agents\\database-architect.md`",
         "isArchived": false
     },
     {
@@ -581,6 +719,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert database optimizer specializing in modern performance tuning, query optimization, and scalable architectures.",
         "model": "inherit",
         "path": "agents/plugins/database-cloud-optimization/agents/database-optimizer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-cloud-optimization\\agents\\database-optimizer.md",
+        "usageInstructions": "## Agent: database-optimizer\\nExpert database optimizer specializing in modern performance tuning, query optimization, and scalable architectures. Masters advanced indexing, N+1 resolution, multi-tier caching, partitioning strategies, and cloud database optimization. Handles complex query analysis, migration strategies, and performance monitoring. Use PROACTIVELY for database optimization, performance issues, or scalability challenges.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-cloud-optimization\\agents\\database-optimizer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── database-optimizer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/database-optimizer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-cloud-optimization\\agents\\database-optimizer.md`",
         "isArchived": false
     },
     {
@@ -591,6 +731,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert database architect specializing in data layer design from scratch, technology selection, schema modeling, and...",
         "model": "opus",
         "path": "agents/plugins/database-design/agents/database-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-design\\agents\\database-architect.md",
+        "usageInstructions": "## Agent: database-architect\\nExpert database architect specializing in data layer design from scratch, technology selection, schema modeling, and scalable database architectures. Masters SQL/NoSQL/TimeSeries database selection, normalization strategies, migration planning, and performance-first design. Handles both greenfield architectures and re-architecture of existing systems. Use PROACTIVELY for database architecture, technology selection, or data modeling decisions.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-design\\agents\\database-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── database-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/database-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-design\\agents\\database-architect.md`",
         "isArchived": false
     },
     {
@@ -601,6 +743,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master modern SQL with cloud-native databases, OLTP/OLAP optimization, and advanced query techniques.",
         "model": "inherit",
         "path": "agents/plugins/database-design/agents/sql-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-design\\agents\\sql-pro.md",
+        "usageInstructions": "## Agent: sql-pro\\nMaster modern SQL with cloud-native databases, OLTP/OLAP optimization, and advanced query techniques. Expert in performance tuning, data modeling, and hybrid analytical systems. Use PROACTIVELY for database optimization or complex analysis.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-design\\agents\\sql-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── sql-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/sql-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-design\\agents\\sql-pro.md`",
         "isArchived": false
     },
     {
@@ -611,6 +755,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert database administrator specializing in modern cloud databases, automation, and reliability engineering.",
         "model": "sonnet",
         "path": "agents/plugins/database-migrations/agents/database-admin.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-migrations\\agents\\database-admin.md",
+        "usageInstructions": "## Agent: database-admin\\nExpert database administrator specializing in modern cloud databases, automation, and reliability engineering. Masters AWS/Azure/GCP database services, Infrastructure as Code, high availability, disaster recovery, performance optimization, and compliance. Handles multi-cloud strategies, container databases, and cost optimization. Use PROACTIVELY for database architecture, operations, or reliability engineering.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-migrations\\agents\\database-admin.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── database-admin.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/database-admin.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-migrations\\agents\\database-admin.md`",
         "isArchived": false
     },
     {
@@ -621,6 +767,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert database optimizer specializing in modern performance tuning, query optimization, and scalable architectures.",
         "model": "inherit",
         "path": "agents/plugins/database-migrations/agents/database-optimizer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-migrations\\agents\\database-optimizer.md",
+        "usageInstructions": "## Agent: database-optimizer\\nExpert database optimizer specializing in modern performance tuning, query optimization, and scalable architectures. Masters advanced indexing, N+1 resolution, multi-tier caching, partitioning strategies, and cloud database optimization. Handles complex query analysis, migration strategies, and performance monitoring. Use PROACTIVELY for database optimization, performance issues, or scalability challenges.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-migrations\\agents\\database-optimizer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── database-optimizer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/database-optimizer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\database-migrations\\agents\\database-optimizer.md`",
         "isArchived": false
     },
     {
@@ -631,6 +779,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Debugging specialist for errors, test failures, and unexpected behavior.",
         "model": "sonnet",
         "path": "agents/plugins/debugging-toolkit/agents/debugger.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\debugging-toolkit\\agents\\debugger.md",
+        "usageInstructions": "## Agent: debugger\\nDebugging specialist for errors, test failures, and unexpected behavior. Use proactively when encountering any issues.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\debugging-toolkit\\agents\\debugger.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── debugger.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/debugger.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\debugging-toolkit\\agents\\debugger.md`",
         "isArchived": false
     },
     {
@@ -641,6 +791,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Developer Experience specialist. Improves tooling, setup, and workflows.",
         "model": "sonnet",
         "path": "agents/plugins/debugging-toolkit/agents/dx-optimizer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\debugging-toolkit\\agents\\dx-optimizer.md",
+        "usageInstructions": "## Agent: dx-optimizer\\nDeveloper Experience specialist. Improves tooling, setup, and workflows. Use PROACTIVELY when setting up new projects, after team feedback, or when development friction is noticed.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\debugging-toolkit\\agents\\dx-optimizer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── dx-optimizer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/dx-optimizer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\debugging-toolkit\\agents\\dx-optimizer.md`",
         "isArchived": false
     },
     {
@@ -651,6 +803,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Refactor legacy codebases, migrate outdated frameworks, and implement gradual modernization.",
         "model": "sonnet",
         "path": "agents/plugins/dependency-management/agents/legacy-modernizer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\dependency-management\\agents\\legacy-modernizer.md",
+        "usageInstructions": "## Agent: legacy-modernizer\\nRefactor legacy codebases, migrate outdated frameworks, and implement gradual modernization. Handles technical debt, dependency updates, and backward compatibility. Use PROACTIVELY for legacy system updates, framework migrations, or technical debt reduction.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\dependency-management\\agents\\legacy-modernizer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── legacy-modernizer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/legacy-modernizer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\dependency-management\\agents\\legacy-modernizer.md`",
         "isArchived": false
     },
     {
@@ -661,6 +815,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation.",
         "model": "haiku",
         "path": "agents/plugins/deployment-strategies/agents/deployment-engineer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\deployment-strategies\\agents\\deployment-engineer.md",
+        "usageInstructions": "## Agent: deployment-engineer\\nExpert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation. Masters GitHub Actions, ArgoCD/Flux, progressive delivery, container security, and platform engineering. Handles zero-downtime deployments, security scanning, and developer experience optimization. Use PROACTIVELY for CI/CD design, GitOps implementation, or deployment automation.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\deployment-strategies\\agents\\deployment-engineer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── deployment-engineer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/deployment-engineer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\deployment-strategies\\agents\\deployment-engineer.md`",
         "isArchived": false
     },
     {
@@ -671,6 +827,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, and enterprise...",
         "model": "opus",
         "path": "agents/plugins/deployment-strategies/agents/terraform-specialist.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\deployment-strategies\\agents\\terraform-specialist.md",
+        "usageInstructions": "## Agent: terraform-specialist\\nExpert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, and enterprise infrastructure patterns. Handles complex module design, multi-cloud deployments, GitOps workflows, policy as code, and CI/CD integration. Covers migration strategies, security best practices, and modern IaC ecosystems. Use PROACTIVELY for advanced IaC, state management, or infrastructure automation.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\deployment-strategies\\agents\\terraform-specialist.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── terraform-specialist.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/terraform-specialist.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\deployment-strategies\\agents\\terraform-specialist.md`",
         "isArchived": false
     },
     {
@@ -681,6 +839,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC...",
         "model": "sonnet",
         "path": "agents/plugins/deployment-validation/agents/cloud-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\deployment-validation\\agents\\cloud-architect.md",
+        "usageInstructions": "## Agent: cloud-architect\\nExpert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC (Terraform/OpenTofu/CDK), FinOps cost optimization, and modern architectural patterns. Masters serverless, microservices, security, compliance, and disaster recovery. Use PROACTIVELY for cloud architecture, cost optimization, migration planning, or multi-cloud strategies.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\deployment-validation\\agents\\cloud-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── cloud-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/cloud-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\deployment-validation\\agents\\cloud-architect.md`",
         "isArchived": false
     },
     {
@@ -691,6 +851,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert DevOps troubleshooter specializing in rapid incident response, advanced debugging, and modern observability.",
         "model": "sonnet",
         "path": "agents/plugins/distributed-debugging/agents/devops-troubleshooter.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\distributed-debugging\\agents\\devops-troubleshooter.md",
+        "usageInstructions": "## Agent: devops-troubleshooter\\nExpert DevOps troubleshooter specializing in rapid incident response, advanced debugging, and modern observability. Masters log analysis, distributed tracing, Kubernetes debugging, performance optimization, and root cause analysis. Handles production outages, system reliability, and preventive monitoring. Use PROACTIVELY for debugging, incident response, or system troubleshooting.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\distributed-debugging\\agents\\devops-troubleshooter.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── devops-troubleshooter.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/devops-troubleshooter.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\distributed-debugging\\agents\\devops-troubleshooter.md`",
         "isArchived": false
     },
     {
@@ -701,6 +863,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Search logs and codebases for error patterns, stack traces, and anomalies.",
         "model": "sonnet",
         "path": "agents/plugins/distributed-debugging/agents/error-detective.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\distributed-debugging\\agents\\error-detective.md",
+        "usageInstructions": "## Agent: error-detective\\nSearch logs and codebases for error patterns, stack traces, and anomalies. Correlates errors across systems and identifies root causes. Use PROACTIVELY when debugging issues, analyzing logs, or investigating production errors.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\distributed-debugging\\agents\\error-detective.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── error-detective.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/error-detective.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\distributed-debugging\\agents\\error-detective.md`",
         "isArchived": false
     },
     {
@@ -711,6 +875,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master API documentation with OpenAPI 3.1, AI-powered tools, and modern developer experience practices.",
         "model": "sonnet",
         "path": "agents/plugins/documentation-generation/agents/api-documenter.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\documentation-generation\\agents\\api-documenter.md",
+        "usageInstructions": "## Agent: api-documenter\\nMaster API documentation with OpenAPI 3.1, AI-powered tools, and modern developer experience practices. Create interactive docs, generate SDKs, and build comprehensive developer portals. Use PROACTIVELY for API documentation or developer portal creation.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\documentation-generation\\agents\\api-documenter.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── api-documenter.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/api-documenter.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\documentation-generation\\agents\\api-documenter.md`",
         "isArchived": false
     },
     {
@@ -721,6 +887,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Creates comprehensive technical documentation from existing codebases.",
         "model": "sonnet",
         "path": "agents/plugins/documentation-generation/agents/docs-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\documentation-generation\\agents\\docs-architect.md",
+        "usageInstructions": "## Agent: docs-architect\\nCreates comprehensive technical documentation from existing codebases. Analyzes architecture, design patterns, and implementation details to produce long-form technical manuals and ebooks. Use PROACTIVELY for system documentation, architecture guides, or technical deep-dives.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\documentation-generation\\agents\\docs-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── docs-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/docs-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\documentation-generation\\agents\\docs-architect.md`",
         "isArchived": false
     },
     {
@@ -731,6 +899,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Create Mermaid diagrams for flowcharts, sequences, ERDs, and architectures.",
         "model": "haiku",
         "path": "agents/plugins/documentation-generation/agents/mermaid-expert.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\documentation-generation\\agents\\mermaid-expert.md",
+        "usageInstructions": "## Agent: mermaid-expert\\nCreate Mermaid diagrams for flowcharts, sequences, ERDs, and architectures. Masters syntax for all diagram types and styling. Use PROACTIVELY for visual documentation, system diagrams, or process flows.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\documentation-generation\\agents\\mermaid-expert.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── mermaid-expert.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/mermaid-expert.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\documentation-generation\\agents\\mermaid-expert.md`",
         "isArchived": false
     },
     {
@@ -741,6 +911,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Creates exhaustive technical references and API documentation.",
         "model": "haiku",
         "path": "agents/plugins/documentation-generation/agents/reference-builder.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\documentation-generation\\agents\\reference-builder.md",
+        "usageInstructions": "## Agent: reference-builder\\nCreates exhaustive technical references and API documentation. Generates comprehensive parameter listings, configuration guides, and searchable reference materials. Use PROACTIVELY for API docs, configuration references, or complete technical specifications.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\documentation-generation\\agents\\reference-builder.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── reference-builder.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/reference-builder.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\documentation-generation\\agents\\reference-builder.md`",
         "isArchived": false
     },
     {
@@ -751,6 +923,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Creates step-by-step tutorials and educational content from code.",
         "model": "sonnet",
         "path": "agents/plugins/documentation-generation/agents/tutorial-engineer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\documentation-generation\\agents\\tutorial-engineer.md",
+        "usageInstructions": "## Agent: tutorial-engineer\\nCreates step-by-step tutorials and educational content from code. Transforms complex concepts into progressive learning experiences with hands-on examples. Use PROACTIVELY for onboarding guides, feature tutorials, or concept explanations.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\documentation-generation\\agents\\tutorial-engineer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── tutorial-engineer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/tutorial-engineer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\documentation-generation\\agents\\tutorial-engineer.md`",
         "isArchived": false
     },
     {
@@ -761,6 +935,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Debugging specialist for errors, test failures, and unexpected behavior.",
         "model": "sonnet",
         "path": "agents/plugins/error-debugging/agents/debugger.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\error-debugging\\agents\\debugger.md",
+        "usageInstructions": "## Agent: debugger\\nDebugging specialist for errors, test failures, and unexpected behavior. Use proactively when encountering any issues.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\error-debugging\\agents\\debugger.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── debugger.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/debugger.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\error-debugging\\agents\\debugger.md`",
         "isArchived": false
     },
     {
@@ -771,6 +947,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Search logs and codebases for error patterns, stack traces, and anomalies.",
         "model": "sonnet",
         "path": "agents/plugins/error-debugging/agents/error-detective.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\error-debugging\\agents\\error-detective.md",
+        "usageInstructions": "## Agent: error-detective\\nSearch logs and codebases for error patterns, stack traces, and anomalies. Correlates errors across systems and identifies root causes. Use PROACTIVELY when debugging issues, analyzing logs, or investigating production errors.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\error-debugging\\agents\\error-detective.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── error-detective.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/error-detective.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\error-debugging\\agents\\error-detective.md`",
         "isArchived": false
     },
     {
@@ -781,6 +959,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Debugging specialist for errors, test failures, and unexpected behavior.",
         "model": "sonnet",
         "path": "agents/plugins/error-diagnostics/agents/debugger.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\error-diagnostics\\agents\\debugger.md",
+        "usageInstructions": "## Agent: debugger\\nDebugging specialist for errors, test failures, and unexpected behavior. Use proactively when encountering any issues.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\error-diagnostics\\agents\\debugger.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── debugger.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/debugger.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\error-diagnostics\\agents\\debugger.md`",
         "isArchived": false
     },
     {
@@ -791,6 +971,44 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Search logs and codebases for error patterns, stack traces, and anomalies.",
         "model": "sonnet",
         "path": "agents/plugins/error-diagnostics/agents/error-detective.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\error-diagnostics\\agents\\error-detective.md",
+        "usageInstructions": "## Agent: error-detective\\nSearch logs and codebases for error patterns, stack traces, and anomalies. Correlates errors across systems and identifies root causes. Use PROACTIVELY when debugging issues, analyzing logs, or investigating production errors.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\error-diagnostics\\agents\\error-detective.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── error-detective.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/error-detective.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\error-diagnostics\\agents\\error-detective.md`",
+        "isArchived": false
+    },
+    {
+        "plugin": "feature-dev",
+        "id": "code-architect",
+        "name": "code-architect",
+        "description": "Designs feature architectures by analyzing existing codebase patterns and conventions, then providing comprehensive implementation blueprints with specific files to create/modify, component designs, data flows, and build sequences",
+        "shortDescription": "Designs feature architectures by analyzing existing codebase patterns and conventions, then providing comprehensive...",
+        "model": "sonnet",
+        "path": "agents/plugins/feature-dev/agents/code-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\feature-dev\\agents\\code-architect.md",
+        "usageInstructions": "## Agent: code-architect\\nDesigns feature architectures by analyzing existing codebase patterns and conventions, then providing comprehensive implementation blueprints with specific files to create/modify, component designs, data flows, and build sequences\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\feature-dev\\agents\\code-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── code-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/code-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\feature-dev\\agents\\code-architect.md`",
+        "isArchived": false
+    },
+    {
+        "plugin": "feature-dev",
+        "id": "code-explorer",
+        "name": "code-explorer",
+        "description": "Deeply analyzes existing codebase features by tracing execution paths, mapping architecture layers, understanding patterns and abstractions, and documenting dependencies to inform new development",
+        "shortDescription": "Deeply analyzes existing codebase features by tracing execution paths, mapping architecture layers, understanding...",
+        "model": "sonnet",
+        "path": "agents/plugins/feature-dev/agents/code-explorer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\feature-dev\\agents\\code-explorer.md",
+        "usageInstructions": "## Agent: code-explorer\\nDeeply analyzes existing codebase features by tracing execution paths, mapping architecture layers, understanding patterns and abstractions, and documenting dependencies to inform new development\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\feature-dev\\agents\\code-explorer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── code-explorer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/code-explorer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\feature-dev\\agents\\code-explorer.md`",
+        "isArchived": false
+    },
+    {
+        "plugin": "feature-dev",
+        "id": "code-reviewer",
+        "name": "code-reviewer",
+        "description": "Reviews code for bugs, logic errors, security vulnerabilities, code quality issues, and adherence to project conventions, using confidence-based filtering to report only high-priority issues that truly matter",
+        "shortDescription": "Reviews code for bugs, logic errors, security vulnerabilities, code quality issues, and adherence to project...",
+        "model": "sonnet",
+        "path": "agents/plugins/feature-dev/agents/code-reviewer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\feature-dev\\agents\\code-reviewer.md",
+        "usageInstructions": "## Agent: code-reviewer\\nReviews code for bugs, logic errors, security vulnerabilities, code quality issues, and adherence to project conventions, using confidence-based filtering to report only high-priority issues that truly matter\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\feature-dev\\agents\\code-reviewer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── code-reviewer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/code-reviewer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\feature-dev\\agents\\code-reviewer.md`",
         "isArchived": false
     },
     {
@@ -801,6 +1019,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master software architect specializing in modern architecture patterns, clean architecture, microservices,...",
         "model": "opus",
         "path": "agents/plugins/framework-migration/agents/architect-review.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\framework-migration\\agents\\architect-review.md",
+        "usageInstructions": "## Agent: architect-review\\nMaster software architect specializing in modern architecture patterns, clean architecture, microservices, event-driven systems, and DDD. Reviews system designs and code changes for architectural integrity, scalability, and maintainability. Use PROACTIVELY for architectural decisions.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\framework-migration\\agents\\architect-review.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── architect-review.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/architect-review.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\framework-migration\\agents\\architect-review.md`",
         "isArchived": false
     },
     {
@@ -811,6 +1031,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Refactor legacy codebases, migrate outdated frameworks, and implement gradual modernization.",
         "model": "sonnet",
         "path": "agents/plugins/framework-migration/agents/legacy-modernizer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\framework-migration\\agents\\legacy-modernizer.md",
+        "usageInstructions": "## Agent: legacy-modernizer\\nRefactor legacy codebases, migrate outdated frameworks, and implement gradual modernization. Handles technical debt, dependency updates, and backward compatibility. Use PROACTIVELY for legacy system updates, framework migrations, or technical debt reduction.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\framework-migration\\agents\\legacy-modernizer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── legacy-modernizer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/legacy-modernizer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\framework-migration\\agents\\legacy-modernizer.md`",
         "isArchived": false
     },
     {
@@ -821,6 +1043,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Build React components, implement responsive layouts, and handle client-side state management.",
         "model": "inherit",
         "path": "agents/plugins/frontend-mobile-development/agents/frontend-developer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\frontend-mobile-development\\agents\\frontend-developer.md",
+        "usageInstructions": "## Agent: frontend-developer\\nBuild React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, and modern frontend architecture. Optimizes performance and ensures accessibility. Use PROACTIVELY when creating UI components or fixing frontend issues.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\frontend-mobile-development\\agents\\frontend-developer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── frontend-developer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/frontend-developer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\frontend-mobile-development\\agents\\frontend-developer.md`",
         "isArchived": false
     },
     {
@@ -831,6 +1055,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Develop React Native, Flutter, or native mobile apps with modern architecture patterns.",
         "model": "inherit",
         "path": "agents/plugins/frontend-mobile-development/agents/mobile-developer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\frontend-mobile-development\\agents\\mobile-developer.md",
+        "usageInstructions": "## Agent: mobile-developer\\nDevelop React Native, Flutter, or native mobile apps with modern architecture patterns. Masters cross-platform development, native integrations, offline sync, and app store optimization. Use PROACTIVELY for mobile features, cross-platform code, or app optimization.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\frontend-mobile-development\\agents\\mobile-developer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── mobile-developer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/mobile-developer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\frontend-mobile-development\\agents\\mobile-developer.md`",
         "isArchived": false
     },
     {
@@ -841,6 +1067,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Build React components, implement responsive layouts, and handle client-side state management.",
         "model": "inherit",
         "path": "agents/plugins/frontend-mobile-security/agents/frontend-developer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\frontend-mobile-security\\agents\\frontend-developer.md",
+        "usageInstructions": "## Agent: frontend-developer\\nBuild React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, and modern frontend architecture. Optimizes performance and ensures accessibility. Use PROACTIVELY when creating UI components or fixing frontend issues.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\frontend-mobile-security\\agents\\frontend-developer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── frontend-developer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/frontend-developer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\frontend-mobile-security\\agents\\frontend-developer.md`",
         "isArchived": false
     },
     {
@@ -851,6 +1079,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert in secure frontend coding practices specializing in XSS prevention, output sanitization, and client-side...",
         "model": "sonnet",
         "path": "agents/plugins/frontend-mobile-security/agents/frontend-security-coder.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\frontend-mobile-security\\agents\\frontend-security-coder.md",
+        "usageInstructions": "## Agent: frontend-security-coder\\nExpert in secure frontend coding practices specializing in XSS prevention, output sanitization, and client-side security patterns. Use PROACTIVELY for frontend security implementations or client-side security code reviews.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\frontend-mobile-security\\agents\\frontend-security-coder.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── frontend-security-coder.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/frontend-security-coder.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\frontend-mobile-security\\agents\\frontend-security-coder.md`",
         "isArchived": false
     },
     {
@@ -861,6 +1091,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert in secure mobile coding practices specializing in input validation, WebView security, and mobile-specific...",
         "model": "sonnet",
         "path": "agents/plugins/frontend-mobile-security/agents/mobile-security-coder.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\frontend-mobile-security\\agents\\mobile-security-coder.md",
+        "usageInstructions": "## Agent: mobile-security-coder\\nExpert in secure mobile coding practices specializing in input validation, WebView security, and mobile-specific security patterns. Use PROACTIVELY for mobile security implementations or mobile security code reviews.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\frontend-mobile-security\\agents\\mobile-security-coder.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── mobile-security-coder.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/mobile-security-coder.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\frontend-mobile-security\\agents\\mobile-security-coder.md`",
         "isArchived": false
     },
     {
@@ -871,6 +1103,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation.",
         "model": "haiku",
         "path": "agents/plugins/full-stack-orchestration/agents/deployment-engineer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\full-stack-orchestration\\agents\\deployment-engineer.md",
+        "usageInstructions": "## Agent: deployment-engineer\\nExpert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation. Masters GitHub Actions, ArgoCD/Flux, progressive delivery, container security, and platform engineering. Handles zero-downtime deployments, security scanning, and developer experience optimization. Use PROACTIVELY for CI/CD design, GitOps implementation, or deployment automation.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\full-stack-orchestration\\agents\\deployment-engineer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── deployment-engineer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/deployment-engineer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\full-stack-orchestration\\agents\\deployment-engineer.md`",
         "isArchived": false
     },
     {
@@ -881,6 +1115,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert performance engineer specializing in modern observability, application optimization, and scalable system...",
         "model": "inherit",
         "path": "agents/plugins/full-stack-orchestration/agents/performance-engineer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\full-stack-orchestration\\agents\\performance-engineer.md",
+        "usageInstructions": "## Agent: performance-engineer\\nExpert performance engineer specializing in modern observability, application optimization, and scalable system performance. Masters OpenTelemetry, distributed tracing, load testing, multi-tier caching, Core Web Vitals, and performance monitoring. Handles end-to-end optimization, real user monitoring, and scalability patterns. Use PROACTIVELY for performance optimization, observability, or scalability challenges.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\full-stack-orchestration\\agents\\performance-engineer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── performance-engineer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/performance-engineer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\full-stack-orchestration\\agents\\performance-engineer.md`",
         "isArchived": false
     },
     {
@@ -891,6 +1127,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks.",
         "model": "opus",
         "path": "agents/plugins/full-stack-orchestration/agents/security-auditor.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\full-stack-orchestration\\agents\\security-auditor.md",
+        "usageInstructions": "## Agent: security-auditor\\nExpert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks. Masters vulnerability assessment, threat modeling, secure authentication (OAuth2/OIDC), OWASP standards, cloud security, and security automation. Handles DevSecOps integration, compliance (GDPR/HIPAA/SOC2), and incident response. Use PROACTIVELY for security audits, DevSecOps, or compliance implementation.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\full-stack-orchestration\\agents\\security-auditor.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── security-auditor.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/security-auditor.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\full-stack-orchestration\\agents\\security-auditor.md`",
         "isArchived": false
     },
     {
@@ -901,6 +1139,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering.",
         "model": "sonnet",
         "path": "agents/plugins/full-stack-orchestration/agents/test-automator.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\full-stack-orchestration\\agents\\test-automator.md",
+        "usageInstructions": "## Agent: test-automator\\nMaster AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering. Build scalable testing strategies with advanced CI/CD integration. Use PROACTIVELY for testing automation or quality assurance.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\full-stack-orchestration\\agents\\test-automator.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── test-automator.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/test-automator.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\full-stack-orchestration\\agents\\test-automator.md`",
         "isArchived": false
     },
     {
@@ -911,6 +1151,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Write idiomatic Elixir code with OTP patterns, supervision trees, and Phoenix LiveView.",
         "model": "inherit",
         "path": "agents/plugins/functional-programming/agents/elixir-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\functional-programming\\agents\\elixir-pro.md",
+        "usageInstructions": "## Agent: elixir-pro\\nWrite idiomatic Elixir code with OTP patterns, supervision trees, and Phoenix LiveView. Masters concurrency, fault tolerance, and distributed systems. Use PROACTIVELY for Elixir refactoring, OTP design, or complex BEAM optimizations.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\functional-programming\\agents\\elixir-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── elixir-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/elixir-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\functional-programming\\agents\\elixir-pro.md`",
         "isArchived": false
     },
     {
@@ -921,6 +1163,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert Haskell engineer specializing in advanced type systems, pure functional design, and high-reliability software.",
         "model": "sonnet",
         "path": "agents/plugins/functional-programming/agents/haskell-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\functional-programming\\agents\\haskell-pro.md",
+        "usageInstructions": "## Agent: haskell-pro\\nExpert Haskell engineer specializing in advanced type systems, pure functional design, and high-reliability software. Use PROACTIVELY for type-level programming, concurrency, and architecture guidance.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\functional-programming\\agents\\haskell-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── haskell-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/haskell-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\functional-programming\\agents\\haskell-pro.md`",
         "isArchived": false
     },
     {
@@ -931,6 +1175,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master Minecraft server plugin development with Bukkit, Spigot, and Paper APIs.",
         "model": "opus",
         "path": "agents/plugins/game-development/agents/minecraft-bukkit-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\game-development\\agents\\minecraft-bukkit-pro.md",
+        "usageInstructions": "## Agent: minecraft-bukkit-pro\\nMaster Minecraft server plugin development with Bukkit, Spigot, and Paper APIs. Specializes in event-driven architecture, command systems, world manipulation, player management, and performance optimization. Use PROACTIVELY for plugin architecture, gameplay mechanics, server-side features, or cross-version compatibility.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\game-development\\agents\\minecraft-bukkit-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── minecraft-bukkit-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/minecraft-bukkit-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\game-development\\agents\\minecraft-bukkit-pro.md`",
         "isArchived": false
     },
     {
@@ -941,6 +1187,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Build Unity games with optimized C# scripts, efficient rendering, and proper asset management.",
         "model": "opus",
         "path": "agents/plugins/game-development/agents/unity-developer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\game-development\\agents\\unity-developer.md",
+        "usageInstructions": "## Agent: unity-developer\\nBuild Unity games with optimized C# scripts, efficient rendering, and proper asset management. Masters Unity 6 LTS, URP/HDRP pipelines, and cross-platform deployment. Handles gameplay systems, UI implementation, and platform optimization. Use PROACTIVELY for Unity performance issues, game mechanics, or cross-platform builds.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\game-development\\agents\\unity-developer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── unity-developer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/unity-developer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\game-development\\agents\\unity-developer.md`",
         "isArchived": false
     },
     {
@@ -951,6 +1199,20 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance...",
         "model": "opus",
         "path": "agents/plugins/git-pr-workflows/agents/code-reviewer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\git-pr-workflows\\agents\\code-reviewer.md",
+        "usageInstructions": "## Agent: code-reviewer\\nElite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance optimization, and production reliability. Masters static analysis tools, security scanning, and configuration review with 2024/2025 best practices. Use PROACTIVELY for code quality assurance.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\git-pr-workflows\\agents\\code-reviewer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── code-reviewer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/code-reviewer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\git-pr-workflows\\agents\\code-reviewer.md`",
+        "isArchived": false
+    },
+    {
+        "plugin": "hookify",
+        "id": "conversation-analyzer",
+        "name": "conversation-analyzer",
+        "description": "Use this agent when analyzing conversation transcripts to find behaviors worth preventing with hooks. Examples: <example>Context: User is running /hookify command without arguments\\nuser: \"/hookify\"\\nassistant: \"I'll analyze the conversation to find behaviors you want to prevent\"\\n<commentary>The /hookify command without arguments triggers conversation analysis to find unwanted behaviors.</commentary></example><example>Context: User wants to create hooks from recent frustrations\\nuser: \"Can you look back at this conversation and help me create hooks for the mistakes you made?\"\\nassistant: \"I'll use the conversation-analyzer agent to identify the issues and suggest hooks.\"\\n<commentary>User explicitly asks to analyze conversation for mistakes that should be prevented.</commentary></example>",
+        "shortDescription": "Use this agent when analyzing conversation transcripts to find behaviors worth preventing with hooks.",
+        "model": "inherit",
+        "path": "agents/plugins/hookify/agents/conversation-analyzer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\hookify\\agents\\conversation-analyzer.md",
+        "usageInstructions": "## Agent: conversation-analyzer\\nUse this agent when analyzing conversation transcripts to find behaviors worth preventing with hooks. Examples: <example>Context: User is running /hookify command without arguments\\nuser: \"/hookify\"\\nassistant: \"I'll analyze the conversation to find behaviors you want to prevent\"\\n<commentary>The /hookify command without arguments triggers conversation analysis to find unwanted behaviors.</commentary></example><example>Context: User wants to create hooks from recent frustrations\\nuser: \"Can you look back at this conversation and help me create hooks for the mistakes you made?\"\\nassistant: \"I'll use the conversation-analyzer agent to identify the issues and suggest hooks.\"\\n<commentary>User explicitly asks to analyze conversation for mistakes that should be prevented.</commentary></example>\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\hookify\\agents\\conversation-analyzer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── conversation-analyzer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/conversation-analyzer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\hookify\\agents\\conversation-analyzer.md`",
         "isArchived": false
     },
     {
@@ -961,6 +1223,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Professional, ethical HR partner for hiring, onboarding/offboarding, PTO and leave, performance, compliant policies,...",
         "model": "sonnet",
         "path": "agents/plugins/hr-legal-compliance/agents/hr-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\hr-legal-compliance\\agents\\hr-pro.md",
+        "usageInstructions": "## Agent: hr-pro\\nProfessional, ethical HR partner for hiring, onboarding/offboarding, PTO and leave, performance, compliant policies, and employee relations. Ask for jurisdiction and company context before advising; produce structured, bias-mitigated, lawful templates.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\hr-legal-compliance\\agents\\hr-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── hr-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/hr-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\hr-legal-compliance\\agents\\hr-pro.md`",
         "isArchived": false
     },
     {
@@ -971,6 +1235,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Draft privacy policies, terms of service, disclaimers, and legal notices.",
         "model": "sonnet",
         "path": "agents/plugins/hr-legal-compliance/agents/legal-advisor.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\hr-legal-compliance\\agents\\legal-advisor.md",
+        "usageInstructions": "## Agent: legal-advisor\\nDraft privacy policies, terms of service, disclaimers, and legal notices. Creates GDPR-compliant texts, cookie policies, and data processing agreements. Use PROACTIVELY for legal documentation, compliance texts, or regulatory requirements.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\hr-legal-compliance\\agents\\legal-advisor.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── legal-advisor.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/legal-advisor.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\hr-legal-compliance\\agents\\legal-advisor.md`",
         "isArchived": false
     },
     {
@@ -981,6 +1247,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert DevOps troubleshooter specializing in rapid incident response, advanced debugging, and modern observability.",
         "model": "sonnet",
         "path": "agents/plugins/incident-response/agents/devops-troubleshooter.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\incident-response\\agents\\devops-troubleshooter.md",
+        "usageInstructions": "## Agent: devops-troubleshooter\\nExpert DevOps troubleshooter specializing in rapid incident response, advanced debugging, and modern observability. Masters log analysis, distributed tracing, Kubernetes debugging, performance optimization, and root cause analysis. Handles production outages, system reliability, and preventive monitoring. Use PROACTIVELY for debugging, incident response, or system troubleshooting.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\incident-response\\agents\\devops-troubleshooter.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── devops-troubleshooter.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/devops-troubleshooter.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\incident-response\\agents\\devops-troubleshooter.md`",
         "isArchived": false
     },
     {
@@ -991,6 +1259,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert SRE incident responder specializing in rapid problem resolution, modern observability, and comprehensive...",
         "model": "sonnet",
         "path": "agents/plugins/incident-response/agents/incident-responder.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\incident-response\\agents\\incident-responder.md",
+        "usageInstructions": "## Agent: incident-responder\\nExpert SRE incident responder specializing in rapid problem resolution, modern observability, and comprehensive incident management. Masters incident command, blameless post-mortems, error budget management, and system reliability patterns. Handles critical outages, communication strategies, and continuous improvement. Use IMMEDIATELY for production incidents or SRE practices.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\incident-response\\agents\\incident-responder.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── incident-responder.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/incident-responder.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\incident-response\\agents\\incident-responder.md`",
         "isArchived": false
     },
     {
@@ -1001,6 +1271,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master modern JavaScript with ES6+, async patterns, and Node.js APIs.",
         "model": "inherit",
         "path": "agents/plugins/javascript-typescript/agents/javascript-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\javascript-typescript\\agents\\javascript-pro.md",
+        "usageInstructions": "## Agent: javascript-pro\\nMaster modern JavaScript with ES6+, async patterns, and Node.js APIs. Handles promises, event loops, and browser/Node compatibility. Use PROACTIVELY for JavaScript optimization, async debugging, or complex JS patterns.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\javascript-typescript\\agents\\javascript-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── javascript-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/javascript-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\javascript-typescript\\agents\\javascript-pro.md`",
         "isArchived": false
     },
     {
@@ -1011,6 +1283,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master TypeScript with advanced types, generics, and strict type safety.",
         "model": "opus",
         "path": "agents/plugins/javascript-typescript/agents/typescript-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\javascript-typescript\\agents\\typescript-pro.md",
+        "usageInstructions": "## Agent: typescript-pro\\nMaster TypeScript with advanced types, generics, and strict type safety. Handles complex type systems, decorators, and enterprise-grade patterns. Use PROACTIVELY for TypeScript architecture, type inference optimization, or advanced typing patterns.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\javascript-typescript\\agents\\typescript-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── typescript-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/typescript-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\javascript-typescript\\agents\\typescript-pro.md`",
         "isArchived": false
     },
     {
@@ -1021,6 +1295,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master Julia 1.10+ with modern features, performance optimization, multiple dispatch, and production-ready practices.",
         "model": "sonnet",
         "path": "agents/plugins/julia-development/agents/julia-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\julia-development\\agents\\julia-pro.md",
+        "usageInstructions": "## Agent: julia-pro\\nMaster Julia 1.10+ with modern features, performance optimization, multiple dispatch, and production-ready practices. Expert in the Julia ecosystem including package management, scientific computing, and high-performance numerical code. Use PROACTIVELY for Julia development, optimization, or advanced Julia patterns.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\julia-development\\agents\\julia-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── julia-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/julia-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\julia-development\\agents\\julia-pro.md`",
         "isArchived": false
     },
     {
@@ -1031,6 +1307,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Write modern C# code with advanced features like records, pattern matching, and async/await.",
         "model": "inherit",
         "path": "agents/plugins/jvm-languages/agents/csharp-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\jvm-languages\\agents\\csharp-pro.md",
+        "usageInstructions": "## Agent: csharp-pro\\nWrite modern C# code with advanced features like records, pattern matching, and async/await. Optimizes .NET applications, implements enterprise patterns, and ensures comprehensive testing. Use PROACTIVELY for C# refactoring, performance optimization, or complex .NET solutions.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\jvm-languages\\agents\\csharp-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── csharp-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/csharp-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\jvm-languages\\agents\\csharp-pro.md`",
         "isArchived": false
     },
     {
@@ -1041,6 +1319,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master Java 21+ with modern features like virtual threads, pattern matching, and Spring Boot 3.x.",
         "model": "opus",
         "path": "agents/plugins/jvm-languages/agents/java-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\jvm-languages\\agents\\java-pro.md",
+        "usageInstructions": "## Agent: java-pro\\nMaster Java 21+ with modern features like virtual threads, pattern matching, and Spring Boot 3.x. Expert in the latest Java ecosystem including GraalVM, Project Loom, and cloud-native patterns. Use PROACTIVELY for Java development, microservices architecture, or performance optimization.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\jvm-languages\\agents\\java-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── java-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/java-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\jvm-languages\\agents\\java-pro.md`",
         "isArchived": false
     },
     {
@@ -1051,6 +1331,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master enterprise-grade Scala development with functional programming, distributed systems, and big data processing.",
         "model": "inherit",
         "path": "agents/plugins/jvm-languages/agents/scala-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\jvm-languages\\agents\\scala-pro.md",
+        "usageInstructions": "## Agent: scala-pro\\nMaster enterprise-grade Scala development with functional programming, distributed systems, and big data processing. Expert in Apache Pekko, Akka, Spark, ZIO/Cats Effect, and reactive architectures. Use PROACTIVELY for Scala system design, performance optimization, or enterprise integration.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\jvm-languages\\agents\\scala-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── scala-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/scala-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\jvm-languages\\agents\\scala-pro.md`",
         "isArchived": false
     },
     {
@@ -1061,6 +1343,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux),...",
         "model": "opus",
         "path": "agents/plugins/kubernetes-operations/agents/kubernetes-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\kubernetes-operations\\agents\\kubernetes-architect.md",
+        "usageInstructions": "## Agent: kubernetes-architect\\nExpert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux), and enterprise container orchestration. Masters EKS/AKS/GKE, service mesh (Istio/Linkerd), progressive delivery, multi-tenancy, and platform engineering. Handles security, observability, cost optimization, and developer experience. Use PROACTIVELY for K8s architecture, GitOps implementation, or cloud-native platform design.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\kubernetes-operations\\agents\\kubernetes-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── kubernetes-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/kubernetes-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\kubernetes-operations\\agents\\kubernetes-architect.md`",
         "isArchived": false
     },
     {
@@ -1071,6 +1355,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Build production-ready LLM applications, advanced RAG systems, and intelligent agents.",
         "model": "inherit",
         "path": "agents/plugins/llm-application-dev/agents/ai-engineer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\llm-application-dev\\agents\\ai-engineer.md",
+        "usageInstructions": "## Agent: ai-engineer\\nBuild production-ready LLM applications, advanced RAG systems, and intelligent agents. Implements vector search, multimodal AI, agent orchestration, and enterprise AI integrations. Use PROACTIVELY for LLM features, chatbots, AI agents, or AI-powered applications.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\llm-application-dev\\agents\\ai-engineer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── ai-engineer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/ai-engineer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\llm-application-dev\\agents\\ai-engineer.md`",
         "isArchived": false
     },
     {
@@ -1081,6 +1367,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert prompt engineer specializing in advanced prompting techniques, LLM optimization, and AI system design.",
         "model": "inherit",
         "path": "agents/plugins/llm-application-dev/agents/prompt-engineer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\llm-application-dev\\agents\\prompt-engineer.md",
+        "usageInstructions": "## Agent: prompt-engineer\\nExpert prompt engineer specializing in advanced prompting techniques, LLM optimization, and AI system design. Masters chain-of-thought, constitutional AI, and production prompt strategies. Use when building AI features, improving agent performance, or crafting system prompts.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\llm-application-dev\\agents\\prompt-engineer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── prompt-engineer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/prompt-engineer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\llm-application-dev\\agents\\prompt-engineer.md`",
         "isArchived": false
     },
     {
@@ -1091,6 +1379,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert data scientist for advanced analytics, machine learning, and statistical modeling.",
         "model": "inherit",
         "path": "agents/plugins/machine-learning-ops/agents/data-scientist.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\machine-learning-ops\\agents\\data-scientist.md",
+        "usageInstructions": "## Agent: data-scientist\\nExpert data scientist for advanced analytics, machine learning, and statistical modeling. Handles complex data analysis, predictive modeling, and business intelligence. Use PROACTIVELY for data analysis tasks, ML modeling, statistical analysis, and data-driven insights.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\machine-learning-ops\\agents\\data-scientist.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── data-scientist.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/data-scientist.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\machine-learning-ops\\agents\\data-scientist.md`",
         "isArchived": false
     },
     {
@@ -1101,6 +1391,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Build production ML systems with PyTorch 2.x, TensorFlow, and modern ML frameworks.",
         "model": "inherit",
         "path": "agents/plugins/machine-learning-ops/agents/ml-engineer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\machine-learning-ops\\agents\\ml-engineer.md",
+        "usageInstructions": "## Agent: ml-engineer\\nBuild production ML systems with PyTorch 2.x, TensorFlow, and modern ML frameworks. Implements model serving, feature engineering, A/B testing, and monitoring. Use PROACTIVELY for ML model deployment, inference optimization, or production ML infrastructure.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\machine-learning-ops\\agents\\ml-engineer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── ml-engineer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/ml-engineer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\machine-learning-ops\\agents\\ml-engineer.md`",
         "isArchived": false
     },
     {
@@ -1111,6 +1403,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Build comprehensive ML pipelines, experiment tracking, and model registries with MLflow, Kubeflow, and modern MLOps...",
         "model": "inherit",
         "path": "agents/plugins/machine-learning-ops/agents/mlops-engineer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\machine-learning-ops\\agents\\mlops-engineer.md",
+        "usageInstructions": "## Agent: mlops-engineer\\nBuild comprehensive ML pipelines, experiment tracking, and model registries with MLflow, Kubeflow, and modern MLOps tools. Implements automated training, deployment, and monitoring across cloud platforms. Use PROACTIVELY for ML infrastructure, experiment management, or pipeline automation.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\machine-learning-ops\\agents\\mlops-engineer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── mlops-engineer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/mlops-engineer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\machine-learning-ops\\agents\\mlops-engineer.md`",
         "isArchived": false
     },
     {
@@ -1121,6 +1415,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert backend architect specializing in scalable API design, microservices architecture, and distributed systems.",
         "model": "inherit",
         "path": "agents/plugins/multi-platform-apps/agents/backend-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\multi-platform-apps\\agents\\backend-architect.md",
+        "usageInstructions": "## Agent: backend-architect\\nExpert backend architect specializing in scalable API design, microservices architecture, and distributed systems. Masters REST/GraphQL/gRPC APIs, event-driven architectures, service mesh patterns, and modern backend frameworks. Handles service boundary definition, inter-service communication, resilience patterns, and observability. Use PROACTIVELY when creating new backend services or APIs.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\multi-platform-apps\\agents\\backend-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── backend-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/backend-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\multi-platform-apps\\agents\\backend-architect.md`",
         "isArchived": false
     },
     {
@@ -1131,6 +1427,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master Flutter development with Dart 3, advanced widgets, and multi-platform deployment.",
         "model": "inherit",
         "path": "agents/plugins/multi-platform-apps/agents/flutter-expert.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\multi-platform-apps\\agents\\flutter-expert.md",
+        "usageInstructions": "## Agent: flutter-expert\\nMaster Flutter development with Dart 3, advanced widgets, and multi-platform deployment. Handles state management, animations, testing, and performance optimization for mobile, web, desktop, and embedded platforms. Use PROACTIVELY for Flutter architecture, UI implementation, or cross-platform features.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\multi-platform-apps\\agents\\flutter-expert.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── flutter-expert.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/flutter-expert.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\multi-platform-apps\\agents\\flutter-expert.md`",
         "isArchived": false
     },
     {
@@ -1141,6 +1439,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Build React components, implement responsive layouts, and handle client-side state management.",
         "model": "inherit",
         "path": "agents/plugins/multi-platform-apps/agents/frontend-developer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\multi-platform-apps\\agents\\frontend-developer.md",
+        "usageInstructions": "## Agent: frontend-developer\\nBuild React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, and modern frontend architecture. Optimizes performance and ensures accessibility. Use PROACTIVELY when creating UI components or fixing frontend issues.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\multi-platform-apps\\agents\\frontend-developer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── frontend-developer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/frontend-developer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\multi-platform-apps\\agents\\frontend-developer.md`",
         "isArchived": false
     },
     {
@@ -1151,6 +1451,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Develop native iOS applications with Swift/SwiftUI.",
         "model": "inherit",
         "path": "agents/plugins/multi-platform-apps/agents/ios-developer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\multi-platform-apps\\agents\\ios-developer.md",
+        "usageInstructions": "## Agent: ios-developer\\nDevelop native iOS applications with Swift/SwiftUI. Masters iOS 18, SwiftUI, UIKit integration, Core Data, networking, and App Store optimization. Use PROACTIVELY for iOS-specific features, App Store optimization, or native iOS development.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\multi-platform-apps\\agents\\ios-developer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── ios-developer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/ios-developer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\multi-platform-apps\\agents\\ios-developer.md`",
         "isArchived": false
     },
     {
@@ -1161,6 +1463,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Develop React Native, Flutter, or native mobile apps with modern architecture patterns.",
         "model": "inherit",
         "path": "agents/plugins/multi-platform-apps/agents/mobile-developer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\multi-platform-apps\\agents\\mobile-developer.md",
+        "usageInstructions": "## Agent: mobile-developer\\nDevelop React Native, Flutter, or native mobile apps with modern architecture patterns. Masters cross-platform development, native integrations, offline sync, and app store optimization. Use PROACTIVELY for mobile features, cross-platform code, or app optimization.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\multi-platform-apps\\agents\\mobile-developer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── mobile-developer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/mobile-developer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\multi-platform-apps\\agents\\mobile-developer.md`",
         "isArchived": false
     },
     {
@@ -1171,6 +1475,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Create interface designs, wireframes, and design systems.",
         "model": "sonnet",
         "path": "agents/plugins/multi-platform-apps/agents/ui-ux-designer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\multi-platform-apps\\agents\\ui-ux-designer.md",
+        "usageInstructions": "## Agent: ui-ux-designer\\nCreate interface designs, wireframes, and design systems. Masters user research, accessibility standards, and modern design tools. Specializes in design tokens, component libraries, and inclusive design. Use PROACTIVELY for design systems, user flows, or interface optimization.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\multi-platform-apps\\agents\\ui-ux-designer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── ui-ux-designer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/ui-ux-designer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\multi-platform-apps\\agents\\ui-ux-designer.md`",
         "isArchived": false
     },
     {
@@ -1181,6 +1487,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert database optimizer specializing in modern performance tuning, query optimization, and scalable architectures.",
         "model": "inherit",
         "path": "agents/plugins/observability-monitoring/agents/database-optimizer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\observability-monitoring\\agents\\database-optimizer.md",
+        "usageInstructions": "## Agent: database-optimizer\\nExpert database optimizer specializing in modern performance tuning, query optimization, and scalable architectures. Masters advanced indexing, N+1 resolution, multi-tier caching, partitioning strategies, and cloud database optimization. Handles complex query analysis, migration strategies, and performance monitoring. Use PROACTIVELY for database optimization, performance issues, or scalability challenges.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\observability-monitoring\\agents\\database-optimizer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── database-optimizer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/database-optimizer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\observability-monitoring\\agents\\database-optimizer.md`",
         "isArchived": false
     },
     {
@@ -1191,6 +1499,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert network engineer specializing in modern cloud networking, security architectures, and performance optimization.",
         "model": "sonnet",
         "path": "agents/plugins/observability-monitoring/agents/network-engineer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\observability-monitoring\\agents\\network-engineer.md",
+        "usageInstructions": "## Agent: network-engineer\\nExpert network engineer specializing in modern cloud networking, security architectures, and performance optimization. Masters multi-cloud connectivity, service mesh, zero-trust networking, SSL/TLS, global load balancing, and advanced troubleshooting. Handles CDN optimization, network automation, and compliance. Use PROACTIVELY for network design, connectivity issues, or performance optimization.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\observability-monitoring\\agents\\network-engineer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── network-engineer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/network-engineer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\observability-monitoring\\agents\\network-engineer.md`",
         "isArchived": false
     },
     {
@@ -1201,6 +1511,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Build production-ready monitoring, logging, and tracing systems.",
         "model": "inherit",
         "path": "agents/plugins/observability-monitoring/agents/observability-engineer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\observability-monitoring\\agents\\observability-engineer.md",
+        "usageInstructions": "## Agent: observability-engineer\\nBuild production-ready monitoring, logging, and tracing systems. Implements comprehensive observability strategies, SLI/SLO management, and incident response workflows. Use PROACTIVELY for monitoring infrastructure, performance optimization, or production reliability.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\observability-monitoring\\agents\\observability-engineer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── observability-engineer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/observability-engineer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\observability-monitoring\\agents\\observability-engineer.md`",
         "isArchived": false
     },
     {
@@ -1211,6 +1523,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert performance engineer specializing in modern observability, application optimization, and scalable system...",
         "model": "inherit",
         "path": "agents/plugins/observability-monitoring/agents/performance-engineer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\observability-monitoring\\agents\\performance-engineer.md",
+        "usageInstructions": "## Agent: performance-engineer\\nExpert performance engineer specializing in modern observability, application optimization, and scalable system performance. Masters OpenTelemetry, distributed tracing, load testing, multi-tier caching, Core Web Vitals, and performance monitoring. Handles end-to-end optimization, real user monitoring, and scalability patterns. Use PROACTIVELY for performance optimization, observability, or scalability challenges.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\observability-monitoring\\agents\\performance-engineer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── performance-engineer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/performance-engineer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\observability-monitoring\\agents\\performance-engineer.md`",
         "isArchived": false
     },
     {
@@ -1221,6 +1535,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Integrate Stripe, PayPal, and payment processors. Handles checkout flows, subscriptions, webhooks, and PCI compliance.",
         "model": "sonnet",
         "path": "agents/plugins/payment-processing/agents/payment-integration.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\payment-processing\\agents\\payment-integration.md",
+        "usageInstructions": "## Agent: payment-integration\\nIntegrate Stripe, PayPal, and payment processors. Handles checkout flows, subscriptions, webhooks, and PCI compliance. Use PROACTIVELY when implementing payments, billing, or subscription features.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\payment-processing\\agents\\payment-integration.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── payment-integration.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/payment-integration.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\payment-processing\\agents\\payment-integration.md`",
         "isArchived": false
     },
     {
@@ -1231,6 +1547,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert performance engineer specializing in modern observability, application optimization, and scalable system...",
         "model": "inherit",
         "path": "agents/plugins/performance-testing-review/agents/performance-engineer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\performance-testing-review\\agents\\performance-engineer.md",
+        "usageInstructions": "## Agent: performance-engineer\\nExpert performance engineer specializing in modern observability, application optimization, and scalable system performance. Masters OpenTelemetry, distributed tracing, load testing, multi-tier caching, Core Web Vitals, and performance monitoring. Handles end-to-end optimization, real user monitoring, and scalability patterns. Use PROACTIVELY for performance optimization, observability, or scalability challenges.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\performance-testing-review\\agents\\performance-engineer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── performance-engineer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/performance-engineer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\performance-testing-review\\agents\\performance-engineer.md`",
         "isArchived": false
     },
     {
@@ -1241,6 +1559,116 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering.",
         "model": "sonnet",
         "path": "agents/plugins/performance-testing-review/agents/test-automator.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\performance-testing-review\\agents\\test-automator.md",
+        "usageInstructions": "## Agent: test-automator\\nMaster AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering. Build scalable testing strategies with advanced CI/CD integration. Use PROACTIVELY for testing automation or quality assurance.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\performance-testing-review\\agents\\test-automator.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── test-automator.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/test-automator.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\performance-testing-review\\agents\\test-automator.md`",
+        "isArchived": false
+    },
+    {
+        "plugin": "plugin-dev",
+        "id": "agent-creator",
+        "name": "agent-creator",
+        "description": "Use this agent when the user asks to \"create an agent\", \"generate an agent\", \"build a new agent\", \"make me an agent that...\", or describes agent functionality they need. Trigger when user wants to create autonomous agents for plugins. Examples:",
+        "shortDescription": "Use this agent when the user asks to \"create an agent\", \"generate an agent\", \"build a new agent\", \"make me an agent...",
+        "model": "sonnet",
+        "path": "agents/plugins/plugin-dev/agents/agent-creator.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\plugin-dev\\agents\\agent-creator.md",
+        "usageInstructions": "## Agent: agent-creator\\nUse this agent when the user asks to \"create an agent\", \"generate an agent\", \"build a new agent\", \"make me an agent that...\", or describes agent functionality they need. Trigger when user wants to create autonomous agents for plugins. Examples:\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\plugin-dev\\agents\\agent-creator.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── agent-creator.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/agent-creator.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\plugin-dev\\agents\\agent-creator.md`",
+        "isArchived": false
+    },
+    {
+        "plugin": "plugin-dev",
+        "id": "plugin-validator",
+        "name": "plugin-validator",
+        "description": "Use this agent when the user asks to \"validate my plugin\", \"check plugin structure\", \"verify plugin is correct\", \"validate plugin.json\", \"check plugin files\", or mentions plugin validation. Also trigger proactively after user creates or modifies plugin components. Examples:",
+        "shortDescription": "Use this agent when the user asks to \"validate my plugin\", \"check plugin structure\", \"verify plugin is correct\",...",
+        "model": "inherit",
+        "path": "agents/plugins/plugin-dev/agents/plugin-validator.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\plugin-dev\\agents\\plugin-validator.md",
+        "usageInstructions": "## Agent: plugin-validator\\nUse this agent when the user asks to \"validate my plugin\", \"check plugin structure\", \"verify plugin is correct\", \"validate plugin.json\", \"check plugin files\", or mentions plugin validation. Also trigger proactively after user creates or modifies plugin components. Examples:\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\plugin-dev\\agents\\plugin-validator.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── plugin-validator.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/plugin-validator.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\plugin-dev\\agents\\plugin-validator.md`",
+        "isArchived": false
+    },
+    {
+        "plugin": "plugin-dev",
+        "id": "skill-reviewer",
+        "name": "skill-reviewer",
+        "description": "Use this agent when the user has created or modified a skill and needs quality review, asks to \"review my skill\", \"check skill quality\", \"improve skill description\", or wants to ensure skill follows best practices. Trigger proactively after skill creation. Examples:",
+        "shortDescription": "Use this agent when the user has created or modified a skill and needs quality review, asks to \"review my skill\",...",
+        "model": "inherit",
+        "path": "agents/plugins/plugin-dev/agents/skill-reviewer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\plugin-dev\\agents\\skill-reviewer.md",
+        "usageInstructions": "## Agent: skill-reviewer\\nUse this agent when the user has created or modified a skill and needs quality review, asks to \"review my skill\", \"check skill quality\", \"improve skill description\", or wants to ensure skill follows best practices. Trigger proactively after skill creation. Examples:\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\plugin-dev\\agents\\skill-reviewer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── skill-reviewer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/skill-reviewer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\plugin-dev\\agents\\skill-reviewer.md`",
+        "isArchived": false
+    },
+    {
+        "plugin": "pr-review-toolkit",
+        "id": "code-reviewer",
+        "name": "code-reviewer",
+        "description": "Use this agent when you need to review code for adherence to project guidelines, style guides, and best practices. This agent should be used proactively after writing or modifying code, especially before committing changes or creating pull requests. It will check for style violations, potential issues, and ensure code follows the established patterns in CLAUDE.md. Also the agent needs to know which files to focus on for the review. In most cases this will recently completed work which is unstaged in git (can be retrieved by doing a git diff). However there can be cases where this is different, make sure to specify this as the agent input when calling the agent. \\n\\nExamples:\\n<example>\\nContext: The user has just implemented a new feature with several TypeScript files.\\nuser: \"I've added the new authentication feature. Can you check if everything looks good?\"\\nassistant: \"I'll use the Task tool to launch the code-reviewer agent to review your recent changes.\"\\n<commentary>\\nSince the user has completed a feature and wants validation, use the code-reviewer agent to ensure the code meets project standards.\\n</commentary>\\n</example>\\n<example>\\nContext: The assistant has just written a new utility function.\\nuser: \"Please create a function to validate email addresses\"\\nassistant: \"Here's the email validation function:\"\\n<function call omitted for brevity>\\nassistant: \"Now I'll use the Task tool to launch the code-reviewer agent to review this implementation.\"\\n<commentary>\\nProactively use the code-reviewer agent after writing new code to catch issues early.\\n</commentary>\\n</example>\\n<example>\\nContext: The user is about to create a PR.\\nuser: \"I think I'm ready to create a PR for this feature\"\\nassistant: \"Before creating the PR, I'll use the Task tool to launch the code-reviewer agent to ensure all code meets our standards.\"\\n<commentary>\\nProactively review code before PR creation to avoid review comments and iterations.\\n</commentary>\\n</example>",
+        "shortDescription": "Use this agent when you need to review code for adherence to project guidelines, style guides, and best practices.",
+        "model": "opus",
+        "path": "agents/plugins/pr-review-toolkit/agents/code-reviewer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\pr-review-toolkit\\agents\\code-reviewer.md",
+        "usageInstructions": "## Agent: code-reviewer\\nUse this agent when you need to review code for adherence to project guidelines, style guides, and best practices. This agent should be used proactively after writing or modifying code, especially before committing changes or creating pull requests. It will check for style violations, potential issues, and ensure code follows the established patterns in CLAUDE.md. Also the agent needs to know which files to focus on for the review. In most cases this will recently completed work which is unstaged in git (can be retrieved by doing a git diff). However there can be cases where this is different, make sure to specify this as the agent input when calling the agent. \\n\\nExamples:\\n<example>\\nContext: The user has just implemented a new feature with several TypeScript files.\\nuser: \"I've added the new authentication feature. Can you check if everything looks good?\"\\nassistant: \"I'll use the Task tool to launch the code-reviewer agent to review your recent changes.\"\\n<commentary>\\nSince the user has completed a feature and wants validation, use the code-reviewer agent to ensure the code meets project standards.\\n</commentary>\\n</example>\\n<example>\\nContext: The assistant has just written a new utility function.\\nuser: \"Please create a function to validate email addresses\"\\nassistant: \"Here's the email validation function:\"\\n<function call omitted for brevity>\\nassistant: \"Now I'll use the Task tool to launch the code-reviewer agent to review this implementation.\"\\n<commentary>\\nProactively use the code-reviewer agent after writing new code to catch issues early.\\n</commentary>\\n</example>\\n<example>\\nContext: The user is about to create a PR.\\nuser: \"I think I'm ready to create a PR for this feature\"\\nassistant: \"Before creating the PR, I'll use the Task tool to launch the code-reviewer agent to ensure all code meets our standards.\"\\n<commentary>\\nProactively review code before PR creation to avoid review comments and iterations.\\n</commentary>\\n</example>\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\pr-review-toolkit\\agents\\code-reviewer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── code-reviewer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/code-reviewer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\pr-review-toolkit\\agents\\code-reviewer.md`",
+        "isArchived": false
+    },
+    {
+        "plugin": "pr-review-toolkit",
+        "id": "code-simplifier",
+        "name": "code-simplifier",
+        "description": "Use this agent when code has been written or modified and needs to be simplified for clarity, consistency, and maintainability while preserving all functionality. This agent should be triggered automatically after completing a coding task or writing a logical chunk of code. It simplifies code by following project best practices while retaining all functionality. The agent focuses only on recently modified code unless instructed otherwise.\\n\\nExamples:\\n\\n<example>",
+        "shortDescription": "Use this agent when code has been written or modified and needs to be simplified for clarity, consistency, and...",
+        "model": "opus",
+        "path": "agents/plugins/pr-review-toolkit/agents/code-simplifier.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\pr-review-toolkit\\agents\\code-simplifier.md",
+        "usageInstructions": "## Agent: code-simplifier\\nUse this agent when code has been written or modified and needs to be simplified for clarity, consistency, and maintainability while preserving all functionality. This agent should be triggered automatically after completing a coding task or writing a logical chunk of code. It simplifies code by following project best practices while retaining all functionality. The agent focuses only on recently modified code unless instructed otherwise.\\n\\nExamples:\\n\\n<example>\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\pr-review-toolkit\\agents\\code-simplifier.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── code-simplifier.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/code-simplifier.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\pr-review-toolkit\\agents\\code-simplifier.md`",
+        "isArchived": false
+    },
+    {
+        "plugin": "pr-review-toolkit",
+        "id": "comment-analyzer",
+        "name": "comment-analyzer",
+        "description": "Use this agent when you need to analyze code comments for accuracy, completeness, and long-term maintainability. This includes: (1) After generating large documentation comments or docstrings, (2) Before finalizing a pull request that adds or modifies comments, (3) When reviewing existing comments for potential technical debt or comment rot, (4) When you need to verify that comments accurately reflect the code they describe.\\n\\n<example>\\nContext: The user is working on a pull request that adds several documentation comments to functions.\\nuser: \"I've added documentation to these functions. Can you check if the comments are accurate?\"\\nassistant: \"I'll use the comment-analyzer agent to thoroughly review all the comments in this pull request for accuracy and completeness.\"\\n<commentary>\\nSince the user has added documentation comments and wants them checked, use the comment-analyzer agent to verify their accuracy against the actual code.\\n</commentary>\\n</example>\\n\\n<example>\\nContext: The user just asked to generate comprehensive documentation for a complex function.\\nuser: \"Add detailed documentation for this authentication handler function\"\\nassistant: \"I've added the documentation. Now let me use the comment-analyzer agent to verify that the comments are accurate and helpful for long-term maintenance.\"\\n<commentary>\\nAfter generating large documentation comments, proactively use the comment-analyzer to ensure quality.\\n</commentary>\\n</example>\\n\\n<example>\\nContext: The user is preparing to create a pull request with multiple code changes and comments.\\nuser: \"I think we're ready to create the PR now\"\\nassistant: \"Before creating the pull request, let me use the comment-analyzer agent to review all the comments we've added or modified to ensure they're accurate and won't create technical debt.\"\\n<commentary>\\nBefore finalizing a PR, use the comment-analyzer to review all comment changes.\\n</commentary>\\n</example>",
+        "shortDescription": "Use this agent when you need to analyze code comments for accuracy, completeness, and long-term maintainability.",
+        "model": "inherit",
+        "path": "agents/plugins/pr-review-toolkit/agents/comment-analyzer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\pr-review-toolkit\\agents\\comment-analyzer.md",
+        "usageInstructions": "## Agent: comment-analyzer\\nUse this agent when you need to analyze code comments for accuracy, completeness, and long-term maintainability. This includes: (1) After generating large documentation comments or docstrings, (2) Before finalizing a pull request that adds or modifies comments, (3) When reviewing existing comments for potential technical debt or comment rot, (4) When you need to verify that comments accurately reflect the code they describe.\\n\\n<example>\\nContext: The user is working on a pull request that adds several documentation comments to functions.\\nuser: \"I've added documentation to these functions. Can you check if the comments are accurate?\"\\nassistant: \"I'll use the comment-analyzer agent to thoroughly review all the comments in this pull request for accuracy and completeness.\"\\n<commentary>\\nSince the user has added documentation comments and wants them checked, use the comment-analyzer agent to verify their accuracy against the actual code.\\n</commentary>\\n</example>\\n\\n<example>\\nContext: The user just asked to generate comprehensive documentation for a complex function.\\nuser: \"Add detailed documentation for this authentication handler function\"\\nassistant: \"I've added the documentation. Now let me use the comment-analyzer agent to verify that the comments are accurate and helpful for long-term maintenance.\"\\n<commentary>\\nAfter generating large documentation comments, proactively use the comment-analyzer to ensure quality.\\n</commentary>\\n</example>\\n\\n<example>\\nContext: The user is preparing to create a pull request with multiple code changes and comments.\\nuser: \"I think we're ready to create the PR now\"\\nassistant: \"Before creating the pull request, let me use the comment-analyzer agent to review all the comments we've added or modified to ensure they're accurate and won't create technical debt.\"\\n<commentary>\\nBefore finalizing a PR, use the comment-analyzer to review all comment changes.\\n</commentary>\\n</example>\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\pr-review-toolkit\\agents\\comment-analyzer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── comment-analyzer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/comment-analyzer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\pr-review-toolkit\\agents\\comment-analyzer.md`",
+        "isArchived": false
+    },
+    {
+        "plugin": "pr-review-toolkit",
+        "id": "pr-test-analyzer",
+        "name": "pr-test-analyzer",
+        "description": "Use this agent when you need to review a pull request for test coverage quality and completeness. This agent should be invoked after a PR is created or updated to ensure tests adequately cover new functionality and edge cases. Examples:\\n\\n<example>\\nContext: Daisy has just created a pull request with new functionality.\\nuser: \"I've created the PR. Can you check if the tests are thorough?\"\\nassistant: \"I'll use the pr-test-analyzer agent to review the test coverage and identify any critical gaps.\"\\n<commentary>\\nSince Daisy is asking about test thoroughness in a PR, use the Task tool to launch the pr-test-analyzer agent.\\n</commentary>\\n</example>\\n\\n<example>\\nContext: A pull request has been updated with new code changes.\\nuser: \"The PR is ready for review - I added the new validation logic we discussed\"\\nassistant: \"Let me analyze the PR to ensure the tests adequately cover the new validation logic and edge cases.\"\\n<commentary>\\nThe PR has new functionality that needs test coverage analysis, so use the pr-test-analyzer agent.\\n</commentary>\\n</example>\\n\\n<example>\\nContext: Reviewing PR feedback before marking as ready.\\nuser: \"Before I mark this PR as ready, can you double-check the test coverage?\"\\nassistant: \"I'll use the pr-test-analyzer agent to thoroughly review the test coverage and identify any critical gaps before you mark it ready.\"\\n<commentary>\\nDaisy wants a final test coverage check before marking PR ready, use the pr-test-analyzer agent.\\n</commentary>\\n</example>",
+        "shortDescription": "Use this agent when you need to review a pull request for test coverage quality and completeness.",
+        "model": "inherit",
+        "path": "agents/plugins/pr-review-toolkit/agents/pr-test-analyzer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\pr-review-toolkit\\agents\\pr-test-analyzer.md",
+        "usageInstructions": "## Agent: pr-test-analyzer\\nUse this agent when you need to review a pull request for test coverage quality and completeness. This agent should be invoked after a PR is created or updated to ensure tests adequately cover new functionality and edge cases. Examples:\\n\\n<example>\\nContext: Daisy has just created a pull request with new functionality.\\nuser: \"I've created the PR. Can you check if the tests are thorough?\"\\nassistant: \"I'll use the pr-test-analyzer agent to review the test coverage and identify any critical gaps.\"\\n<commentary>\\nSince Daisy is asking about test thoroughness in a PR, use the Task tool to launch the pr-test-analyzer agent.\\n</commentary>\\n</example>\\n\\n<example>\\nContext: A pull request has been updated with new code changes.\\nuser: \"The PR is ready for review - I added the new validation logic we discussed\"\\nassistant: \"Let me analyze the PR to ensure the tests adequately cover the new validation logic and edge cases.\"\\n<commentary>\\nThe PR has new functionality that needs test coverage analysis, so use the pr-test-analyzer agent.\\n</commentary>\\n</example>\\n\\n<example>\\nContext: Reviewing PR feedback before marking as ready.\\nuser: \"Before I mark this PR as ready, can you double-check the test coverage?\"\\nassistant: \"I'll use the pr-test-analyzer agent to thoroughly review the test coverage and identify any critical gaps before you mark it ready.\"\\n<commentary>\\nDaisy wants a final test coverage check before marking PR ready, use the pr-test-analyzer agent.\\n</commentary>\\n</example>\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\pr-review-toolkit\\agents\\pr-test-analyzer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── pr-test-analyzer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/pr-test-analyzer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\pr-review-toolkit\\agents\\pr-test-analyzer.md`",
+        "isArchived": false
+    },
+    {
+        "plugin": "pr-review-toolkit",
+        "id": "silent-failure-hunter",
+        "name": "silent-failure-hunter",
+        "description": "Use this agent when reviewing code changes in a pull request to identify silent failures, inadequate error handling, and inappropriate fallback behavior. This agent should be invoked proactively after completing a logical chunk of work that involves error handling, catch blocks, fallback logic, or any code that could potentially suppress errors. Examples:\\n\\n<example>\\nContext: Daisy has just finished implementing a new feature that fetches data from an API with fallback behavior.\\nDaisy: \"I've added error handling to the API client. Can you review it?\"\\nAssistant: \"Let me use the silent-failure-hunter agent to thoroughly examine the error handling in your changes.\"\\n<Task tool invocation to launch silent-failure-hunter agent>\\n</example>\\n\\n<example>\\nContext: Daisy has created a PR with changes that include try-catch blocks.\\nDaisy: \"Please review PR #1234\"\\nAssistant: \"I'll use the silent-failure-hunter agent to check for any silent failures or inadequate error handling in this PR.\"\\n<Task tool invocation to launch silent-failure-hunter agent>\\n</example>\\n\\n<example>\\nContext: Daisy has just refactored error handling code.\\nDaisy: \"I've updated the error handling in the authentication module\"\\nAssistant: \"Let me proactively use the silent-failure-hunter agent to ensure the error handling changes don't introduce silent failures.\"\\n<Task tool invocation to launch silent-failure-hunter agent>\\n</example>",
+        "shortDescription": "Use this agent when reviewing code changes in a pull request to identify silent failures, inadequate error handling,...",
+        "model": "inherit",
+        "path": "agents/plugins/pr-review-toolkit/agents/silent-failure-hunter.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\pr-review-toolkit\\agents\\silent-failure-hunter.md",
+        "usageInstructions": "## Agent: silent-failure-hunter\\nUse this agent when reviewing code changes in a pull request to identify silent failures, inadequate error handling, and inappropriate fallback behavior. This agent should be invoked proactively after completing a logical chunk of work that involves error handling, catch blocks, fallback logic, or any code that could potentially suppress errors. Examples:\\n\\n<example>\\nContext: Daisy has just finished implementing a new feature that fetches data from an API with fallback behavior.\\nDaisy: \"I've added error handling to the API client. Can you review it?\"\\nAssistant: \"Let me use the silent-failure-hunter agent to thoroughly examine the error handling in your changes.\"\\n<Task tool invocation to launch silent-failure-hunter agent>\\n</example>\\n\\n<example>\\nContext: Daisy has created a PR with changes that include try-catch blocks.\\nDaisy: \"Please review PR #1234\"\\nAssistant: \"I'll use the silent-failure-hunter agent to check for any silent failures or inadequate error handling in this PR.\"\\n<Task tool invocation to launch silent-failure-hunter agent>\\n</example>\\n\\n<example>\\nContext: Daisy has just refactored error handling code.\\nDaisy: \"I've updated the error handling in the authentication module\"\\nAssistant: \"Let me proactively use the silent-failure-hunter agent to ensure the error handling changes don't introduce silent failures.\"\\n<Task tool invocation to launch silent-failure-hunter agent>\\n</example>\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\pr-review-toolkit\\agents\\silent-failure-hunter.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── silent-failure-hunter.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/silent-failure-hunter.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\pr-review-toolkit\\agents\\silent-failure-hunter.md`",
+        "isArchived": false
+    },
+    {
+        "plugin": "pr-review-toolkit",
+        "id": "type-design-analyzer",
+        "name": "type-design-analyzer",
+        "description": "Use this agent when you need expert analysis of type design in your codebase. Specifically use it: (1) when introducing a new type to ensure it follows best practices for encapsulation and invariant expression, (2) during pull request creation to review all types being added, (3) when refactoring existing types to improve their design quality. The agent will provide both qualitative feedback and quantitative ratings on encapsulation, invariant expression, usefulness, and enforcement.\\n\\n<example>\\nContext: Daisy is writing code that introduces a new UserAccount type and wants to ensure it has well-designed invariants.\\nuser: \"I've just created a new UserAccount type that handles user authentication and permissions\"\\nassistant: \"I'll use the type-design-analyzer agent to review the UserAccount type design\"\\n<commentary>\\nSince a new type is being introduced, use the type-design-analyzer to ensure it has strong invariants and proper encapsulation.\\n</commentary>\\n</example>\\n\\n<example>\\nContext: Daisy is creating a pull request and wants to review all newly added types.\\nuser: \"I'm about to create a PR with several new data model types\"\\nassistant: \"Let me use the type-design-analyzer agent to review all the types being added in this PR\"\\n<commentary>\\nDuring PR creation with new types, use the type-design-analyzer to review their design quality.\\n</commentary>\\n</example>",
+        "shortDescription": "Use this agent when you need expert analysis of type design in your codebase.",
+        "model": "inherit",
+        "path": "agents/plugins/pr-review-toolkit/agents/type-design-analyzer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\pr-review-toolkit\\agents\\type-design-analyzer.md",
+        "usageInstructions": "## Agent: type-design-analyzer\\nUse this agent when you need expert analysis of type design in your codebase. Specifically use it: (1) when introducing a new type to ensure it follows best practices for encapsulation and invariant expression, (2) during pull request creation to review all types being added, (3) when refactoring existing types to improve their design quality. The agent will provide both qualitative feedback and quantitative ratings on encapsulation, invariant expression, usefulness, and enforcement.\\n\\n<example>\\nContext: Daisy is writing code that introduces a new UserAccount type and wants to ensure it has well-designed invariants.\\nuser: \"I've just created a new UserAccount type that handles user authentication and permissions\"\\nassistant: \"I'll use the type-design-analyzer agent to review the UserAccount type design\"\\n<commentary>\\nSince a new type is being introduced, use the type-design-analyzer to ensure it has strong invariants and proper encapsulation.\\n</commentary>\\n</example>\\n\\n<example>\\nContext: Daisy is creating a pull request and wants to review all newly added types.\\nuser: \"I'm about to create a PR with several new data model types\"\\nassistant: \"Let me use the type-design-analyzer agent to review all the types being added in this PR\"\\n<commentary>\\nDuring PR creation with new types, use the type-design-analyzer to review their design quality.\\n</commentary>\\n</example>\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\pr-review-toolkit\\agents\\type-design-analyzer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── type-design-analyzer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/type-design-analyzer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\pr-review-toolkit\\agents\\type-design-analyzer.md`",
         "isArchived": false
     },
     {
@@ -1251,6 +1679,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master Django 5.x with async views, DRF, Celery, and Django Channels.",
         "model": "opus",
         "path": "agents/plugins/python-development/agents/django-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\python-development\\agents\\django-pro.md",
+        "usageInstructions": "## Agent: django-pro\\nMaster Django 5.x with async views, DRF, Celery, and Django Channels. Build scalable web applications with proper architecture, testing, and deployment. Use PROACTIVELY for Django development, ORM optimization, or complex Django patterns.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\python-development\\agents\\django-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── django-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/django-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\python-development\\agents\\django-pro.md`",
         "isArchived": false
     },
     {
@@ -1261,6 +1691,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Build high-performance async APIs with FastAPI, SQLAlchemy 2.0, and Pydantic V2.",
         "model": "opus",
         "path": "agents/plugins/python-development/agents/fastapi-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\python-development\\agents\\fastapi-pro.md",
+        "usageInstructions": "## Agent: fastapi-pro\\nBuild high-performance async APIs with FastAPI, SQLAlchemy 2.0, and Pydantic V2. Master microservices, WebSockets, and modern Python async patterns. Use PROACTIVELY for FastAPI development, async optimization, or API architecture.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\python-development\\agents\\fastapi-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── fastapi-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/fastapi-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\python-development\\agents\\fastapi-pro.md`",
         "isArchived": false
     },
     {
@@ -1271,6 +1703,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master Python 3.12+ with modern features, async programming, performance optimization, and production-ready practices.",
         "model": "opus",
         "path": "agents/plugins/python-development/agents/python-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\python-development\\agents\\python-pro.md",
+        "usageInstructions": "## Agent: python-pro\\nMaster Python 3.12+ with modern features, async programming, performance optimization, and production-ready practices. Expert in the latest Python ecosystem including uv, ruff, pydantic, and FastAPI. Use PROACTIVELY for Python development, optimization, or advanced Python patterns.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\python-development\\agents\\python-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── python-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/python-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\python-development\\agents\\python-pro.md`",
         "isArchived": false
     },
     {
@@ -1281,6 +1715,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Build financial models, backtest trading strategies, and analyze market data.",
         "model": "inherit",
         "path": "agents/plugins/quantitative-trading/agents/quant-analyst.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\quantitative-trading\\agents\\quant-analyst.md",
+        "usageInstructions": "## Agent: quant-analyst\\nBuild financial models, backtest trading strategies, and analyze market data. Implements risk metrics, portfolio optimization, and statistical arbitrage. Use PROACTIVELY for quantitative finance, trading algorithms, or risk analysis.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\quantitative-trading\\agents\\quant-analyst.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── quant-analyst.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/quant-analyst.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\quantitative-trading\\agents\\quant-analyst.md`",
         "isArchived": false
     },
     {
@@ -1291,6 +1727,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Monitor portfolio risk, R-multiples, and position limits.",
         "model": "inherit",
         "path": "agents/plugins/quantitative-trading/agents/risk-manager.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\quantitative-trading\\agents\\risk-manager.md",
+        "usageInstructions": "## Agent: risk-manager\\nMonitor portfolio risk, R-multiples, and position limits. Creates hedging strategies, calculates expectancy, and implements stop-losses. Use PROACTIVELY for risk assessment, trade tracking, or portfolio protection.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\quantitative-trading\\agents\\risk-manager.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── risk-manager.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/risk-manager.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\quantitative-trading\\agents\\risk-manager.md`",
         "isArchived": false
     },
     {
@@ -1301,6 +1739,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks.",
         "model": "opus",
         "path": "agents/plugins/security-compliance/agents/security-auditor.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\security-compliance\\agents\\security-auditor.md",
+        "usageInstructions": "## Agent: security-auditor\\nExpert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks. Masters vulnerability assessment, threat modeling, secure authentication (OAuth2/OIDC), OWASP standards, cloud security, and security automation. Handles DevSecOps integration, compliance (GDPR/HIPAA/SOC2), and incident response. Use PROACTIVELY for security audits, DevSecOps, or compliance implementation.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\security-compliance\\agents\\security-auditor.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── security-auditor.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/security-auditor.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\security-compliance\\agents\\security-auditor.md`",
         "isArchived": false
     },
     {
@@ -1311,6 +1751,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks.",
         "model": "opus",
         "path": "agents/plugins/security-scanning/agents/security-auditor.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\security-scanning\\agents\\security-auditor.md",
+        "usageInstructions": "## Agent: security-auditor\\nExpert security auditor specializing in DevSecOps, comprehensive cybersecurity, and compliance frameworks. Masters vulnerability assessment, threat modeling, secure authentication (OAuth2/OIDC), OWASP standards, cloud security, and security automation. Handles DevSecOps integration, compliance (GDPR/HIPAA/SOC2), and incident response. Use PROACTIVELY for security audits, DevSecOps, or compliance implementation.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\security-scanning\\agents\\security-auditor.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── security-auditor.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/security-auditor.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\security-scanning\\agents\\security-auditor.md`",
         "isArchived": false
     },
     {
@@ -1321,6 +1763,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Analyzes content for E-E-A-T signals and suggests improvements to build authority and trust.",
         "model": "sonnet",
         "path": "agents/plugins/seo-analysis-monitoring/agents/seo-authority-builder.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-analysis-monitoring\\agents\\seo-authority-builder.md",
+        "usageInstructions": "## Agent: seo-authority-builder\\nAnalyzes content for E-E-A-T signals and suggests improvements to build authority and trust. Identifies missing credibility elements. Use PROACTIVELY for YMYL topics.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-analysis-monitoring\\agents\\seo-authority-builder.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── seo-authority-builder.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/seo-authority-builder.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-analysis-monitoring\\agents\\seo-authority-builder.md`",
         "isArchived": false
     },
     {
@@ -1331,6 +1775,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Analyzes multiple provided pages to identify keyword overlap and potential cannibalization issues.",
         "model": "haiku",
         "path": "agents/plugins/seo-analysis-monitoring/agents/seo-cannibalization-detector.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-analysis-monitoring\\agents\\seo-cannibalization-detector.md",
+        "usageInstructions": "## Agent: seo-cannibalization-detector\\nAnalyzes multiple provided pages to identify keyword overlap and potential cannibalization issues. Suggests differentiation strategies. Use PROACTIVELY when reviewing similar content.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-analysis-monitoring\\agents\\seo-cannibalization-detector.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── seo-cannibalization-detector.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/seo-cannibalization-detector.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-analysis-monitoring\\agents\\seo-cannibalization-detector.md`",
         "isArchived": false
     },
     {
@@ -1341,6 +1787,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Identifies outdated elements in provided content and suggests updates to maintain freshness.",
         "model": "haiku",
         "path": "agents/plugins/seo-analysis-monitoring/agents/seo-content-refresher.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-analysis-monitoring\\agents\\seo-content-refresher.md",
+        "usageInstructions": "## Agent: seo-content-refresher\\nIdentifies outdated elements in provided content and suggests updates to maintain freshness. Finds statistics, dates, and examples that need updating. Use PROACTIVELY for older content.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-analysis-monitoring\\agents\\seo-content-refresher.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── seo-content-refresher.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/seo-content-refresher.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-analysis-monitoring\\agents\\seo-content-refresher.md`",
         "isArchived": false
     },
     {
@@ -1351,6 +1799,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Analyzes provided content for quality, E-E-A-T signals, and SEO best practices.",
         "model": "sonnet",
         "path": "agents/plugins/seo-content-creation/agents/seo-content-auditor.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-content-creation\\agents\\seo-content-auditor.md",
+        "usageInstructions": "## Agent: seo-content-auditor\\nAnalyzes provided content for quality, E-E-A-T signals, and SEO best practices. Scores content and provides improvement recommendations based on established guidelines. Use PROACTIVELY for content review.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-content-creation\\agents\\seo-content-auditor.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── seo-content-auditor.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/seo-content-auditor.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-content-creation\\agents\\seo-content-auditor.md`",
         "isArchived": false
     },
     {
@@ -1361,6 +1811,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Creates comprehensive content outlines and topic clusters for SEO. Plans content calendars and identifies topic gaps.",
         "model": "haiku",
         "path": "agents/plugins/seo-content-creation/agents/seo-content-planner.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-content-creation\\agents\\seo-content-planner.md",
+        "usageInstructions": "## Agent: seo-content-planner\\nCreates comprehensive content outlines and topic clusters for SEO. Plans content calendars and identifies topic gaps. Use PROACTIVELY for content strategy and planning.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-content-creation\\agents\\seo-content-planner.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── seo-content-planner.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/seo-content-planner.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-content-creation\\agents\\seo-content-planner.md`",
         "isArchived": false
     },
     {
@@ -1371,6 +1823,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Writes SEO-optimized content based on provided keywords and topic briefs.",
         "model": "sonnet",
         "path": "agents/plugins/seo-content-creation/agents/seo-content-writer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-content-creation\\agents\\seo-content-writer.md",
+        "usageInstructions": "## Agent: seo-content-writer\\nWrites SEO-optimized content based on provided keywords and topic briefs. Creates engaging, comprehensive content following best practices. Use PROACTIVELY for content creation tasks.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-content-creation\\agents\\seo-content-writer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── seo-content-writer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/seo-content-writer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-content-creation\\agents\\seo-content-writer.md`",
         "isArchived": false
     },
     {
@@ -1381,6 +1835,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Analyzes keyword usage in provided content, calculates density, suggests semantic variations and LSI keywords based...",
         "model": "haiku",
         "path": "agents/plugins/seo-technical-optimization/agents/seo-keyword-strategist.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-technical-optimization\\agents\\seo-keyword-strategist.md",
+        "usageInstructions": "## Agent: seo-keyword-strategist\\nAnalyzes keyword usage in provided content, calculates density, suggests semantic variations and LSI keywords based on the topic. Prevents over-optimization. Use PROACTIVELY for content optimization.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-technical-optimization\\agents\\seo-keyword-strategist.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── seo-keyword-strategist.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/seo-keyword-strategist.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-technical-optimization\\agents\\seo-keyword-strategist.md`",
         "isArchived": false
     },
     {
@@ -1391,6 +1847,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Creates optimized meta titles, descriptions, and URL suggestions based on character limits and best practices.",
         "model": "haiku",
         "path": "agents/plugins/seo-technical-optimization/agents/seo-meta-optimizer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-technical-optimization\\agents\\seo-meta-optimizer.md",
+        "usageInstructions": "## Agent: seo-meta-optimizer\\nCreates optimized meta titles, descriptions, and URL suggestions based on character limits and best practices. Generates compelling, keyword-rich metadata. Use PROACTIVELY for new content.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-technical-optimization\\agents\\seo-meta-optimizer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── seo-meta-optimizer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/seo-meta-optimizer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-technical-optimization\\agents\\seo-meta-optimizer.md`",
         "isArchived": false
     },
     {
@@ -1401,6 +1859,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Formats content to be eligible for featured snippets and SERP features.",
         "model": "haiku",
         "path": "agents/plugins/seo-technical-optimization/agents/seo-snippet-hunter.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-technical-optimization\\agents\\seo-snippet-hunter.md",
+        "usageInstructions": "## Agent: seo-snippet-hunter\\nFormats content to be eligible for featured snippets and SERP features. Creates snippet-optimized content blocks based on best practices. Use PROACTIVELY for question-based content.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-technical-optimization\\agents\\seo-snippet-hunter.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── seo-snippet-hunter.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/seo-snippet-hunter.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-technical-optimization\\agents\\seo-snippet-hunter.md`",
         "isArchived": false
     },
     {
@@ -1411,6 +1871,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Analyzes and optimizes content structure including header hierarchy, suggests schema markup, and internal linking...",
         "model": "haiku",
         "path": "agents/plugins/seo-technical-optimization/agents/seo-structure-architect.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-technical-optimization\\agents\\seo-structure-architect.md",
+        "usageInstructions": "## Agent: seo-structure-architect\\nAnalyzes and optimizes content structure including header hierarchy, suggests schema markup, and internal linking opportunities. Creates search-friendly content organization. Use PROACTIVELY for content structuring.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-technical-optimization\\agents\\seo-structure-architect.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── seo-structure-architect.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/seo-structure-architect.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\seo-technical-optimization\\agents\\seo-structure-architect.md`",
         "isArchived": false
     },
     {
@@ -1421,6 +1883,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master of defensive Bash scripting for production automation, CI/CD pipelines, and system utilities.",
         "model": "sonnet",
         "path": "agents/plugins/shell-scripting/agents/bash-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\shell-scripting\\agents\\bash-pro.md",
+        "usageInstructions": "## Agent: bash-pro\\nMaster of defensive Bash scripting for production automation, CI/CD pipelines, and system utilities. Expert in safe, portable, and testable shell scripts.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\shell-scripting\\agents\\bash-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── bash-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/bash-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\shell-scripting\\agents\\bash-pro.md`",
         "isArchived": false
     },
     {
@@ -1431,6 +1895,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Expert in strict POSIX sh scripting for maximum portability across Unix-like systems.",
         "model": "sonnet",
         "path": "agents/plugins/shell-scripting/agents/posix-shell-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\shell-scripting\\agents\\posix-shell-pro.md",
+        "usageInstructions": "## Agent: posix-shell-pro\\nExpert in strict POSIX sh scripting for maximum portability across Unix-like systems. Specializes in shell scripts that run on any POSIX-compliant shell (dash, ash, sh, bash --posix).\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\shell-scripting\\agents\\posix-shell-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── posix-shell-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/posix-shell-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\shell-scripting\\agents\\posix-shell-pro.md`",
         "isArchived": false
     },
     {
@@ -1441,6 +1907,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Write efficient C code with proper memory management, pointer arithmetic, and system calls.",
         "model": "opus",
         "path": "agents/plugins/systems-programming/agents/c-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\systems-programming\\agents\\c-pro.md",
+        "usageInstructions": "## Agent: c-pro\\nWrite efficient C code with proper memory management, pointer arithmetic, and system calls. Handles embedded systems, kernel modules, and performance-critical code. Use PROACTIVELY for C optimization, memory issues, or system programming.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\systems-programming\\agents\\c-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── c-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/c-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\systems-programming\\agents\\c-pro.md`",
         "isArchived": false
     },
     {
@@ -1451,6 +1919,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Write idiomatic C++ code with modern features, RAII, smart pointers, and STL algorithms.",
         "model": "opus",
         "path": "agents/plugins/systems-programming/agents/cpp-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\systems-programming\\agents\\cpp-pro.md",
+        "usageInstructions": "## Agent: cpp-pro\\nWrite idiomatic C++ code with modern features, RAII, smart pointers, and STL algorithms. Handles templates, move semantics, and performance optimization. Use PROACTIVELY for C++ refactoring, memory safety, or complex C++ patterns.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\systems-programming\\agents\\cpp-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── cpp-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/cpp-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\systems-programming\\agents\\cpp-pro.md`",
         "isArchived": false
     },
     {
@@ -1461,6 +1931,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master Go 1.21+ with modern patterns, advanced concurrency, performance optimization, and production-ready...",
         "model": "opus",
         "path": "agents/plugins/systems-programming/agents/golang-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\systems-programming\\agents\\golang-pro.md",
+        "usageInstructions": "## Agent: golang-pro\\nMaster Go 1.21+ with modern patterns, advanced concurrency, performance optimization, and production-ready microservices. Expert in the latest Go ecosystem including generics, workspaces, and cutting-edge frameworks. Use PROACTIVELY for Go development, architecture design, or performance optimization.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\systems-programming\\agents\\golang-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── golang-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/golang-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\systems-programming\\agents\\golang-pro.md`",
         "isArchived": false
     },
     {
@@ -1471,6 +1943,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master Rust 1.75+ with modern async patterns, advanced type system features, and production-ready systems programming.",
         "model": "opus",
         "path": "agents/plugins/systems-programming/agents/rust-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\systems-programming\\agents\\rust-pro.md",
+        "usageInstructions": "## Agent: rust-pro\\nMaster Rust 1.75+ with modern async patterns, advanced type system features, and production-ready systems programming. Expert in the latest Rust ecosystem including Tokio, axum, and cutting-edge crates. Use PROACTIVELY for Rust development, performance optimization, or systems programming.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\systems-programming\\agents\\rust-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── rust-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/rust-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\systems-programming\\agents\\rust-pro.md`",
         "isArchived": false
     },
     {
@@ -1481,6 +1955,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Elite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance...",
         "model": "opus",
         "path": "agents/plugins/tdd-workflows/agents/code-reviewer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\tdd-workflows\\agents\\code-reviewer.md",
+        "usageInstructions": "## Agent: code-reviewer\\nElite code review expert specializing in modern AI-powered code analysis, security vulnerabilities, performance optimization, and production reliability. Masters static analysis tools, security scanning, and configuration review with 2024/2025 best practices. Use PROACTIVELY for code quality assurance.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\tdd-workflows\\agents\\code-reviewer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── code-reviewer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/code-reviewer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\tdd-workflows\\agents\\code-reviewer.md`",
         "isArchived": false
     },
     {
@@ -1491,6 +1967,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master TDD orchestrator specializing in red-green-refactor discipline, multi-agent workflow coordination, and...",
         "model": "opus",
         "path": "agents/plugins/tdd-workflows/agents/tdd-orchestrator.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\tdd-workflows\\agents\\tdd-orchestrator.md",
+        "usageInstructions": "## Agent: tdd-orchestrator\\nMaster TDD orchestrator specializing in red-green-refactor discipline, multi-agent workflow coordination, and comprehensive test-driven development practices. Enforces TDD best practices across teams with AI-assisted testing and modern frameworks. Use PROACTIVELY for TDD implementation and governance.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\tdd-workflows\\agents\\tdd-orchestrator.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── tdd-orchestrator.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/tdd-orchestrator.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\tdd-workflows\\agents\\tdd-orchestrator.md`",
         "isArchived": false
     },
     {
@@ -1501,6 +1979,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Developer Experience specialist. Improves tooling, setup, and workflows.",
         "model": "sonnet",
         "path": "agents/plugins/team-collaboration/agents/dx-optimizer.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\team-collaboration\\agents\\dx-optimizer.md",
+        "usageInstructions": "## Agent: dx-optimizer\\nDeveloper Experience specialist. Improves tooling, setup, and workflows. Use PROACTIVELY when setting up new projects, after team feedback, or when development friction is noticed.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\team-collaboration\\agents\\dx-optimizer.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── dx-optimizer.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/dx-optimizer.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\team-collaboration\\agents\\dx-optimizer.md`",
         "isArchived": false
     },
     {
@@ -1511,6 +1991,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Debugging specialist for errors, test failures, and unexpected behavior.",
         "model": "sonnet",
         "path": "agents/plugins/unit-testing/agents/debugger.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\unit-testing\\agents\\debugger.md",
+        "usageInstructions": "## Agent: debugger\\nDebugging specialist for errors, test failures, and unexpected behavior. Use proactively when encountering any issues.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\unit-testing\\agents\\debugger.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── debugger.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/debugger.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\unit-testing\\agents\\debugger.md`",
         "isArchived": false
     },
     {
@@ -1521,6 +2003,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Master AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering.",
         "model": "sonnet",
         "path": "agents/plugins/unit-testing/agents/test-automator.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\unit-testing\\agents\\test-automator.md",
+        "usageInstructions": "## Agent: test-automator\\nMaster AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering. Build scalable testing strategies with advanced CI/CD integration. Use PROACTIVELY for testing automation or quality assurance.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\unit-testing\\agents\\test-automator.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── test-automator.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/test-automator.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\unit-testing\\agents\\test-automator.md`",
         "isArchived": false
     },
     {
@@ -1531,6 +2015,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Write idiomatic PHP code with generators, iterators, SPL data structures, and modern OOP features.",
         "model": "inherit",
         "path": "agents/plugins/web-scripting/agents/php-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\web-scripting\\agents\\php-pro.md",
+        "usageInstructions": "## Agent: php-pro\\nWrite idiomatic PHP code with generators, iterators, SPL data structures, and modern OOP features. Use PROACTIVELY for high-performance PHP applications.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\web-scripting\\agents\\php-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── php-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/php-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\web-scripting\\agents\\php-pro.md`",
         "isArchived": false
     },
     {
@@ -1541,6 +2027,8 @@ export const GENERATED_AGENTS: Agent[] = [
         "shortDescription": "Write idiomatic Ruby code with metaprogramming, Rails patterns, and performance optimization.",
         "model": "inherit",
         "path": "agents/plugins/web-scripting/agents/ruby-pro.md",
+        "sourcePath": "C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\web-scripting\\agents\\ruby-pro.md",
+        "usageInstructions": "## Agent: ruby-pro\\nWrite idiomatic Ruby code with metaprogramming, Rails patterns, and performance optimization. Specializes in Ruby on Rails, gem development, and testing frameworks. Use PROACTIVELY for Ruby refactoring, optimization, or complex Ruby features.\\n\\n### Step 1: Copy Agent File\\nCopy the agent to your project's instructions folder:\\n```\\ncp \"C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\web-scripting\\agents\\ruby-pro.md\" .instructions/agents/\\n```\\n\\nThis will create:\\n```\\n.instructions/\\n└── agents/\\n    └── ruby-pro.md\\n```\\n\\n### Step 2: Reference the Agent\\nInvoke the agent by referencing its path:\\n```\\n@.instructions/agents/ruby-pro.md\\n\\nGoal: [YOUR_GOAL]\\n```\\n\\n### Source Location:\\n`C:\\AI\\In Progress\\Superpowers\\agents\\plugins\\web-scripting\\agents\\ruby-pro.md`",
         "isArchived": false
     }
 ];

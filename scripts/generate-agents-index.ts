@@ -17,7 +17,51 @@ interface AgentData {
     shortDescription: string;
     model: string;
     path: string;
+    sourcePath: string;
+    usageInstructions: string;
     isArchived?: boolean;
+}
+
+function generateUsageInstructions(
+    agentName: string,
+    description: string,
+    sourcePath: string,
+    agentFile: string
+): string {
+    const lines: string[] = [];
+    lines.push(`## Agent: ${agentName}`);
+    lines.push(description);
+    lines.push('');
+
+    // Step 1: Copy instruction
+    lines.push('### Step 1: Copy Agent File');
+    lines.push('Copy the agent to your project\'s instructions folder:');
+    lines.push('```');
+    lines.push(`cp "${sourcePath}" .instructions/agents/`);
+    lines.push('```');
+    lines.push('');
+    lines.push('This will create:');
+    lines.push('```');
+    lines.push('.instructions/');
+    lines.push('└── agents/');
+    lines.push(`    └── ${agentFile}`);
+    lines.push('```');
+    lines.push('');
+
+    // Step 2: How to use
+    lines.push('### Step 2: Reference the Agent');
+    lines.push('Invoke the agent by referencing its path:');
+    lines.push('```');
+    lines.push(`@.instructions/agents/${agentFile}`);
+    lines.push('');
+    lines.push('Goal: [YOUR_GOAL]');
+    lines.push('```');
+    lines.push('');
+
+    lines.push('### Source Location:');
+    lines.push(`\`${sourcePath}\``);
+
+    return lines.join('\\n');
 }
 
 function getShortDescription(description: string): string {
@@ -79,16 +123,20 @@ function scanAgents(baseDir: string, isArchived: boolean) {
                     // For archived items, we still want to keep the relative path logic or adjust if needed.
                     // The path is used for ID/deletion, so sticking to standard structure is best.
                     const relativePath = path.join('agents', 'plugins', plugin, 'agents', file).replace(/\\/g, '/');
+                    const absolutePath = path.join(agentDir, file);
 
                     const description = descMatch ? descMatch[1].trim() : '';
+                    const agentName = nameMatch[1].trim();
                     agents.push({
                         plugin: plugin,
                         id: file.replace('.md', ''),
-                        name: nameMatch[1].trim(),
+                        name: agentName,
                         description: description,
                         shortDescription: getShortDescription(description),
                         model: modelMatch ? modelMatch[1].trim() : 'inherit',
                         path: relativePath,
+                        sourcePath: absolutePath,
+                        usageInstructions: generateUsageInstructions(agentName, description, absolutePath, file),
                         isArchived: isArchived
                     });
                 }
@@ -112,6 +160,8 @@ export interface Agent {
     shortDescription: string;
     model: string;
     path: string;
+    sourcePath: string;
+    usageInstructions: string;
     isArchived?: boolean;
 }
 
