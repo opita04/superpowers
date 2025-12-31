@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Edit2, Trash2, Check, ChevronDown, ChevronUp, ExternalLink, Star } from 'lucide-react';
+import { Edit2, Archive, Check, ChevronDown, ChevronUp, ExternalLink, Star } from 'lucide-react';
 import type { Agent } from '../types';
 import { Tooltip } from './Tooltip';
 import './SkillCard.css';
@@ -153,16 +153,16 @@ export function AgentCard({ agent, isSelected, isFavorite, onClick, onEdit, onDe
                             <Edit2 size={14} />
                         </button>
                         <button
-                            className="action-btn delete-btn"
+                            className="action-btn archive-btn"
                             onClick={(e) => {
                                 e.stopPropagation();
-                                if (confirm(`Are you sure you want to delete agent "${agent.name}"?`)) {
+                                if (confirm(`Are you sure you want to archive agent "${agent.name}"?`)) {
                                     onDelete(agent);
                                 }
                             }}
-                            title="Delete Agent"
+                            title="Archive Agent"
                         >
-                            <Trash2 size={14} />
+                            <Archive size={14} />
                         </button>
                         <a
                             href={getAgentGithubUrl(agent)}

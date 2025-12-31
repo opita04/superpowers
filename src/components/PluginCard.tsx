@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Edit2, Trash2, Check, ChevronDown, ChevronUp, FolderOpen, Star } from 'lucide-react';
+import { Edit2, Archive, Check, ChevronDown, ChevronUp, FolderOpen, Star } from 'lucide-react';
 import type { Plugin } from '../types';
 import { Tooltip } from './Tooltip';
 import './SkillCard.css';
@@ -110,16 +110,16 @@ export function PluginCard({ plugin, isSelected, isFavorite, onClick, onEdit, on
                             <Edit2 size={14} />
                         </button>
                         <button
-                            className="action-btn delete-btn"
+                            className="action-btn archive-btn"
                             onClick={(e) => {
                                 e.stopPropagation();
-                                if (confirm(`Are you sure you want to delete plugin "${plugin.name}"?`)) {
+                                if (confirm(`Are you sure you want to archive plugin "${plugin.name}"?`)) {
                                     onDelete(plugin);
                                 }
                             }}
-                            title="Delete Plugin"
+                            title="Archive Plugin"
                         >
-                            <Trash2 size={14} />
+                            <Archive size={14} />
                         </button>
                         <button
                             className="action-btn"

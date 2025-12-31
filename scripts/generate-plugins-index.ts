@@ -181,18 +181,54 @@ function generateInstallInstructions(plugin: PluginData): string {
     lines.push(plugin.description);
     lines.push('');
 
-    // Add README pointer
+    // Step 1: Copy instruction
+    lines.push('### Step 1: Copy Plugin Files');
+    lines.push(`Copy the plugin contents from source to your project root:`);
+    lines.push('```');
+    lines.push(`cp -r "${plugin.sourcePath}"/* .instructions/`);
+    lines.push('```');
+    lines.push('');
+    lines.push('This will create:');
+    lines.push('```');
+    lines.push('.instructions/');
+
+    if (plugin.components.agents.length > 0) {
+        lines.push('├── agents/');
+        plugin.components.agents.forEach((a, i, arr) => {
+            const isLast = i === arr.length - 1 && plugin.components.commands.length === 0 && plugin.components.skills.length === 0;
+            lines.push(`│   ${isLast ? '└──' : '├──'} ${a.file}`);
+        });
+    }
+
+    if (plugin.components.commands.length > 0) {
+        lines.push('├── commands/');
+        plugin.components.commands.forEach((c, i, arr) => {
+            const isLast = i === arr.length - 1 && plugin.components.skills.length === 0;
+            lines.push(`│   ${isLast ? '└──' : '├──'} ${c.file}`);
+        });
+    }
+
+    if (plugin.components.skills.length > 0) {
+        lines.push('└── skills/');
+        plugin.components.skills.forEach((s, i, arr) => {
+            lines.push(`    ${i === arr.length - 1 ? '└──' : '├──'} ${s.file}/`);
+        });
+    }
+    lines.push('```');
+    lines.push('');
+
+    // Step 2: Read documentation (now from local path)
     const readmePath = path.join(plugin.sourcePath, 'README.md');
     if (fs.existsSync(readmePath)) {
-        lines.push(`### Documentation:`);
-        lines.push(`Read the full plugin docs: \`${readmePath}\``);
+        lines.push(`### Step 2: Read Documentation`);
+        lines.push(`Read the plugin docs (now in your project): \`.instructions/README.md\``);
         lines.push('');
     }
 
-    // Add executable commands section
+    // Step 3: Execute commands
     if (plugin.components.commands.length > 0) {
-        lines.push('### Execute:');
-        lines.push('Run one of these commands with your goal:');
+        lines.push('### Step 3: Execute');
+        lines.push('Run one of these commands:');
         lines.push('```');
         plugin.components.commands.forEach(c => {
             const cmdName = c.file.replace('.md', '');
@@ -202,25 +238,24 @@ function generateInstallInstructions(plugin: PluginData): string {
         lines.push('');
     }
 
-    // Add agents section
+    // Available components
     if (plugin.components.agents.length > 0) {
         lines.push('### Available Agents:');
         plugin.components.agents.forEach(a => {
-            lines.push(`- \`${a.name}\`: ${a.description.substring(0, 100)}${a.description.length > 100 ? '...' : ''}`);
+            lines.push(`- \`${a.name}\`: ${a.description.substring(0, 80)}${a.description.length > 80 ? '...' : ''}`);
         });
         lines.push('');
     }
 
-    // Add skills section
     if (plugin.components.skills.length > 0) {
         lines.push('### Available Skills:');
         plugin.components.skills.forEach(s => {
-            lines.push(`- \`${s.name}\`: ${s.description.substring(0, 100)}${s.description.length > 100 ? '...' : ''}`);
+            lines.push(`- \`${s.name}\`: ${s.description.substring(0, 80)}${s.description.length > 80 ? '...' : ''}`);
         });
         lines.push('');
     }
 
-    lines.push('### Plugin Location:');
+    lines.push('### Source Location:');
     lines.push(`\`${plugin.sourcePath}\``);
 
     return lines.join('\n');
