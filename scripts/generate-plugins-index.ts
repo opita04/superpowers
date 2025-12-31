@@ -178,52 +178,50 @@ function scanDirectory(dir: string, type: 'agents' | 'commands' | 'skills'): Com
 function generateInstallInstructions(plugin: PluginData): string {
     const lines: string[] = [];
     lines.push(`## Plugin: ${plugin.name}`);
+    lines.push(plugin.description);
     lines.push('');
-    lines.push(`**Source:** \`${plugin.sourcePath}\``);
-    lines.push('');
-    lines.push('### Install:');
-    lines.push('Copy the plugin contents to your project root:');
-    lines.push('');
-    lines.push('```');
-    lines.push('.instructions/');
 
-    if (plugin.components.agents.length > 0) {
-        lines.push('├── agents/');
-        plugin.components.agents.forEach((a, i, arr) => {
-            const prefix = i === arr.length - 1 && plugin.components.commands.length === 0 && plugin.components.skills.length === 0 ? '└──' : '├──';
-            lines.push(`│   ${prefix} ${a.file}`);
-        });
+    // Add README pointer
+    const readmePath = path.join(plugin.sourcePath, 'README.md');
+    if (fs.existsSync(readmePath)) {
+        lines.push(`### Documentation:`);
+        lines.push(`Read the full plugin docs: \`${readmePath}\``);
+        lines.push('');
     }
 
+    // Add executable commands section
     if (plugin.components.commands.length > 0) {
-        lines.push('├── commands/');
-        plugin.components.commands.forEach((c, i, arr) => {
-            const prefix = i === arr.length - 1 && plugin.components.skills.length === 0 ? '└──' : '├──';
-            lines.push(`│   ${prefix} ${c.file}`);
+        lines.push('### Execute:');
+        lines.push('Run one of these commands with your goal:');
+        lines.push('```');
+        plugin.components.commands.forEach(c => {
+            const cmdName = c.file.replace('.md', '');
+            lines.push(`/${cmdName} "[YOUR_GOAL]"`);
         });
+        lines.push('```');
+        lines.push('');
     }
 
-    if (plugin.components.skills.length > 0) {
-        lines.push('└── skills/');
-        plugin.components.skills.forEach((s, i, arr) => {
-            const prefix = i === arr.length - 1 ? '└──' : '├──';
-            lines.push(`    ${prefix} ${s.file}/`);
-        });
-    }
-
-    lines.push('```');
-    lines.push('');
-    lines.push('### Available:');
-
+    // Add agents section
     if (plugin.components.agents.length > 0) {
-        lines.push(`- **Agents:** ${plugin.components.agents.map(a => `\`${a.name}\``).join(', ')}`);
+        lines.push('### Available Agents:');
+        plugin.components.agents.forEach(a => {
+            lines.push(`- \`${a.name}\`: ${a.description.substring(0, 100)}${a.description.length > 100 ? '...' : ''}`);
+        });
+        lines.push('');
     }
-    if (plugin.components.commands.length > 0) {
-        lines.push(`- **Commands:** ${plugin.components.commands.map(c => `\`/${c.file.replace('.md', '')}\``).join(', ')}`);
-    }
+
+    // Add skills section
     if (plugin.components.skills.length > 0) {
-        lines.push(`- **Skills:** ${plugin.components.skills.map(s => `\`${s.name}\``).join(', ')}`);
+        lines.push('### Available Skills:');
+        plugin.components.skills.forEach(s => {
+            lines.push(`- \`${s.name}\`: ${s.description.substring(0, 100)}${s.description.length > 100 ? '...' : ''}`);
+        });
+        lines.push('');
     }
+
+    lines.push('### Plugin Location:');
+    lines.push(`\`${plugin.sourcePath}\``);
 
     return lines.join('\n');
 }

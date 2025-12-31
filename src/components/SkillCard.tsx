@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Edit2, Trash2, Check, ChevronDown, ChevronUp, Star, ExternalLink } from 'lucide-react';
+import { Edit2, Archive, Check, ChevronDown, ChevronUp, Star, ExternalLink } from 'lucide-react';
 import type { Skill } from '../types';
 import { Tooltip } from './Tooltip';
 import './SkillCard.css';
@@ -92,16 +92,16 @@ export function SkillCard({ skill, isSelected, isFavorite, onClick, onEdit, onDe
                             <Edit2 size={14} />
                         </button>
                         <button
-                            className="action-btn delete-btn"
+                            className="action-btn archive-btn"
                             onClick={(e) => {
                                 e.stopPropagation();
-                                if (confirm('Are you sure you want to delete this skill?')) {
+                                if (confirm('Are you sure you want to archive this skill?')) {
                                     onDelete(skill.id);
                                 }
                             }}
-                            title="Delete Skill"
+                            title="Archive Skill"
                         >
-                            <Trash2 size={14} />
+                            <Archive size={14} />
                         </button>
                         {skill.references && skill.references.length > 0 && skill.references[0].startsWith('http') && (
                             <a

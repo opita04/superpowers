@@ -20,8 +20,10 @@ export function PromptBuilder({ onOpenSettings }: PromptBuilderProps) {
                 setGeneratedPrompt('');
                 return;
             }
-            // For plugins, generate install/use instructions
-            const prompt = `${selectedPlugin.installInstructions}\n\nGoal: ${userGoal || '[Enter goal]'}`;
+            // For plugins, generate install/use instructions with goal injected
+            const goalText = userGoal || '[Enter your goal above]';
+            const instructions = selectedPlugin.installInstructions.replace(/\[YOUR_GOAL\]/g, goalText);
+            const prompt = `${instructions}\n\n### Your Goal:\n${goalText}`;
             setGeneratedPrompt(prompt);
         } else if (mode === 'agents') {
             if (!selectedAgent) {
