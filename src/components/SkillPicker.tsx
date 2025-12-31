@@ -193,7 +193,9 @@ export function SkillPicker() {
         if (plugin.isArchived) return false;
         const matchesSearch = plugin.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
             plugin.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            plugin.contents.toLowerCase().includes(searchQuery.toLowerCase());
+            plugin.components.agents.some(a => a.name.toLowerCase().includes(searchQuery.toLowerCase())) ||
+            plugin.components.commands.some(c => c.name.toLowerCase().includes(searchQuery.toLowerCase())) ||
+            plugin.components.skills.some(s => s.name.toLowerCase().includes(searchQuery.toLowerCase()));
         return matchesSearch;
     }).sort((a, b) => {
         const aFav = favoritePluginIds.includes(a.id) ? 0 : 1;

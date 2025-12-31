@@ -1,8 +1,22 @@
 import React, { useRef, useState } from 'react';
-import { Edit2, Trash2, Check, ChevronDown, ChevronUp, ExternalLink, Star } from 'lucide-react';
+import { Edit2, Trash2, Check, ChevronDown, ChevronUp, FolderOpen, Star } from 'lucide-react';
 import type { Plugin } from '../types';
 import { Tooltip } from './Tooltip';
 import './SkillCard.css';
+
+function getComponentsSummary(plugin: Plugin): string {
+    const parts: string[] = [];
+    if (plugin.components.agents.length > 0) {
+        parts.push(`${plugin.components.agents.length} agent${plugin.components.agents.length > 1 ? 's' : ''}`);
+    }
+    if (plugin.components.commands.length > 0) {
+        parts.push(`${plugin.components.commands.length} cmd${plugin.components.commands.length > 1 ? 's' : ''}`);
+    }
+    if (plugin.components.skills.length > 0) {
+        parts.push(`${plugin.components.skills.length} skill${plugin.components.skills.length > 1 ? 's' : ''}`);
+    }
+    return parts.join(' • ');
+}
 
 interface PluginCardProps {
     plugin: Plugin;
@@ -84,7 +98,7 @@ export function PluginCard({ plugin, isSelected, isFavorite, onClick, onEdit, on
 
                 <div className="skill-footer">
                     <span className="skill-category plugin-contents">
-                        {plugin.contents.length > 50 ? plugin.contents.substring(0, 47) + '...' : plugin.contents}
+                        {getComponentsSummary(plugin)}
                     </span>
 
                     <div className="skill-actions" onClick={e => e.stopPropagation()}>
@@ -107,16 +121,16 @@ export function PluginCard({ plugin, isSelected, isFavorite, onClick, onEdit, on
                         >
                             <Trash2 size={14} />
                         </button>
-                        <a
-                            href={plugin.githubUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="action-btn github-btn"
-                            title="View on GitHub"
-                            onClick={e => e.stopPropagation()}
+                        <button
+                            className="action-btn"
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                navigator.clipboard.writeText(plugin.sourcePath);
+                            }}
+                            title={`Copy path: ${plugin.sourcePath}`}
                         >
-                            <ExternalLink size={14} />
-                        </a>
+                            <FolderOpen size={14} />
+                        </button>
                     </div>
                 </div>
             </div>

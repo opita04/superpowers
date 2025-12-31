@@ -18,13 +18,24 @@ export interface Settings {
 
 export type AppMode = 'skills' | 'agents' | 'plugins' | 'archive';
 
+export interface PluginComponent {
+    name: string;
+    description: string;
+    file: string;
+}
+
 export interface Plugin {
     id: string;
     name: string;
     description: string;
     shortDescription: string;
-    contents: string;
-    githubUrl: string;
+    sourcePath: string;
+    components: {
+        agents: PluginComponent[];
+        commands: PluginComponent[];
+        skills: PluginComponent[];
+    };
+    installInstructions: string;
     icon: string;
     isArchived?: boolean;
 }

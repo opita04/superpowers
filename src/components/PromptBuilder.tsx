@@ -21,7 +21,7 @@ export function PromptBuilder({ onOpenSettings }: PromptBuilderProps) {
                 return;
             }
             // For plugins, generate install/use instructions
-            const prompt = `# Plugin: ${selectedPlugin.name}\n\n${selectedPlugin.description}\n\n## Contents\n${selectedPlugin.contents}\n\n## Installation\nClone or copy from: ${selectedPlugin.githubUrl}\n\nGoal: ${userGoal || '[Enter goal]'}`;
+            const prompt = `${selectedPlugin.installInstructions}\n\nGoal: ${userGoal || '[Enter goal]'}`;
             setGeneratedPrompt(prompt);
         } else if (mode === 'agents') {
             if (!selectedAgent) {
@@ -172,7 +172,7 @@ export function PromptBuilder({ onOpenSettings }: PromptBuilderProps) {
                                         `skills/${selectedSkill?.id}/SKILL.md` :
                                         mode === 'agents' ?
                                             selectedAgent?.path :
-                                            selectedPlugin?.githubUrl
+                                            selectedPlugin?.sourcePath
                                     }
                                 </div>
                             )}
