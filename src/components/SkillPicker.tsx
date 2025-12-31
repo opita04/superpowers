@@ -112,9 +112,93 @@ function getAgentCategory(agent: Agent): AgentCategory {
     return 'backend';
 }
 
+// Plugin category definitions
+type PluginCategory = 'backend' | 'frontend' | 'devops' | 'testing' | 'security' | 'documentation' | 'database' | 'ai-ml' | 'business';
+
+const PLUGIN_CATEGORIES: Record<PluginCategory, { label: string; icon: string }> = {
+    'backend': { label: 'Backend', icon: '⚙️' },
+    'frontend': { label: 'Frontend', icon: '🎨' },
+    'devops': { label: 'DevOps', icon: '🚀' },
+    'testing': { label: 'Testing', icon: '🧪' },
+    'security': { label: 'Security', icon: '🔐' },
+    'documentation': { label: 'Docs', icon: '📖' },
+    'database': { label: 'Database', icon: '🗄️' },
+    'ai-ml': { label: 'AI & ML', icon: '🤖' },
+    'business': { label: 'Business', icon: '💼' },
+};
+
+// Map plugin IDs to categories based on their purpose
+function getPluginCategory(pluginId: string): PluginCategory {
+    const id = pluginId.toLowerCase();
+
+    // Backend development
+    if (id.includes('backend') || id.includes('api-scaffolding') ||
+        id.includes('graphql') || id.includes('temporal') ||
+        id.includes('event-sourcing')) {
+        return 'backend';
+    }
+
+    // Frontend & Mobile
+    if (id.includes('frontend') || id.includes('mobile') ||
+        id.includes('flutter') || id.includes('react') ||
+        id.includes('application-performance')) {
+        return 'frontend';
+    }
+
+    // DevOps & Infrastructure
+    if (id.includes('cicd') || id.includes('cloud') ||
+        id.includes('kubernetes') || id.includes('terraform') ||
+        id.includes('deployment') || id.includes('infrastructure')) {
+        return 'devops';
+    }
+
+    // Testing & Debugging
+    if (id.includes('test') || id.includes('debug') ||
+        id.includes('error') || id.includes('validation')) {
+        return 'testing';
+    }
+
+    // Security & Compliance
+    if (id.includes('security') || id.includes('audit') ||
+        id.includes('compliance') || id.includes('accessibility')) {
+        return 'security';
+    }
+
+    // Documentation
+    if (id.includes('doc') || id.includes('c4-') ||
+        id.includes('mermaid') || id.includes('tutorial')) {
+        return 'documentation';
+    }
+
+    // Database
+    if (id.includes('database') || id.includes('sql') ||
+        id.includes('data-engineer') || id.includes('migration')) {
+        return 'database';
+    }
+
+    // AI & ML
+    if (id.includes('agent') || id.includes('context') ||
+        id.includes('claude') || id.includes('ml') ||
+        id.includes('ai')) {
+        return 'ai-ml';
+    }
+
+    // Business
+    if (id.includes('business') || id.includes('analytics') ||
+        id.includes('sales') || id.includes('marketing') ||
+        id.includes('content') || id.includes('hr') ||
+        id.includes('legal')) {
+        return 'business';
+    }
+
+    // Default fallback
+    return 'backend';
+}
+
 export function SkillPicker() {
     const [activeCategory, setActiveCategory] = useState<SkillCategory | 'all'>('all');
     const [activeAgentCategory, setActiveAgentCategory] = useState<AgentCategory | 'all'>('all');
+    const [activePluginCategory, setActivePluginCategory] = useState<PluginCategory | 'all'>('all');
     const [searchQuery, setSearchQuery] = useState('');
     const [isEditModalOpen, setIsEditModalOpen] = useState(false);
     const [skillToEdit, setSkillToEdit] = useState<Skill | null>(null);
@@ -162,6 +246,36 @@ export function SkillPicker() {
             .sort((a, b) => agentsByCategory[b].length - agentsByCategory[a].length);
     }, [agentsByCategory]);
 
+    // Group plugins by category and get counts
+    const pluginsByCategory = useMemo(() => {
+        const grouped: Record<PluginCategory | 'all', typeof plugins> = {
+            'all': plugins,
+            'backend': [],
+            'frontend': [],
+            'devops': [],
+            'testing': [],
+            'security': [],
+            'documentation': [],
+            'database': [],
+            'ai-ml': [],
+            'business': [],
+        };
+
+        plugins.forEach(plugin => {
+            const cat = getPluginCategory(plugin.id);
+            grouped[cat].push(plugin);
+        });
+
+        return grouped;
+    }, [plugins]);
+
+    // Get categories that have plugins (sorted by count descending)
+    const activePluginCategories = useMemo(() => {
+        return (Object.keys(PLUGIN_CATEGORIES) as PluginCategory[])
+            .filter(cat => pluginsByCategory[cat].length > 0)
+            .sort((a, b) => pluginsByCategory[b].length - pluginsByCategory[a].length);
+    }, [pluginsByCategory]);
+
     // Filtering logic
     const filteredSkills = mode === 'skills' ? skills.filter(skill => {
         if (skill.isArchived) return false;
@@ -191,12 +305,14 @@ export function SkillPicker() {
 
     const filteredPlugins = mode === 'plugins' ? plugins.filter(plugin => {
         if (plugin.isArchived) return false;
+        const pluginCat = getPluginCategory(plugin.id);
+        const matchesCategory = activePluginCategory === 'all' || pluginCat === activePluginCategory;
         const matchesSearch = plugin.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
             plugin.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
             plugin.components.agents.some(a => a.name.toLowerCase().includes(searchQuery.toLowerCase())) ||
             plugin.components.commands.some(c => c.name.toLowerCase().includes(searchQuery.toLowerCase())) ||
             plugin.components.skills.some(s => s.name.toLowerCase().includes(searchQuery.toLowerCase()));
-        return matchesSearch;
+        return matchesCategory && matchesSearch;
     }).sort((a, b) => {
         const aFav = favoritePluginIds.includes(a.id) ? 0 : 1;
         const bFav = favoritePluginIds.includes(b.id) ? 0 : 1;
@@ -355,6 +471,32 @@ export function SkillPicker() {
                             {AGENT_CATEGORIES[cat].label}
                             <span className="tab-count">
                                 {agentsByCategory[cat].filter(a => !a.isArchived).length}
+                            </span>
+                        </button>
+                    ))}
+                </div>
+            )}
+
+            {mode === 'plugins' && (
+                <div className="category-tabs">
+                    <button
+                        className={`category-tab ${activePluginCategory === 'all' ? 'active' : ''}`}
+                        onClick={() => setActivePluginCategory('all')}
+                    >
+                        <span className="tab-icon">✦</span>
+                        All
+                        <span className="tab-count">{plugins.filter(p => !p.isArchived).length}</span>
+                    </button>
+                    {activePluginCategories.map(cat => (
+                        <button
+                            key={cat}
+                            className={`category-tab ${activePluginCategory === cat ? 'active' : ''}`}
+                            onClick={() => setActivePluginCategory(cat)}
+                        >
+                            <span className="tab-icon">{PLUGIN_CATEGORIES[cat].icon}</span>
+                            {PLUGIN_CATEGORIES[cat].label}
+                            <span className="tab-count">
+                                {pluginsByCategory[cat].filter(p => !p.isArchived).length}
                             </span>
                         </button>
                     ))}

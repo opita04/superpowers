@@ -30,9 +30,11 @@ export function PromptBuilder({ onOpenSettings }: PromptBuilderProps) {
                 setGeneratedPrompt('');
                 return;
             }
-            // Agent paths are relative from project root in generated data
-            const agentPath = `${superpowersPath}/${selectedAgent.path}`;
-            const prompt = `@${agentPath}\n\nGoal: ${userGoal || '[Enter goal]'}`;
+            // Use the full usageInstructions with goal injected
+            const goalText = userGoal || '[Enter your goal above]';
+            const instructions = (selectedAgent as any).usageInstructions
+                ?.replace(/\[YOUR_GOAL\]/g, goalText) || '';
+            const prompt = instructions || `@${superpowersPath}/${selectedAgent.path}\n\nGoal: ${goalText}`;
             setGeneratedPrompt(prompt);
         } else {
             if (!selectedSkill) {

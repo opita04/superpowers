@@ -26,42 +26,46 @@ function generateUsageInstructions(
     agentName: string,
     description: string,
     sourcePath: string,
-    agentFile: string
+    agentFile: string,
+    model: string
 ): string {
     const lines: string[] = [];
+
+    // Header
     lines.push(`## Agent: ${agentName}`);
+    lines.push(`**Model:** ${model || 'inherit'}`);
+    lines.push('');
     lines.push(description);
+    lines.push('');
+    lines.push('---');
     lines.push('');
 
     // Step 1: Copy instruction
     lines.push('### Step 1: Copy Agent File');
-    lines.push('Copy the agent to your project\'s instructions folder:');
-    lines.push('```');
-    lines.push(`cp "${sourcePath}" .instructions/agents/`);
-    lines.push('```');
     lines.push('');
-    lines.push('This will create:');
-    lines.push('```');
-    lines.push('.instructions/');
-    lines.push('└── agents/');
-    lines.push(`    └── ${agentFile}`);
+    lines.push('Copy the agent to your project:');
+    lines.push('```bash');
+    lines.push(`cp "${sourcePath}" .instructions/agents/`);
     lines.push('```');
     lines.push('');
 
     // Step 2: How to use
-    lines.push('### Step 2: Reference the Agent');
-    lines.push('Invoke the agent by referencing its path:');
+    lines.push('### Step 2: Use the Agent');
+    lines.push('');
+    lines.push('Reference the agent in your prompt:');
     lines.push('```');
     lines.push(`@.instructions/agents/${agentFile}`);
     lines.push('');
-    lines.push('Goal: [YOUR_GOAL]');
+    lines.push('[YOUR_GOAL]');
     lines.push('```');
     lines.push('');
+    lines.push('---');
+    lines.push('');
 
-    lines.push('### Source Location:');
-    lines.push(`\`${sourcePath}\``);
+    // Source
+    lines.push('**Source:** `' + sourcePath + '`');
 
-    return lines.join('\\n');
+    return lines.join('\n');
 }
 
 function getShortDescription(description: string): string {
@@ -136,7 +140,7 @@ function scanAgents(baseDir: string, isArchived: boolean) {
                         model: modelMatch ? modelMatch[1].trim() : 'inherit',
                         path: relativePath,
                         sourcePath: absolutePath,
-                        usageInstructions: generateUsageInstructions(agentName, description, absolutePath, file),
+                        usageInstructions: generateUsageInstructions(agentName, description, absolutePath, file, modelMatch ? modelMatch[1].trim() : 'inherit'),
                         isArchived: isArchived
                     });
                 }
